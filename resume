@@ -5,14 +5,16 @@
 		<title>Portfolio </title>
 	</head>
 	<body>
+	   <header>
 		<nav>
-    		<ul>
+    		     <ul>
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
         		<li><a href="/resume">Resume</a></li>
-        		<li><a href="/blog">Journal</a></li>
-    		</ul>
-		</nav>
+        		<li><a href="/blog">Note</a></li>
+    	             </ul>
+	    </nav>
+           </header>
 		<div class="container">
     	
     	
