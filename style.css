@@ -5,5 +5,14 @@ html, body, div {
   margin:  0;
 }
 
+/* the components that I will re-used */
+.box { width: 100%; height: auto;}
+
+
+/*the colors that I ll used */
+.color-white { color:#fff;}
+.background-white { background: #fff;}
+
 /* Styling for Navigation start here */
+
 .header li { display: inline;}
