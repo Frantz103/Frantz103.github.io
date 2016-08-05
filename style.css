@@ -11,6 +11,8 @@ html, body, div {
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
+.color-green--light {color: #80cbc4;}
+.background-green--light {background: #80cbc4;}
 .background-white { background: #fff;}
 
 /* Styling for Navigation start here */
