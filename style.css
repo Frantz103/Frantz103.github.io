@@ -15,7 +15,9 @@ header {
 .container, .box, .box-small { width: 100%; height: auto;}
 .container { margin: 32px 0;}
 .box-small { max-width: 320px;}
+
 .margin-auto { margin-left: auto; margin-right: auto;}
+.min-height--25em {min-height: 25em;}
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
