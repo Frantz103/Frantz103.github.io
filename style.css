@@ -22,7 +22,7 @@ header { height: 3em;}
             padding: 10px;
             line-height: 48px;
             }
-.header li a { 
+.header li a, footer li a { 
               text-align: center;
               text-decoration: none;
               text-transform: uppercase;
