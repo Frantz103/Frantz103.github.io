@@ -15,4 +15,10 @@ html, body, div {
 
 /* Styling for Navigation start here */
 
-.header li { display: inline;}
+.header li { display: inline; padding: 10px;}
+.header li a { 
+              text-align: center;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 15px;
+              }
