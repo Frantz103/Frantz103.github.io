@@ -5,6 +5,12 @@ html, body, div {
   margin:  0;
 }
 
+/* fixed for the header because of the whitespace in some browser */
+header {
+        position: relative;
+        top: -0.99em;
+        }
+
 /* the components that I will re-used */
 .container, .box { width: 100%; height: auto;}
 
