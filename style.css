@@ -6,7 +6,7 @@ html, body, div {
 }
 
 /* the components that I will re-used */
-.box { width: 100%; height: auto;}
+.container, .box { width: 100%; height: auto;}
 
 
 /*the colors that I ll used */
