@@ -16,7 +16,7 @@ html, body, div {
 .background-white { background: #fff;}
 
 /* Styling for Navigation start here */
-header { height: 5em;}
+header { height: 3em;}
 .header li { display: inline; padding: 10px;}
 .header li a { 
               text-align: center;
