@@ -17,7 +17,7 @@ html, body, div {
 
 /* Styling for Navigation start here */
 header { height: 3em;}
-.header li { 
+.header li, footer li  { 
             display: inline; 
             padding: 10px;
             line-height: 48px;
