@@ -13,7 +13,7 @@ header {
 
 /* the components that I will re-used */
 .container, .box, .box-small { width: 100%; height: auto;}
-.container { margin: 32px 20px 32px 0;}
+.container { margin: 32px 0;}
 .box-small { max-width: 320px;}
 .margin-auto { margin-left: auto; margin-right: auto;}
 
