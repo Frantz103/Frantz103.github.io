@@ -10,7 +10,7 @@ header {
         position: relative;
         top: -0.99em;
         }
-/* fixed for screen larger than 320px */
+/* fixed for screen larger than 375px */
 
 @media screen and (min-width: 375px) {
   .min-height--25em {min-height: 35em;}
