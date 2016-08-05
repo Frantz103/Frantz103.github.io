@@ -17,7 +17,11 @@ html, body, div {
 
 /* Styling for Navigation start here */
 header { height: 3em;}
-.header li { display: inline; padding: 10px;}
+.header li { 
+            display: inline; 
+            padding: 10px;
+            line-height: 48px;
+            }
 .header li a { 
               text-align: center;
               text-decoration: none;
