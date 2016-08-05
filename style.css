@@ -14,6 +14,7 @@ header {
 /* the components that I will re-used */
 .container, .box, .box-small { width: 100%; height: auto;}
 .box-small { max-width: 320px;}
+.margin-auto { margin-left: auto; margin-right: auto;}
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
