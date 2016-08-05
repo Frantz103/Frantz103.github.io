@@ -15,7 +15,7 @@ html, body, div {
 .background-green--light {background: #80cbc4;}
 .background-white { background: #fff;}
 
-/* Styling for Navigation start here */
+/* Styling for Navigation for header and footer start here */
 header { height: 3em;}
 .header li, footer li  { 
             display: inline; 
