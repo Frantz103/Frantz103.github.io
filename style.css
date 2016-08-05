@@ -12,8 +12,8 @@ header {
         }
 
 /* the components that I will re-used */
-.container, .box { width: 100%; height: auto;}
-
+.container, .box, .box-small { width: 100%; height: auto;}
+.box-small { max-width: 320px;}
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
