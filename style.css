@@ -22,10 +22,9 @@ header { height: 3em;}
             padding: 10px;
             line-height: 48px;
             }
- .header li a {  text-transform: uppercase; font-size: 15px;  text-transform: uppercase; }
+.header li a {  text-transform: uppercase; font-size: 15px;  text-transform: uppercase; letter-spacing: 0.25em }
 .header li a, footer li a { 
               text-align: center;
               text-decoration: none;
               color: #000;
-              letter-spacing: 0.25em
               }
