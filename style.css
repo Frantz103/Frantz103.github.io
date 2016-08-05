@@ -13,7 +13,7 @@ header {
 /* fixed for screen larger than 375px */
 
 @media screen and (min-width: 375px) {
-  .min-height--25em {min-height: 35em;}
+  footer {position: relative; bottom: -5em;}
 }
 
 /* the components that I will re-used */
