@@ -72,9 +72,11 @@ h2, h3 {
 h1{
   font-family: 'Vollkorn', serif;
   font-weight: 700;
-  font-size: 2.2em;
-  letter-spacing: 0.16em;
-  /*text-transform: uppercase;*/
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -105,6 +107,6 @@ min-width: 300px;
 width: 30%;
 margin-left: 20px;
 position: relative;
-top: 40%;
+top: 36%;
 }
   
