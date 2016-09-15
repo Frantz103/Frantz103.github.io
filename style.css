@@ -97,6 +97,7 @@ p, li, a {
 .cover {
 background-image: url('/images/the-ceilling.jpg');
 background-size: cover;
+background-position: 100% 50%;
 width: 95%;
 height: 48em;
 border: 2em solid #fff;
