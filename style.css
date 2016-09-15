@@ -61,3 +61,10 @@ header { height: 3em;}
  
 /* styling for the resume page */
 .box-small.margin-auto.padding-top--20 {text-align: center;}
+
+/* new css for the new homepage */
+
+.cover {
+  background-image: url('/images/the-ceilling.jpg');
+  width: 100%;
+}
