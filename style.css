@@ -65,11 +65,12 @@ header { height: 3em;}
     src: url(font/EBGaramond-Regular.tff);
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
 h1{
+  font-family:'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.7em;
 }
