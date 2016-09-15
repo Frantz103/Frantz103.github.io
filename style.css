@@ -61,12 +61,6 @@ header { height: 3em;}
 /* new css for the new homepage */
 
 @font-face {
-    font-family: quicksand;
-    src: url(font/Quicksand-Bold.tff);
-    font-weight: bold;
-}
-
-@font-face {
     font-family: ebgaramond;
     src: url(font/EBGaramond-Regular.tff);
 }
