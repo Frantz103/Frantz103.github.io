@@ -63,6 +63,26 @@ header { height: 3em;}
 .box-small.margin-auto.padding-top--20 {text-align: center;}
 
 /* new css for the new homepage */
+
+@font-face {
+    font-family: quicksand;
+    src: url(font/Quicksand-Bold.tff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ebgaramond;
+    src: url(font/EBGaramond-Regular.tff);
+}
+
+h1, h2, h3 {
+    font-family: quicksand;
+}
+
+p, li, a {
+  font-family: ebgaramond;
+}
+
 .cover {
 background-image: url('/images/the-ceilling.jpg');
 background-size: cover;
