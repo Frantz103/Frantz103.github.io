@@ -66,5 +66,8 @@ header { height: 3em;}
 
 .cover {
   background-image: url('/images/the-ceilling.jpg');
+  background-size: cover;
   width: 100%;
+  height: 80em;
+  border: 5em solid #fff;
 }
