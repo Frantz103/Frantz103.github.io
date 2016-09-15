@@ -90,3 +90,11 @@ width: 95%;
 height: 48em;
 border: 2em solid #fff;
 }
+
+.left-box{
+min-width: 300px;
+width: 30%;
+margin-left: 20px;
+position: relative;
+top: 40%;
+}
