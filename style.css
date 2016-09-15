@@ -71,6 +71,7 @@ h1, h2, h3 {
 
 h1{
   font-weight: 700;
+  font-size: 2.7em;
 }
 
 h2 {
@@ -78,7 +79,7 @@ h2 {
 }
 
 p, li, a {
-  font-family: ebgaramond;
+  font-family: 'EB Garamond', serif;
 }
 
 /*the colors that I ll used */
