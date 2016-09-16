@@ -88,15 +88,17 @@ p, li, a {
 }
 
 i {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 .nav-box {
+
   width: 5%;
   min-width: 60px;
   min-height: 60px;
   height: 5%;
   margin-left: 20px;
   margin-top: 10px;
+  color: #fff;
 }
 
 /*the colors that I ll used */
