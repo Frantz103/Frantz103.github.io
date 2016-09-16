@@ -66,10 +66,12 @@ header { height: 3em;}
 }
 
 h2, h3 {
+
     font-family: 'Quicksand', sans-serif;
+
     }
 
-h1{
+h1 {
   font-family: 'Vollkorn', serif;
   font-weight: 700;
   font-family: 'Vollkorn', serif;
@@ -119,7 +121,8 @@ height: 48em;
 border: 2em solid #fff;
 }
 
-.left-box{
+.left-box {
+
 min-width: 300px;
 width: 30%;
 margin-left: 20px;
@@ -155,4 +158,3 @@ top: 25%;
   }
 
 }
-  
