@@ -87,6 +87,16 @@ p, li, a {
   font-family: 'EB Garamond', serif;
 }
 
+i {
+  font-size: 1.5em;
+}
+.nav-box {
+  width: 5%;
+  min-width: 60px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 /*the colors that I ll used */
 .color-white { color:#fff;}
 .color-green--light {color: #80cbc4;}
