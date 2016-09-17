@@ -11,15 +11,7 @@ header {
         top: -0.99em;
         }
         
-/* fixed for screen larger than 375px */
-@media screen and (min-width: 375px) {
-  footer {position: relative; bottom: -5em;}
-}
 
-/* fixed for screen larger than 414px */
-@media screen and (min-width: 414px) {
-footer { bottom: -10em; }
-}
 
 /* the components that I will re-used */
 .container, .box, .box-small { width: 100%; height: auto;}
@@ -132,8 +124,8 @@ li {
 
 .notice {
   position: fixed;
-  top: 30%;
-  left: 100px;
+  top: 40%;
+  left: 40%;
   z-index: 999;
   background: #000;
   width: 30%;
@@ -180,6 +172,21 @@ top: 25%;
 
 }
 
+/* fixed for screen larger than 375px */
+@media screen and (min-width: 375px) {
+
+  footer {position: relative; bottom: -5em;}
+
+  .notice { top: 50px; left: 25px; }
+
+}/* end of fixed for screen larger than 375px */
+
+/* fixed for screen larger than 414px */
+@media screen and (min-width: 414px) {
+
+footer { bottom: -10em; }
+
+}/* end of fixed for screen larger than 414px */
 
 /* css for extra large screen 2560x1440 */
 
