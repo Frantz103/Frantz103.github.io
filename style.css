@@ -130,6 +130,17 @@ li {
   display:inline-block;
 }
 
+.notice {
+  position: relative;
+  top: 0;
+  z-index: 999;
+  background: 000;
+  width: 100%;
+  height: 100px;
+}
+
+.notice p { color: white;}
+
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
