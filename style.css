@@ -96,8 +96,13 @@ i {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 1.5em;
   color:#fff;
+}
+
+li {
+    list-style: none;
 }
 
 .nav-box {
