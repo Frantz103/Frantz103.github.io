@@ -129,8 +129,9 @@ li {
   z-index: 999;
   background: #000;
   width: 30%;
-  max-width: 240px;
-  height: 100px;
+  max-width: 250px;
+  max-height: 20em;
+
 }
 
 .notice p { color: white;}
@@ -173,11 +174,11 @@ top: 25%;
 }
 
 /* fixed for screen larger than 375px */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
 
   footer {position: relative; bottom: -5em;}
 
-  .notice { top: 50px; left: 25px; }
+
 
 }/* end of fixed for screen larger than 375px */
 
