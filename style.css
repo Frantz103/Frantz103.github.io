@@ -116,9 +116,20 @@ li {
   color: #fff;
 }
 
- .nav {
+.nav-box:hover {
+  cursor: pointer;
+}
 
+ .nav {
+  display: none;
+  z-index: 999;
   }
+.menu-open {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .5s;
+  display:inline-block;
+}
+
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
