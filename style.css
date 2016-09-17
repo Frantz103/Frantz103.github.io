@@ -94,6 +94,12 @@ i {
   font-size: 1.5em !important;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color:#fff;
+}
+
 .nav-box {
 
   width: 5%;
@@ -104,6 +110,10 @@ i {
   margin-top: 10px;
   color: #fff;
 }
+
+ .nav {
+
+  }
 
 /*the colors that I ll used */
 .color-white { color:#fff;}
@@ -157,8 +167,5 @@ top: 25%;
     height: 1898px;
   }
 
-  .nav {
-    
-  }
 
-}
+} /* end of extra screen 2560pxx1440 */
