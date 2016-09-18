@@ -96,9 +96,11 @@ li {
   z-index: 999;
   }
 .menu-open {
-  transform: rotate(45deg) translate(8px, 8px);
-  transition: .5s;
+  /*transform: rotate(45deg) translate(8px, 8px);*/
+  /*transition: .5s;*/
   display:inline-block;
+  width: 50%;
+  height: 100%;
 }
 
 .notice {
@@ -174,13 +176,16 @@ footer { bottom: -10em; }
 
 .notice {
   top: 10%;
-  width: 100%;
-  min-width: 320px;
+  max-width: 100%;
   min-height: 8em;
 }
 
 .notice p {
   padding: 20px;
+}
+
+.menu-open {
+  width: 100%;
 }
 
 
