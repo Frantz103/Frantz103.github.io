@@ -12,9 +12,34 @@ header {
         top: -0.99em;
         }
         
+/* the experiment */
 
+.top {
+  height: 2em;
+  width: 100%;
+}
+
+.left {
+width: 2em;
+height: 100%;
+float: left;
+}
+
+.right {
+width: 2em;
+height: 100%;
+float: right;
+}
+
+.bottom {
+height: 2em;
+  width: 100%;
+  clear: both;
+}
 
 /* the components that I will re-used */
+
+
 .container, .box, .box-small { width: 100%; height: auto;}
 .container { margin: 32px 0;}
 .box-small { max-width: 320px;}
@@ -43,8 +68,6 @@ h2, h3 {
     }
 
 h1 {
-  /*font-family: 'Vollkorn', serif;*/
-  /*font-family: 'David Libre', serif;*/
   font-family: 'Cardo', serif;
   font-weight: 700;
   font-size: 2.5em;
@@ -132,7 +155,7 @@ background-size: cover;
 background-position: 100% 50%;
 width: 95%;
 height: 48em;
-border: 2em solid #fff;
+/*border: 2em solid #fff;*/
 }
 
 .left-box {
