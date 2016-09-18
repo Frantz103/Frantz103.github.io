@@ -2,9 +2,8 @@ $(document).ready(function() {
   var $menu = $('.menu');
 
   $menu.on('click', function(){
-
-    $(".menu-open").css({"background-color": "white"});
-    $(this).toggleClass('menu-open');
+   $('.nav').toggleClass('menu-open');
+     $(".nav").css({"background-color": "white", "width":"100%"});
 
   });
 
