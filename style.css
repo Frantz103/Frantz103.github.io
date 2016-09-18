@@ -173,8 +173,7 @@ footer { bottom: -10em; }
 
 .notice {
   top: 10%;
-  left: 10%;
-  width: 80%;
+  width: 100%;
   min-width: 250px;
   min-height: 8em;
 }
