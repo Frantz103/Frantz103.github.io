@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $menu.on('click', function(){
    $('.nav').toggleClass('menu-open');
-     $(".nav").css({"background-color": "white", "width":"100%"});
+   $(".nav").css({"background-color": "white", "height":"100%", "z-index":"9999"});
 
   });
 
