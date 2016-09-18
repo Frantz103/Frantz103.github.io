@@ -13,6 +13,9 @@ header {
         }
         
 /* the experiment */
+.border {
+ z-index: 99999; 
+}
 
 .top {
   height: 2em;
