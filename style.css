@@ -14,33 +14,35 @@ header {
         
 /* the experiment */
 .border {
- z-index: 99999;
+ z-index: 99999999;
  color: #fff; 
+ position: fixed;
 }
 
 .top {
   height: 2em;
   width: 100%;
+  top: 0;
 }
 
 .left {
 width: 2em;
 min-height: 50em;
 height: auto;
-float: left;
+left:0;
 }
 
 .right {
 width: 2em;
 min-height: 50em;
 height: auto;
-float: right;
+right: 0;
 }
 
 .bottom {
 height: 2em;
   width: 100%;
-  clear: both;
+  bottom: 0;
 }
 
 /* the components that I will re-used */
