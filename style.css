@@ -15,7 +15,7 @@ header {
 /* the experiment */
 .border {
  z-index: 99999999;
- color: #fff; 
+ background: #fff; 
  position: fixed;
 }
 
