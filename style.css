@@ -14,7 +14,8 @@ header {
         
 /* the experiment */
 .border {
- z-index: 99999; 
+ z-index: 99999;
+ color: #fff; 
 }
 
 .top {
