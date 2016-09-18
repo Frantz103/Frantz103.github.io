@@ -179,6 +179,10 @@ footer { bottom: -10em; }
   min-height: 8em;
 }
 
+.notice p {
+  padding: 20px;
+}
+
 
 }/* end of fixed for screen larger than 480px */
 
