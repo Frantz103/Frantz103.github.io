@@ -24,33 +24,11 @@ header {
           padding: 1.3em;
 }
 
-
 .margin-auto { margin-left: auto; margin-right: auto;}
 .min-height--25em {min-height: 25em;}
 .padding-top--20 { padding-top: 20%;}
 
-
-
-/* Styling for Navigation for header and footer start here */
-header { height: 3em;}
-.header li, footer li  { 
-            display: inline; 
-            padding: 10px;
-            line-height: 48px;
-            }
-.header li a {  text-transform: uppercase; font-size: 15px;  text-transform: uppercase; letter-spacing: 0.25em }
-.header li a, footer li a, .button { 
-              text-align: center;
-              text-decoration: none;
-              color: #000;
-              }
-/* styling for the content of the homepage */
- .container h1, .container h2, .container P { padding-left: 3.5%;} 
- 
-/* styling for the resume page */
-.box-small.margin-auto.padding-top--20 {text-align: center;}
-
-/* new css for the new homepage */
+/* css for the new homepage */
 
 @font-face {
     font-family: ebgaramond;
@@ -188,6 +166,21 @@ top: 25%;
 footer { bottom: -10em; }
 
 }/* end of fixed for screen larger than 414px */
+
+
+/* fixed for screen larger than 480px */
+@media screen and (max-width: 480px) {
+
+.notice {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  min-width: 250px;
+  min-height: 8em;
+}
+
+
+}/* end of fixed for screen larger than 480px */
 
 /* css for extra large screen 2560x1440 */
 
