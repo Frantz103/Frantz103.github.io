@@ -3,6 +3,7 @@
 html, body, div { 
   padding: 0;
   margin:  0;
+  overflow: hidden;
 }
 
 /* fixed for the header because of the whitespace in some browser */
