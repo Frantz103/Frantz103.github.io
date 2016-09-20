@@ -12,6 +12,8 @@ $('#popup').css({
   "color":"white", "float":"right", "margin":"10px", "cursor": "pointer"
 });
 
+$('#popup').remove('.notice');
+
 setTimeout(function() {
   $('.notice').remove();
 }, 10000)
