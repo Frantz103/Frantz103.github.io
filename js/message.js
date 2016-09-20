@@ -12,11 +12,9 @@ $('#popup').css({
   "color":"white", "float":"right", "margin":"10px", "cursor": "pointer"
 });
 
-var $popup = $('.notice');
+var $popup = $('#popup');
 $popup.on('click', function(){
-
-  $('#popup').remove('.notice');
-
+  $('.notice').remove();
 });
 
 setTimeout(function() {
