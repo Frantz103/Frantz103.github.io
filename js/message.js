@@ -9,7 +9,7 @@ $('body').append(
   );
 
 $('i').css({
-"background-color":"white"
+  "color":"white", "float":"right"
 });
 
 setTimeout(function() {
