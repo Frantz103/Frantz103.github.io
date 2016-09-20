@@ -19,6 +19,6 @@ $popup.on('click', function(){
 
 setTimeout(function() {
   $('.notice').remove();
-}, 10000)
+}, 12000)
 
 });
