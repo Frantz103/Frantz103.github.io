@@ -222,7 +222,7 @@ footer { bottom: -10em; }
   left: 0;
   width: 60%;
   min-height: 8em;
-  margin: auto;
+  margin: auto 0;
 }
 
 .notice p {
