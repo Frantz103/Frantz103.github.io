@@ -9,7 +9,7 @@ $('body').append(
   );
 
 $('#popup').css({
-  "color":"white", "float":"right", "margin":"10px", "cursor": "pointer"
+  "color":"white", "float":"right", "margin":"20px", "cursor": "pointer"
 });
 
 var $popup = $('#popup');
