@@ -186,23 +186,11 @@ top: 25%;
 left: 3.5%;
 }
 
-/* css for sreen 1440 x 900, that's my computer screen very important :) */
-@media screen and (min-width: 2560px) {
-  .cover {
-  background-position: 50% 50%;
-  width: 95.5%;
-  height: 48em;
-  border: 2em solid #fff;
-  }
-
-}
 
 /* fixed for screen larger than 375px */
 @media screen and (min-width: 375px) {
 
   footer {position: relative; bottom: -5em;}
-
-
 
 }/* end of fixed for screen larger than 375px */
 
@@ -243,23 +231,9 @@ footer { bottom: -10em; }
    width: 1em;
   }
 
-
-}/* end of fixed for screen larger than 480px */
-
-/* css for extra large screen 2560x1440 */
-
-@media screen and (min-width: 2560px) {
- 
-
-  .cover {
-
-    background-image: url('/images/the-ceilling.jpg');
-    background-position: 50% 50%;
-    width: 98%;
-    max-width: 2560px;
-    min-height: 48em;
-    height: 1898px;
+  a {
+    font-size: 1.2em;
   }
 
 
-} /* end of extra screen 2560pxx1440 */
+}/* end of fixed for screen larger than 480px */
