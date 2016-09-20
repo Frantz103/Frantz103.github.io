@@ -8,6 +8,10 @@ $('body').append(
   </div>"
   );
 
+$('i').css({
+"background-color":"white"
+});
+
 setTimeout(function() {
   $('.notice').remove();
 }, 10000)
