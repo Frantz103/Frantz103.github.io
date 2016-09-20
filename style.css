@@ -220,8 +220,10 @@ footer { bottom: -10em; }
 
 .notice {
   top: 10%;
+  left: 0;
   width: 60%;
   min-height: 8em;
+  margin: auto;
 }
 
 .notice p {
