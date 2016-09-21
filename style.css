@@ -69,8 +69,12 @@ html, body, div {
   line-height: 40px;
   letter-spacing: 0.2em;
  }
+ button:hover {
+  background-color: #fff;
+  color:#000;
+ }
 
-.button:hover {
+/*.button:hover {
   animation-name: colorchange;
   -webkit-animation-duration: 4500ms;
   animation-duration: 4500ms;
@@ -81,7 +85,7 @@ html, body, div {
 @keyframes colorchange {
     from {background-color: #000; color:#fff;}
     to {background-color: #fff;color:#000;}
-}
+}*/
 
 .margin-auto { 
    margin-left: auto;
