@@ -60,13 +60,14 @@ html, body, div {
 
 .button {
   font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
   width: 200px;
   height: 50px;
   background: #f2b441;
   text-transform: uppercase;
   padding:10px;
   line-height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
 }
 
 .margin-auto { 
