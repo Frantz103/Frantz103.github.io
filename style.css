@@ -72,9 +72,9 @@ html, body, div {
 
 .button:hover {
   animation-name: colorchange;
-  -webkit-animation-duration: 1500ms;
-  animation-duration: 1500ms;
-  animation-iteration-count: 5;
+  -webkit-animation-duration: 2500ms;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
  }
 
