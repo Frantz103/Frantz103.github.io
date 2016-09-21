@@ -6,11 +6,6 @@ html, body, div {
   overflow: hidden;
 }
 
-/* fixed for the header because of the whitespace in some browser */
-header {
-        position: relative;
-        top: -0.99em;
-        }
         
 .border {
  z-index: 99999999;
@@ -80,7 +75,7 @@ header {
   padding-top: 20%;
 }
 
-/* css for the new homepage */
+/* css for the homepage */
 
 @font-face {
     font-family: ebgaramond;
@@ -212,27 +207,6 @@ li {
   top: 25%;
   left: 3.5%;
 }
-
-
-/* fixed for screen larger than 375px */
-@media screen and (min-width: 375px) {
-
-  footer {
-    position: relative; 
-    bottom: -5em;
-  }
-
-}/* end of fixed for screen larger than 375px */
-
-/* fixed for screen larger than 414px */
-@media screen and (min-width: 414px) {
-
-footer { 
-  bottom: -10em; 
-}
-
-}/* end of fixed for screen larger than 414px */
-
 
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
