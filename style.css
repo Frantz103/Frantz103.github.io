@@ -69,7 +69,7 @@ html, body, div {
   line-height: 40px;
   letter-spacing: 0.2em;
  }
- button:hover {
+ .button:hover {
   background-color: #fff;
   color:#000;
  }
