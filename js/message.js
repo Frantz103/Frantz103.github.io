@@ -3,8 +3,9 @@ $(document).ready(function() {
   $('body').append(
   "<div class='notice'> \
   <i class='fa fa-times' id='popup'></i> \
-  <p>This portfolio is under contruction.<br> Please click here to \
-  <a href='http://lefrantz.weebly.com'>visit my past portfolio</p> \
+  <p>This portfolio is under contruction.<br> \
+  <a href='http://lefrantz.weebly.com'> \
+   Please click here to visit my past portfolio</p> \
   </div>"
   );
 
