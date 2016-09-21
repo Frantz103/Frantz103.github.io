@@ -60,9 +60,7 @@ html, body, div {
   height: 50px;
 
 }
-font-size--1-5em {
-   font-size: 1.5em;
-}
+
 .margin-auto { 
    margin-left: auto;
    margin-right: auto;
@@ -109,7 +107,6 @@ i {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color:#fff;
 }
 
@@ -154,6 +151,12 @@ li {
   width: 50%;
   height: 100%;
 }
+
+.menu-link {
+   font-size: 1.5em;
+   text-transform: uppercase;
+}
+
 
 .notice {
   position: fixed;
