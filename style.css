@@ -59,12 +59,14 @@ html, body, div {
 }
 
 .button {
+  font-family: 'Quicksand', sans-serif;
   width: 200px;
   height: 50px;
   background: #f2b441;
   text-transform: uppercase;
   padding:10px;
   line-height: 40px;
+  letter-spacing: 4px;
 }
 
 .margin-auto { 
@@ -107,7 +109,6 @@ i {
 }
 
 a {
-  font-family: 'Cardo', serif;
   text-decoration: none;
   color:#fff;
 }
