@@ -1,24 +1,26 @@
 $(document).ready(function() {
 
-
-$('body').append(
+  $('body').append(
   "<div class='notice'> \
   <i class='fa fa-times' id='popup'></i> \
   <p>This portfolio is under contruction.<br> Please check back later</p> \
   </div>"
   );
 
-$('#popup').css({
-  "color":"white", "float":"right", "margin":"20px", "cursor": "pointer"
-});
+  $('#popup').css({
+    "color":"white", 
+    "float":"right", 
+    "margin":"20px", 
+    "cursor": "pointer"
+  });
 
-var $popup = $('#popup');
-$popup.on('click', function(){
+  var $popup = $('#popup');
+  $popup.on('click', function(){
   $('.notice').remove();
-});
+  });
 
-setTimeout(function() {
+  setTimeout(function() {
   $('.notice').remove();
-}, 12000)
+  }, 12000)
 
 });
