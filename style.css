@@ -73,11 +73,9 @@ html, body, div {
 
 .button:hover {
   animation-name: colorchange;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in; 
-}
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+ }
 
 @keyframes colorchange {
     from {background-color: #000; color:#fff;}
