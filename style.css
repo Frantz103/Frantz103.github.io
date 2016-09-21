@@ -56,12 +56,13 @@ html, body, div {
 }
 
 .button {
-  width: 200px;
+  width: 160px;
   height: 50px;
-  border: solid 1px #80cbc4;
-  padding: 1em;
-}
 
+}
+font-size--1-5em {
+   font-size: 1.5em;
+}
 .margin-auto { 
    margin-left: auto;
    margin-right: auto;
@@ -109,7 +110,6 @@ i {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.5em;
   color:#fff;
 }
 
