@@ -11,7 +11,7 @@ $(document).ready(function() {
   $('#popup').css({
     "color":"white", 
     "float":"right", 
-    "margin":"20px",p
+    "margin":"20px",
     "cursor": "pointer"
   });
 
