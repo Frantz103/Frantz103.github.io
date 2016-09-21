@@ -69,9 +69,11 @@ html, body, div {
   padding: 1em 3em;
   line-height: 40px;
   letter-spacing: 0.2em;
+ }
+
+.button:hover {
   animation-name: colorchange;
-  animation-duration: 4s;
- 
+  animation-duration: 2s;
 }
 
 @keyframes colorchange {
