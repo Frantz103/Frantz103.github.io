@@ -1,4 +1,7 @@
 /* Main stylesheet for the site */
+html, body {
+ height:100%;
+}
 
 html, body, div { 
   padding: 0;
@@ -22,14 +25,14 @@ html, body, div {
 .left {
   width: 2em;
   min-height: 52em;
-  height: auto;
+  height: 100%;
   left:0;
 }
 
 .right {
   width: 2em;
   min-height: 52em;
-  height: auto;
+  height: 100%;
   right: 0;
 }
 
@@ -58,7 +61,7 @@ html, body, div {
 .button {
   width: 160px;
   height: 50px;
-
+  background: #f2b441;
 }
 
 .margin-auto { 
@@ -197,7 +200,8 @@ li {
   background-size: cover;
   background-position: 100% 50%;
   width: 100%;
-  height: 52em;
+  min-height: 52em;
+  height: 100%;
   position: absolute;
   top: 0;
 }
