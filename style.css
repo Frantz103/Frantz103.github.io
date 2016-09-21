@@ -67,7 +67,6 @@ html, body, div {
   border: 0.5px solid #000;
   text-transform: uppercase;
   padding: 1em;
-  margin-top: 10%;
   line-height: 40px;
   letter-spacing: 0.2em;
 }
@@ -80,6 +79,10 @@ html, body, div {
  .margin-zero {
   margin: 0;
  }
+
+.margin-bottom--10 {
+  margin-bottom: 10%;
+}
 
 .min-height--25em {
   min-height: 25em;
