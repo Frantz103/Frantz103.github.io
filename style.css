@@ -63,18 +63,22 @@ html, body, div {
   font-size: 11px;
   width: 200px;
   height: 50px;
-  /*background: #f2b441;*/
-  border: 0.5px solid #fff;
+  background: #000;
+  border: 0.5px solid #000;
   text-transform: uppercase;
   padding: 1em;
   margin-top: 10%;
   line-height: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 0.2em;
 }
 
 .margin-auto { 
    margin-left: auto;
    margin-right: auto;
+ }
+
+ .margin-zero {
+  margin: 0;
  }
 
 .min-height--25em {
