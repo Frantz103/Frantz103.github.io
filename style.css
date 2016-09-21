@@ -63,7 +63,8 @@ html, body, div {
   font-size: 11px;
   width: 200px;
   height: 50px;
-  background: #f2b441;
+  /*background: #f2b441;*/
+  border: 0.5px solid #f2b441;
   text-transform: uppercase;
   padding:10px;
   line-height: 40px;
