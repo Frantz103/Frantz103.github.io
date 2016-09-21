@@ -69,7 +69,14 @@ html, body, div {
   padding: 1em 3em;
   line-height: 40px;
   letter-spacing: 0.2em;
-  box-shadow: 10px 10px 5px #888888;
+  animation-name: colorchange;
+  animation-duration: 4s;
+ 
+}
+
+@keyframes colorchange {
+    from {background-color: #000; color:#fff;}
+    to {background-color: #fff; color:#000;}
 }
 
 .margin-auto { 
