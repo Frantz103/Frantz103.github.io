@@ -74,8 +74,8 @@ html, body, div {
   animation-name: colorchange;
   -webkit-animation-duration: 2500ms;
   animation-duration: 2500ms;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
  }
 
 @keyframes colorchange {
