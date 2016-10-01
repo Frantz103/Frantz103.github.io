@@ -265,6 +265,11 @@ li {
     text-align: center;
   }
 
+.portfolio h1 {
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+}
+
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
 
