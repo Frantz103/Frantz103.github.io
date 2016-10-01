@@ -270,6 +270,9 @@ li {
   letter-spacing: 0.2em;
   margin-top: 10%;
 }
+.portfolio h3 {
+  padding: 2em;
+}
 
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
