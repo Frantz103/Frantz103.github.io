@@ -229,6 +229,9 @@ li {
   background: #fff;
 }
 
+.background-black {
+  background: #000;
+}
 
 .cover {
   background-image: url('/images/the-ceilling.jpg');
@@ -284,6 +287,11 @@ li {
 
   .left-box {
     top: 15%;
+  }
+
+  .portfolio h1, 
+  .portfolio h3 {
+    color: #fff;
   }
 
 }/* end of fixed for screen larger than 480px */
