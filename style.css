@@ -44,8 +44,8 @@ html, body, div {
 
 /* the components that I will re-used */
 
-.container, 
-.box { 
+.container {
+
  width: 100%; 
  height: 100%;
 }
@@ -236,8 +236,7 @@ li {
   background: #000;
 }
 
-.cover {
-  background-image: url('/images/the-ceilling.jpg');
+.cover, .box {
   background-size: cover;
   background-position: 100% 50%;
   width: 100%;
@@ -245,6 +244,10 @@ li {
   height: 100%;
   position: absolute;
   top: 0;
+}
+
+.cover {
+  background-image: url('/images/the-ceilling.jpg');
 }
 
 .left-box {
