@@ -287,8 +287,8 @@ vertical-align: middle;
 .box03 img {
   width: 80%;
   display: inline-block;
-  vertical-align: middle;
   margin: auto;
+  top: 40%;
 }
 
  .portfolio h1, 
