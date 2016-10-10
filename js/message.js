@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $( window ).unload(function() {
+ 
 
   $('body').append(
   "<div class='notice'> \
@@ -22,6 +22,8 @@ $(document).ready(function() {
   $popup.on('click', function(){
   $('.notice').remove();
   });
+
+$( window ).unload(function() {
 
   setTimeout(function() {
   $('.notice').remove();
