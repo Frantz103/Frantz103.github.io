@@ -128,7 +128,8 @@ html, body, div {
 /* css for the homepage */
 
 h2, h3 {
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Cardo', sans-serif;
  }
 
 h1 {
