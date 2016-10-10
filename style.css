@@ -287,7 +287,8 @@ vertical-align: middle;
 .box03 img {
   width: 80%;
   display: inline-block;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   top: 40%;
 }
