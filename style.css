@@ -76,7 +76,7 @@ html, body, div {
   color:#000;
   -webkit-transition: background-color 2s, color 2s;
   transition: background-color 2s, color 2s;
-  -webkit- transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
  }
 
