@@ -279,14 +279,13 @@ li {
 
 .box03 {
 height: 100%;
-display: flex;
-justify-content: center;
 top: 0;
 left: 0;
 }
 
 .box03 img {
   width: 60%;
+  margin: auto 0;
 }
 
  .portfolio h1, 
