@@ -24,11 +24,11 @@ $(document).ready(function() {
   });
 
 $( window ).unload(function() {
-
+  return
   setTimeout(function() {
   $('.notice').remove();
   }, 12000)
 
- });
+ }); 
 
 })
