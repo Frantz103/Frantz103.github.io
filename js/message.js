@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $( window ).unload(function() {
+
   $('body').append(
   "<div class='notice'> \
   <i class='fa fa-times' id='popup'></i> \
@@ -25,4 +27,6 @@ $(document).ready(function() {
   $('.notice').remove();
   }, 12000)
 
-});
+ });
+
+})
