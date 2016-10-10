@@ -281,6 +281,10 @@ li {
 height: 100%;
 }
 
+.box03 img {
+  width: 60%;
+}
+
  .portfolio h1, 
   .portfolio h3 {
     color: #fff;
