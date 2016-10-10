@@ -288,6 +288,7 @@ vertical-align: middle;
   width: 80%;
   display: inline-block;
   margin: auto;
+  position: relative;
   top: 40%;
 }
 
