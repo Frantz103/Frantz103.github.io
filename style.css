@@ -192,7 +192,7 @@ li {
 
  .nav {
   display: none;
-  border-left: 2em solid black;
+  /*border-left: 2em solid black;*/
   }
 
 .menu-open {
@@ -201,6 +201,10 @@ li {
   display:inline-block;
   width: 100%;
   height: 100%;
+}
+
+.menu-open li {
+  text-align: center;
 }
 
 .menu-link {
