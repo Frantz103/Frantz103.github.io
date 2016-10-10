@@ -1,9 +1,6 @@
 $(document).ready(function() {
-
- $( window ).unload(function() {
-  return
-
-  $('body').append(
+/*
+ $('body').append(
   "<div class='notice'> \
   <i class='fa fa-times' id='popup'></i> \
   <p>This portfolio is under contruction.<br> \
@@ -29,6 +26,6 @@ $(document).ready(function() {
   $('.notice').remove();
   }, 12000)
 
- }); 
+  */
 
 })
