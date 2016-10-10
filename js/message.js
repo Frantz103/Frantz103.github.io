@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
- 
+ $( window ).unload(function() {
+  return
 
   $('body').append(
   "<div class='notice'> \
@@ -23,8 +24,7 @@ $(document).ready(function() {
   $('.notice').remove();
   });
 
-$( window ).unload(function() {
-  return
+
   setTimeout(function() {
   $('.notice').remove();
   }, 12000)
