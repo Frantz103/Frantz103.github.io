@@ -194,6 +194,7 @@ li {
 
  .nav {
   display: none;
+  opacity: .80;
   /*border-left: 2em solid black;*/
   }
 
@@ -222,7 +223,6 @@ li {
   left: 40%;
   z-index: 999;
   background: #000;
-  opacity: .80;
   width: 20%;
   min-width: 100px;
   min-height: 8em;
