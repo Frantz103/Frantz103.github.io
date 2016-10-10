@@ -279,7 +279,10 @@ li {
 
 .box03 {
 height: 100%;
-vertical-align: middle;
+display: flex;
+justify-content: center;
+top: 0;
+left: 0;
 }
 
 .box03 img {
