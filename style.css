@@ -277,7 +277,7 @@ li {
  background: #800808;
 }
 
-.cover, .box {
+.cover, .box, .about {
   background-size: cover;
   background-position: 100% 50%;
   width: 100%;
