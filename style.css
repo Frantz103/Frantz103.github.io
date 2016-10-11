@@ -71,6 +71,7 @@ html, body, div {
 
 .text-box p {
   word-spacing: 1px;
+ letter-spacing: 1px;
 }
 
 .button {
