@@ -264,6 +264,10 @@ li {
   background: #000;
 }
 
+.background-red {
+ background: #800808;
+}
+
 .cover, .box {
   background-size: cover;
   background-position: 100% 50%;
