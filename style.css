@@ -115,6 +115,10 @@ html, body, div {
   text-align: center;
  }
 
+ .text-justify {
+  text-align: justify;
+ }
+
 .margin-bottom--10 {
   margin-bottom: 10%;
 }
