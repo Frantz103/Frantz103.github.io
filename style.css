@@ -69,6 +69,10 @@ html, body, div {
   left: 50%;
 }
 
+.text-box p {
+  word-spacing: 2px;
+}
+
 .button {
   font-family: 'Quicksand', sans-serif;
   font-size: 11px;
