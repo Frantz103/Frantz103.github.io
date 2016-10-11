@@ -292,7 +292,7 @@ li {
 }
 
 .about {
-  background: url('/images/the-ceilling.jpg'), #000;
+  background: url('/images/the-ceilling.jpg');
 }
 
 .left-box {
