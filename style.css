@@ -61,7 +61,7 @@ html, body, div {
 }
 
 .text-box {
-  width: 35%;
+  width: 30%;
   height: 10em;
   z-index: 998;
   position: absolute;
