@@ -277,6 +277,10 @@ li {
  background: #800808;
 }
 
+.background-green--2 {
+  background: #088080;
+}
+
 .cover, .box, .about {
   background-size: cover;
   background-position: 100% 50%;
