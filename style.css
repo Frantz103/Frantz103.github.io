@@ -65,7 +65,8 @@ html, body, div {
   height: 14em;
   z-index: 998;
   position: absolute;
-  top: 39.5%;
+  top: 35%;
+  left: 35%;
  }
 
 .text-box p {
