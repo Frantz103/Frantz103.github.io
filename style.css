@@ -351,7 +351,9 @@ vertical-align: middle;
 
 address a {
   padding-left: 10px;
+  line-height: 120%;
 }
+
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
 
