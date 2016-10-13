@@ -385,6 +385,10 @@ vertical-align: middle;
     top: 15%;
   }
 
+  .text-box { 
+    left: 5%;
+  }
+
  
 
 }/* end of fixed for screen larger than 480px */
