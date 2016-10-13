@@ -298,7 +298,8 @@ li {
 }
 
 .background-purple-2 {
-  background:#8088cb;
+ /* background:#8088cb;*/
+ background: #80cbc4;
 }
 .background-green--2 {
   background: #088080;
