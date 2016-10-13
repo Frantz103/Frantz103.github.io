@@ -349,6 +349,9 @@ vertical-align: middle;
   padding: 0.5em;
 }
 
+address a {
+  padding-left: 10px;
+}
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
 
