@@ -169,6 +169,11 @@ h2 {
   margin-bottom: 6%;
 }
 
+.brand {
+  position: relative;
+  top: 5%;
+}
+
 p, li {
   font-family: 'EB Garamond', serif;
 }
