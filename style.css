@@ -60,14 +60,21 @@ html, body, div {
   height: auto;
 }
 
-.text-box {
+.text-box, .text-box-2 {
   width: 30%;
   min-width: 240px;
   height: 14em;
   z-index: 998;
   position: absolute;
   top: 35%;
+ }
+
+ .text-box-2 {
   left: 35%;
+ }
+
+ text-box {
+  left: 50%;
  }
 
 .text-box p {
