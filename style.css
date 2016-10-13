@@ -77,9 +77,10 @@ html, body, div {
   left: 50%;
  }
 
-.text-box p {
+.text-box p, 
+.text-box-2 p {
   word-spacing: 1px;
- letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .button {
