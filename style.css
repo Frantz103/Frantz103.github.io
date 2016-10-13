@@ -66,8 +66,7 @@ html, body, div {
   z-index: 998;
   position: absolute;
   top: 39.5%;
-  left: 50%;
-}
+ }
 
 .text-box p {
   word-spacing: 1px;
