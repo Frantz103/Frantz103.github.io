@@ -386,9 +386,15 @@ vertical-align: middle;
   }
 
   .text-box { 
-    left: 5%;
+    left: 15%;
   }
 
+@media screen and (max-width: 415px) {
+
+  .text-box {
+    left: 8%;
+  }
+}
  
 
 }/* end of fixed for screen larger than 480px */
