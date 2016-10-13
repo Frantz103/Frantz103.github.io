@@ -277,7 +277,8 @@ li {
 }
 
 .background-green--light {
-  background: #80cbc4;
+  /*background: #80cbc4;*/
+  background: #cb8084;
 }
 
 .background-white {
