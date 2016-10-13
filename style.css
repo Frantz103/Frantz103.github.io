@@ -375,6 +375,7 @@ address a {
 .myportfolio {
   position: relative;
   left:18%;
+ top: -0.7em;
 }
 
 /* fixed for screen larger than 480px */
