@@ -396,6 +396,12 @@ vertical-align: middle;
   }
 }
 
+@media screen and (max-width: 376px) {
+  .text-box {
+    left: 15%;
+  }
+}
+
 @media screen and (max-width: 361px) {
   .text-box {
     left: 12%;
