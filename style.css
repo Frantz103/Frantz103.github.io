@@ -351,7 +351,10 @@ vertical-align: middle;
 .portfolio h1, .brand {
   font-size: 1.1em;
   letter-spacing: 0.2em;
-  margin-top: 10%;
+ }
+
+.portfolio h1 {
+   margin-top: 10%;
 }
 
 .portfolio h3 {
