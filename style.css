@@ -392,7 +392,13 @@ vertical-align: middle;
 @media screen and (max-width: 415px) {
 
   .text-box {
-    left: 8%;
+    left: 21%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .text-box {
+    left: 12%;
   }
 }
  
