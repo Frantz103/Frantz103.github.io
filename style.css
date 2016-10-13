@@ -125,6 +125,10 @@ html, body, div {
   text-align: justify;
  }
 
+ .italic {
+  font-style: italic;
+ }
+
 .margin-bottom--10 {
   margin-bottom: 10%;
 }
