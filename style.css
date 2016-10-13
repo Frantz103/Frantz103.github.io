@@ -348,11 +348,12 @@ vertical-align: middle;
     text-align: center;
   }
 
-.portfolio h1 {
+.portfolio h1, .brand h2 {
   font-size: 1.1em;
   letter-spacing: 0.2em;
   margin-top: 10%;
 }
+
 .portfolio h3 {
   padding: 0.5em;
 }
