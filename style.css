@@ -172,6 +172,9 @@ h2 {
 p, li {
   font-family: 'EB Garamond', serif;
 }
+address {
+  font-family: Quicksand;
+}
 
 i {
   font-size: 1.5em !important;
