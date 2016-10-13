@@ -389,6 +389,11 @@ vertical-align: middle;
     left: 15%;
   }
 
+  .button {
+    padding: 1em 2em;
+
+  }
+
 @media screen and (max-width: 415px) {
 
   .text-box {
