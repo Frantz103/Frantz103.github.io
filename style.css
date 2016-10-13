@@ -372,6 +372,11 @@ address a {
  line-height: 150%;
 }
 
+.myportfolio {
+  position: relative;
+  left:18%;
+}
+
 /* fixed for screen larger than 480px */
 @media screen and (max-width: 480px) {
 
