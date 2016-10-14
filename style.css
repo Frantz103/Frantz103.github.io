@@ -215,7 +215,8 @@ li {
 }
 
 .resume h3, 
-.resume h2 {
+.resume h2,
+.resume p {
  color: #fff;
 }
 
