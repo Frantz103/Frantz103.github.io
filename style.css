@@ -54,7 +54,6 @@ html, body, div {
 }
 
 .box-small {  
-
   width: 100%; 
   max-width: 320px;
   height: auto;
@@ -213,6 +212,11 @@ a {
 
 li {
     list-style: none;
+}
+
+.resume h3, 
+.resume h2 {
+ color: #fff;
 }
 
 .nav-box, .closed-box {
