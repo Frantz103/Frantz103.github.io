@@ -9,10 +9,6 @@ html, body, div {
   overflow-y: hidden;
 }
 
-blockquote {
-  margin: 0;
-}
-       
 .border {
  z-index: 99999999;
  background: #fff; 
@@ -446,7 +442,6 @@ address a {
 
   .button {
     padding: 1em 2em;
-
   }
 
 @media screen and (max-width: 415px) {
