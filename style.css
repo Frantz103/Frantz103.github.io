@@ -9,7 +9,10 @@ html, body, div {
   overflow-y: hidden;
 }
 
-        
+blockquote {
+  margin: 0;
+}
+       
 .border {
  z-index: 99999999;
  background: #fff; 
