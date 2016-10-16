@@ -142,6 +142,10 @@ html, body, div {
   font-style: italic;
  }
 
+.margin-top--5 {
+  margin-top: 5%;
+}
+
 .margin-bottom--10 {
   margin-bottom: 10%;
 }
