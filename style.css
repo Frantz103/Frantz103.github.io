@@ -135,7 +135,7 @@ html, body, div {
  }
 
  .text-left {
-  text-align: left;
+  text-align: left!important;
  }
 
  .text-justify {
