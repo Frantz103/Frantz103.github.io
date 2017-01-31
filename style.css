@@ -471,5 +471,11 @@ address a {
     left: 12%;
   }
 }
+
+@media screen and (max-width: 321px) {
+.portfolio h1 {
+  margin-top: 30%;
+ }
+}
  
 
