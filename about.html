@@ -80,9 +80,17 @@
        
       <div class="text-box-2 margin-auto">
       <h1>The Story</h1>
-      <p class="color-white text-justify"> Hello, I am Frantz Augustin.<br>
+      <p class="color-white text-justify" id="p1"> Hello, I am Frantz Augustin.<br>
       A marketing professional with experience in digital marketing, social media, marketing research, web design and web development.</p>
       </div>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+<button type="button" 
+onclick="document.getElementById('p1').innerHTML = 'New text!">
+Click Me!</button>
        
  
 
