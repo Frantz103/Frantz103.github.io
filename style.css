@@ -414,6 +414,13 @@ address a {
    word-spacing: 2px;
  }
 
+ .resume h4 {
+  font-style: italic;
+  word-spacing: 0.5em;
+  letter-spacing: 0.025em;
+   margin-bottom: 0;
+ }
+
 /* fixed for screen smaller than 480px */
 @media screen and (max-width: 480px) {
 
