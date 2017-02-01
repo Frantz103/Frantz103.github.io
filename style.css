@@ -1,11 +1,12 @@
 /* Main stylesheet for the site */
 html, body {
  height:100%;
+ padding: 0;
+ margin:  0;
 }
 
-html, body, div { 
-  padding: 0;
-  margin:  0;
+body, div { 
+  
   overflow-y: hidden;
 }
 
