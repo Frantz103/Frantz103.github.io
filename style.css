@@ -482,7 +482,7 @@ address a {
   letter-spacing: 0em;
    margin-bottom: 0%;
  }
-.aboutHtml {
+html.aboutHtml {
   overflow-y: scroll;
 }
 
