@@ -84,13 +84,19 @@
       A marketing professional with experience in digital marketing, social media, marketing research, web design and web development.</p>
       
 
-      <a class="button" type="button" 
-       onclick="document.getElementById('p1').innerHTML = 'New text!">
-       Click Me!</a>
+      <a class="button" onclick="changeText(this)"></a>
        
       </div>
 
     </div>
+
+
+    <script type="text/javascript">
+     function changeText(id) {
+    id.innerHTML = "Ooops!";
+       }
+
+    </script>
 
   <!--  Google tag -->
   <script>
