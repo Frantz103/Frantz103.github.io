@@ -482,6 +482,9 @@ address a {
   letter-spacing: 0em;
    margin-bottom: 0%;
  }
+.aboutHtml {
+  overflow-y: scroll;
+}
 
 
 }/* end of fixed for screen larger than 480px */
