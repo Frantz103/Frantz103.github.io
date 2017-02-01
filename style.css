@@ -408,6 +408,12 @@ address a {
  top: -0.7em;
 }
 
+ blockquote p {
+   letter-spacing: 1.5px;
+   line-height: 200%;
+   word-spacing: 2px;
+ }
+
 /* fixed for screen smaller than 480px */
 @media screen and (max-width: 480px) {
 
@@ -456,11 +462,7 @@ address a {
   margin-top: 30%;
  }
 
- blockquote p {
-   letter-spacing: 1.5px;
-   line-height: 200%;
-   word-spacing: 2px;
- }
+
 
 }/* end of fixed for screen larger than 480px */
 
