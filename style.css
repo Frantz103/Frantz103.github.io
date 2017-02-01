@@ -421,6 +421,11 @@ address a {
    margin-bottom: 0;
  }
 
+ .resume h2 {
+  letter-spacing: 0.79em;
+   margin-bottom: 4%;
+ }
+
 /* fixed for screen smaller than 480px */
 @media screen and (max-width: 480px) {
 
@@ -469,6 +474,10 @@ address a {
   margin-top: 30%;
  }
 
+.resume h2 {
+  letter-spacing: 0em;
+   margin-bottom: 0%;
+ }
 
 
 }/* end of fixed for screen larger than 480px */
