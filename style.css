@@ -466,7 +466,7 @@ address a {
     top: 15%;
   }
 
-  .text-box { 
+  .text-box, .text-box-2 { 
     left: 15%;
   }
 
@@ -488,19 +488,19 @@ address a {
 
 @media screen and (max-width: 415px) {
 
-  .text-box {
+  .text-box, .text-box-2 {
     left: 21%;
   }
 }
 
 @media screen and (max-width: 376px) {
-  .text-box {
+  .text-box, .text-box-2 {
     left: 19%;
   }
 }
 
 @media screen and (max-width: 361px) {
-  .text-box {
+  .text-box, .text-box-2 {
     left: 12%;
   }
 }
