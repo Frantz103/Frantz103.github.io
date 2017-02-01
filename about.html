@@ -82,16 +82,16 @@
       <h1>The Story</h1>
       <p class="color-white text-justify" id="p1"> Hello, I am Frantz Augustin.<br>
       A marketing professional with experience in digital marketing, social media, marketing research, web design and web development.</p>
-      <a class="button" onclick="changeText(this)"></a>
+      <a class="button" onclick="myFunction()"></a>
       </div>
 
     </div>
 
 
     <script type="text/javascript">
-     function changeText(id) {
-    id.innerHTML = "Ooops!";
-       }
+    function myFunction() {
+    document.getElementById("p1").innerHTML = "Hello World";
+}
 
     </script>
 
