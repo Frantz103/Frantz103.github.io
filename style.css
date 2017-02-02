@@ -352,6 +352,10 @@ li {
   position: absolute;
  }
 
+ .portfolio .box {
+  position: initial;
+ }
+
 .cover {
   background-image: url('/images/ceiling.jpg');
   position: absolute;
