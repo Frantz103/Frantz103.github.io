@@ -115,6 +115,13 @@ var parent = document.getElementById("storyBox");
 var child = document.getElementById("button");
 parent.removeChild(child);
 
+var button = document.createElement('a');
+var buttonText = document.createTextNode("my title text");
+button.appendChild(linkText);
+button.title = "Visit My Portfolio";
+button.href = "http://frantzaugustin.com/portfolio.html";
+document.getElementById("storyBox").appendChild(button);
+
 }
 
     </script>
