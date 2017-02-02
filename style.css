@@ -493,6 +493,10 @@ address a {
  text-align: justify; 
 }
 
+.resume .box {
+  min-height: 90em;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
