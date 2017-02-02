@@ -394,7 +394,9 @@ vertical-align: middle;
 }
 
  .portfolio h1, 
-  .portfolio h3 {
+  .portfolio h3,
+  .about h1,
+  .about h3 {
     color: #fff;
     text-align: center;
   }
