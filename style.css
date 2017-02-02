@@ -437,6 +437,14 @@ address a {
    margin-bottom: 4%;
  }
 
+ .resume blockquote p {
+ text-align: justify; 
+}
+
+.resume .box {
+  min-height: 90em;
+}
+
 /* fixed for screen smaller than 480px */
 @media screen and (max-width: 480px) {
 
@@ -489,13 +497,7 @@ address a {
   letter-spacing: 0em;
    margin-bottom: 0%;
  }
-.resume blockquote p {
- text-align: justify; 
-}
 
-.resume .box {
-  min-height: 90em;
-}
 
 }/* end of fixed for screen larger than 480px */
 
