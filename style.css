@@ -346,10 +346,6 @@ li {
   height: 100%;
  }
 
- .aboutHtml .box {
-  min-height: 82em;
- }
-
 .cover {
   background-image: url('/images/ceiling.jpg');
   position: absolute;
