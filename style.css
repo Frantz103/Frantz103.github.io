@@ -348,6 +348,10 @@ li {
   height: 100%;
  }
 
+ .box {
+  position: absolute;
+ }
+
 .cover {
   background-image: url('/images/ceiling.jpg');
   position: absolute;
