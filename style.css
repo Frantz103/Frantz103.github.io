@@ -401,7 +401,7 @@ vertical-align: middle;
     text-align: center;
   }
 
-.portfolio h1, .about h1 .brand {
+.portfolio h1, .about h1, .brand {
   font-size: 1.1em;
   letter-spacing: 0.2em;
  }
