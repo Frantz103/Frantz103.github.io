@@ -489,10 +489,9 @@ address a {
   letter-spacing: 0em;
    margin-bottom: 0%;
  }
-html.aboutHtml {
-  overflow-y: scroll;
+.resume blockquote p {
+ text-align: justify; 
 }
-
 
 }/* end of fixed for screen larger than 480px */
 
