@@ -255,6 +255,7 @@ li {
 
 .closed-box  {
   right: 1.5%;
+  position: fixed;
 }
 
 .nav-box:hover, 
