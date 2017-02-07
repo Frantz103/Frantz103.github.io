@@ -476,7 +476,7 @@ address a {
 .left, .right {
    width: 1em;
   }
-.box {
+#largeBox .box {
   min-height: 22em;
 }
 
