@@ -249,6 +249,8 @@ li {
 
 .nav-box {
   left: 3.5%;
+  position: fixed;
+  top: 10%;
 }
 
 .closed-box  {
