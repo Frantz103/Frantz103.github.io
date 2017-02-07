@@ -94,8 +94,8 @@
 
   
 var parent = document.getElementById("photobox");
-var child = document.getElementsByTagName("h3");
-while (parent[0]) parent[0].parentNode.removeChild(parent[0]);
+var child = document.getElementById("uphoto");
+
     parent.removeChild(child);
     
 var x = document.createElement("IMG");
@@ -103,6 +103,7 @@ var x = document.createElement("IMG");
     x.setAttribute("width", "100%");
     x.setAttribute("height", "100%");
     x.setAttribute("alt", "Jordan");
+    document.getElementById("photobox").appendChild(x);
     
   }
 </script>
