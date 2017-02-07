@@ -54,7 +54,7 @@
     <div class="border right"></div>
     <div class="border bottom"></div>
      
-    <div class="box background-red">
+    <div class="box background-red" id="largeBox">
 
       <div class="nav-box menu">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -92,8 +92,8 @@
     function myFunction() {
 
   
-var parent = document.getElementById("photobox");
-var child = document.getElementById("uphoto");
+var parent = document.getElementById("largeBox");
+var child = document.getElementById("photobox");
 
 
     parent.removeChild(child);
@@ -104,7 +104,7 @@ var x = document.createElement("IMG");
     x.setAttribute("width", "100%");
     x.setAttribute("height", "100%");
     x.setAttribute("alt", "Jordan");
-    document.getElementById("photobox").appendChild(x);
+    document.getElementById("largeBox").appendChild(x);
     
   }
 </script>
