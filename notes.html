@@ -82,7 +82,7 @@
        <h3 id="pphoto"><a href="#" onclick="myFunction()">Portrait Photography</a></h3>
        <h3 id="uphoto"><a href="#" onclick="Boston()">Urban Photography</h3>
        <h3 id="slphoto"><a href="#" onclick="Globe()">Still life Photography</a></h3>
-       <h3 id="sphoto">Street Photography</h3>       
+       <h3 id="sphoto"><a href="#" onclick="Ashmont()">Street Photography</a></h3>       
       </div>
 
     </div>
@@ -135,6 +135,23 @@ var x = document.createElement("IMG");
     x.setAttribute("width", "100%");
     x.setAttribute("height", "auto");
     x.setAttribute("alt", "Boston");
+    document.getElementById("largeBox").appendChild(x);
+    
+  }
+
+  function Ashmont () {
+
+  
+var parent = document.getElementById("largeBox");
+var child = document.getElementById("photobox");
+parent.removeChild(child);
+    
+    
+var x = document.createElement("IMG");
+    x.setAttribute("src", "images/ashmont.jpg");
+    x.setAttribute("width", "100%");
+    x.setAttribute("height", "auto");
+    x.setAttribute("alt", "Ashmont");
     document.getElementById("largeBox").appendChild(x);
     
   }
