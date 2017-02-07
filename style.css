@@ -527,6 +527,11 @@ address a {
   min-height: 34em;
 }
 
+#largeBox img {
+position: absolute;
+top: 25%;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
@@ -555,6 +560,11 @@ address a {
  .left-box {
   margin-left: 1.2em;
  }
+ #largeBox img {
+position: absolute;
+top: 20%;
+}
+
 }
 
 
