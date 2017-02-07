@@ -476,6 +476,10 @@ address a {
 .left, .right {
    width: 1em;
   }
+.box {
+  min-height: 22em;
+}
+
 }
 
 /* fixed for screen smaller than 480px */
