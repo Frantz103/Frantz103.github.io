@@ -476,7 +476,7 @@ address a {
 .left, .right {
    width: 1em;
   }
-#largeBox .box {
+.notes .box {
   min-height: 22em;
 }
 
