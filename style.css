@@ -520,6 +520,12 @@ address a {
    margin-bottom: 0%;
  }
 
+ .padding-top--20 {
+  padding-left: 0;
+ }
+.cover {
+  min-height: 34em;
+}
 
 }/* end of fixed for screen larger than 480px */
 
@@ -545,6 +551,9 @@ address a {
 @media screen and (max-width: 321px) {
 .portfolio h1 {
   margin-top: 30%;
+ }
+ .left-box {
+  margin-left: 1.2em;
  }
 }
 
