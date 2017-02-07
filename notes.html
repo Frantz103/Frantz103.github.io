@@ -91,16 +91,19 @@
    
 <script type="text/javascript">
     function myFunction() {
+
+  document.getElementById("photobox").appendChild(x); 
+var parent = document.getElementById("photobox");
+var child = document.getElementsByTagName("h3");
+    parent.removeChild(child);
+
     var x = document.createElement("IMG");
     x.setAttribute("src", "images/JordanW.jpg");
     x.setAttribute("width", "100%");
     x.setAttribute("height", "100%");
     x.setAttribute("alt", "Jordan");
     
-    document.getElementById("photobox").appendChild(x); 
-var parent = document.getElementById("photobox");
-var child = document.getElementsByTagName("h3");
-    parent.removeChild(child);
+  
 }
 </script>
 
