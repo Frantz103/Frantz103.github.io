@@ -98,6 +98,9 @@
     x.setAttribute("alt", "Jordan");
     
     document.getElementById("photobox").appendChild(x); 
+var parent = document.getElementById("photobox");
+var child = document.getElementsByTagName("h3");
+    parent.removeChild(child);
 }
 </script>
 
