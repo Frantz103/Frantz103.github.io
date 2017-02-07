@@ -468,7 +468,7 @@ address a {
  margin: auto;
 }
 
-@media screen and (max-width: 780px;) {
+@media screen and (max-width: 780px) {
   .top, .bottom {
   height: 1em;
   }
