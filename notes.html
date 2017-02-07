@@ -94,15 +94,13 @@
   
 var parent = document.getElementById("largeBox");
 var child = document.getElementById("photobox");
-
-
-    parent.removeChild(child);
+parent.removeChild(child);
     
     
 var x = document.createElement("IMG");
     x.setAttribute("src", "images/JordanW.jpg");
     x.setAttribute("width", "100%");
-    x.setAttribute("height", "100%");
+    x.setAttribute("height", "auto");
     x.setAttribute("alt", "Jordan");
     document.getElementById("largeBox").appendChild(x);
     
