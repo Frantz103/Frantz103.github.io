@@ -247,10 +247,10 @@ li {
   z-index: 999;
 }
 
-.nav-box {
+.nav-box.menu {
   left: 3.5%;
   position: fixed;
-  top: 10%;
+  top: 7%;
 }
 
 .closed-box  {
