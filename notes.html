@@ -88,18 +88,17 @@
 
     </div>
 
-    <script>
-    function myfunction() {
-      var img = new Image();
-      var div = document.getElementById("photobox");
- 
-    img.onload = function() {
-     div.appendChild(img);
-     };
- 
-    img.src = 'images/JordanW.jpg'
-  }
-    </script>
+   
+<script type="text/javascript">
+    function myFunction() {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "images/JordanW.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("width", "228");
+    x.setAttribute("alt", "The Pulpit Rock");
+    document.body.appendChild(x);
+}
+</script>
 
   <!--  Google tag -->
   <script>
