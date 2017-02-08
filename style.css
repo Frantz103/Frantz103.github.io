@@ -565,6 +565,10 @@ address a {
   margin-top: 30%;
 }
 
+.resume .box {
+  min-height: 225em;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
