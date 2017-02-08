@@ -465,6 +465,10 @@ address a {
  margin: auto;
 }
 
+.mobile {
+  display: none;
+}
+
 
 @media screen and (max-width: 780px) {
   .top, .bottom {
@@ -492,6 +496,10 @@ address a {
 
 /* fixed for screen smaller than 480px */
 @media screen and (max-width: 480px) {
+
+.desktop {
+  display: none;
+}
 
 .notice {
   top: 0;
