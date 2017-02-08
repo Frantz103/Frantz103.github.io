@@ -605,7 +605,7 @@ address a {
   margin-top: 30%;
  }
  .left-box {
-  margin-left: 1.2em;
+ /* margin-left: 1.2em;*/
  }
  #largeBox img {
 position: absolute;
