@@ -365,10 +365,6 @@ li {
   top: 0;
 }
 
-.about {
-  background-image: url('/images/the-ceilling-l.jpg');
-  background-position: 50% 50%;
-}
 
 .left-box {
   min-width: 270px;
@@ -396,7 +392,7 @@ vertical-align: middle;
   left: 10%;
 }
 
- .portfolio h1, 
+  .portfolio h1, 
   .portfolio h3,
   .about h1,
   .about h3 {
@@ -468,6 +464,7 @@ address a {
  top: 20%;
  margin: auto;
 }
+
 
 @media screen and (max-width: 780px) {
   .top, .bottom {
