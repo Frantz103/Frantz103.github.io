@@ -482,6 +482,12 @@ address a {
   margin: 0;
 }
 
+.img-mobile {
+  max-width: 800px;
+  width: 80%;
+  height: auto;
+}
+
 }
 
 /* fixed for screen smaller than 480px */
