@@ -478,6 +478,10 @@ address a {
   min-height: 22em;
 }
 
+.left-box {
+  margin: 0;
+}
+
 }
 
 /* fixed for screen smaller than 480px */
