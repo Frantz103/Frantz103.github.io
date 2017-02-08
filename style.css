@@ -576,7 +576,7 @@ address a {
 .left-box {
   width: 100%;
   height: 250px;
-  margin: 0;
+  margin-left: 0;
 }
 
 }/* end of fixed for screen larger than 480px */
