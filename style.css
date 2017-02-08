@@ -579,6 +579,10 @@ address a {
   margin-left: 0;
 }
 
+.home .left-box {
+  margin-left: 1.2em;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
