@@ -557,6 +557,10 @@ address a {
   top: 25%;
 }
 
+.resume blockquote p {
+  text-align: left;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
