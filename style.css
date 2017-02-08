@@ -501,6 +501,10 @@ address a {
   display: none;
 }
 
+.mobile {
+  display: block;
+}
+
 .notice {
   top: 0;
   left: 5%;
