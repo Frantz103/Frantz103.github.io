@@ -549,11 +549,15 @@ address a {
 
 .padding-top--20 {
  position: relative;
- top: 11%;
+ top: 15%;
 }
 
 .contact .box {
   min-height: 22em;
+}
+
+.contact .text-box-2 {
+  top: 25%;
 }
 
 }/* end of fixed for screen larger than 480px */
