@@ -561,6 +561,10 @@ address a {
   text-align: left;
 }
 
+#resumeBox {
+  margin-top: 30%;
+}
+
 }/* end of fixed for screen larger than 480px */
 
 @media screen and (max-width: 415px) {
