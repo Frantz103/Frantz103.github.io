@@ -8,7 +8,7 @@ $(document).ready(function() {
    $(".nav").css({
     "background-color": "black", 
     "height":"100%", "z-index":"9999", 
-    "position":"absolute", "top":"0"
+    "position":"fixed", "top":"0"
    });
 
    $('.closed-box').remove('.menu');
