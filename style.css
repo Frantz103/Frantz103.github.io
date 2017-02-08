@@ -544,8 +544,16 @@ address a {
 }
 
 #largeBox img {
-position: absolute;
-top: 25%;
+ top: 25%;
+}
+
+.padding-top--20 {
+ position: relative;
+ top: 15%;
+}
+
+.contact .cover {
+  min-height: 22em;
 }
 
 }/* end of fixed for screen larger than 480px */
