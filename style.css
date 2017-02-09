@@ -642,6 +642,8 @@ position: absolute;
 top: 20%;
 }
 
+.resume .box {
+  min-height: 245em;
 }
 
-
+}
