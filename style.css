@@ -269,7 +269,7 @@ li {
 
  .nav {
   display: none;
-  opacity: .90;
+ /* opacity: .90;*/
   /*border-left: 2em solid black;*/
   }
 
