@@ -204,16 +204,16 @@ body {
   margin: 0 auto;
   width: 40px;
   height: 40px;
-  border: 2px solid red;
+  border: 3px solid red;
   border-radius: 50%;
   position: absolute;
   top: -32%;
 }
 .one {
-  animation: circle 3s infinite linear;
+  animation: circle 2s infinite linear;
 }
 .two {
-  animation: circle 3s infinite linear;
+  animation: circle 2s infinite linear;
 }
 
 
