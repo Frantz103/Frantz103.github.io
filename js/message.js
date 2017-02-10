@@ -31,6 +31,8 @@ $(document).ready(function() {
 $(function() {
   $('.menu').click(function() {
     $('.notify-bubble').hide(400);
+    $('.circle').hide(400);
+
   });
 });
 
