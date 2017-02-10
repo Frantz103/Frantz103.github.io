@@ -208,13 +208,12 @@ body {
   border-radius: 50%;
   position: absolute;
   top: -32%;
-  left: 40%;
 }
 .one {
   animation: circle 3s infinite linear;
 }
 .two {
-  animation: circle 2s infinite linear;
+  animation: circle 3s infinite linear;
 }
 
 
