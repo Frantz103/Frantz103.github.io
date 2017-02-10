@@ -45,7 +45,8 @@ body {
 }
 
 .cadre-fine {
-  border: 0.5px solid #fff
+  border: 0.5px solid #fff;
+  box-shadow: 0px 2px 20px 2px grey;
 }
 
 /* the components that I will re-used */
