@@ -28,4 +28,10 @@ $(document).ready(function() {
 
   */
 
+$(function() {
+  $('.menu').click(function() {
+    $('.notify-bubble').hide(400);
+  });
+});
+
 })
