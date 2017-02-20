@@ -535,6 +535,12 @@ address a {
   height: auto;
 }
 
+.social .img-mobile {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
 .resume .box {
   min-height: 290em;
 }
