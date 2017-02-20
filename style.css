@@ -518,6 +518,11 @@ span#u_0_3 {
   display: none;
 }
 
+._2tga {
+  background: #000;
+  border: #000;
+}
+
 @media screen and (max-width: 780px) {
   .top, .bottom {
   height: 1em;
