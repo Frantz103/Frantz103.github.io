@@ -523,6 +523,10 @@ span#u_0_3 {
   border: #000!important;
 }
 
+div.fb-like.fb_iframe_widget {
+  max-width: 100px;
+}
+
 @media screen and (max-width: 780px) {
   .top, .bottom {
   height: 1em;
