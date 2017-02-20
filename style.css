@@ -515,12 +515,12 @@ address a {
 /* code for facebook sharing button */
 
 span#u_0_3 {
-  display: none;
+  display: none!important;
 }
 
 ._2tga {
-  background: #000;
-  border: #000;
+  background: #000!important;
+  border: #000!important;
 }
 
 @media screen and (max-width: 780px) {
