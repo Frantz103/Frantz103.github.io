@@ -512,6 +512,11 @@ address a {
   display: none;
 }
 
+/* code for facebook sharing button */
+
+span#u_0_3 {
+  display: none;
+}
 
 @media screen and (max-width: 780px) {
   .top, .bottom {
