@@ -693,4 +693,10 @@ top: 20%;
   min-height: 300em;
 }
 
+.social .img-mobile {
+  max-width: 220px;
+  width: 90%;
+  height: auto;
+}
+
 }
