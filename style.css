@@ -384,6 +384,10 @@ li {
   background: #088080;
 }
 
+.background-favorite {
+  background: rgb(203, 146, 128);
+}
+
 .cover, .box, .about {
   background-size: cover;
   background-position: 100% 50%;
