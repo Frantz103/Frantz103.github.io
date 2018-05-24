@@ -292,17 +292,8 @@ li {
   z-index: 999;
 }
 
-.blog-box {
-   width: 5%;
-  min-width: 60px;
-  min-height: 60px;
-  height: 5%;
-  margin-left: 20px;
-  margin-top: 10px;
+#blog-box {
   color: #000;
-  position: absolute;
-  top: 5%;
-  z-index: 999;
 }
 
 .nav-box.menu {
