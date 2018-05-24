@@ -292,6 +292,10 @@ li {
   z-index: 999;
 }
 
+.blog-post .nav-box {
+ color: #000;
+}
+
 .nav-box.menu {
   left: 3.5%;
   position: fixed;
