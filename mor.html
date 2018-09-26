@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>MIT Human Resources</title>
     <style>
@@ -10,31 +11,54 @@
         margin-top: 2.5em;
         margin-bottom: 1.5em;
     }
+
+    .label_search--right {
+        float: right;
+        margin-right: 10px;
+    }
+
     #block-block-3 {
-        margin-right: 4em;
+        margin-right: 5em;
     }
+
     #block-block-4 {
-        margin-left: 4em;
+        margin-left: 5em;
     }
+
     .max-1200 {
         max-width: 1200px;
     }
+
     .hr_logo {
         max-width: 500px;
     }
+
     .inline_div {
         display: inline-block;
     }
+
     aside {
-        margin-top: 5em;
+        margin-top: 4em;
     }
+
     .side_menu li,
     article {
         margin-top: 2em;
     }
+
+    .logos {
+        width: 50%;
+    }
+
     body #site-footer {
         background: url(http://hr.mit.edu/sites/default/files/styles/background_footer/public/gallery/barker-reading-room-02_dsc2771_17424712228_o.jpg?itok=o5ZKGcST) center no-repeat;
         background-size: cover;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .hr_logo {
+            max-width: 300px;
+        }
     }
     </style>
 </head>
@@ -44,10 +68,11 @@
         <div class="row max-1200">
             <header id="site-header" role="banner" class="">
                 <section id="block-block-3" class="block block-block col-lg-5 col-12 order-3 order-lg-2 clearfix inline_div">
-                    <img class="hr_logo" src="MIT_LOGO.png" alt="MIT Logo">
+                    <a href="https://hr.mit.edu/"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/MIT_LOGO.png" alt="MIT Logo"></a>
                 </section>
                 <!-- SEARCH -->
                 <section id="block-block-4" class="block block-block col-lg-4 col-9 order-2 order-lg-3 clearfix inline_div">
+                    <span class="label__default top label_search--right">Search</span>
                     <div id="search-main">
                         <form action="http://search.mit.edu/search" id="form-search-main" method="get" name="searchform">
                             <input name="site" type="hidden" value="mit">
@@ -61,8 +86,7 @@
                                 <input id="input-search-main" class="searchTextField" name="q" size="20" type="search">
                             </div>
                             <button arial-label="Search submit" id="searchButton" type="submit" class="toggle__search blue">
-                                <span class="label__default top">Search</span>
-                                <span class="icon__search white"></span>
+                                <span class="icon__search white"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/search_icon.png" alt="Search Icon"></span>
                             </button>
                         </form>
                     </div>
@@ -89,8 +113,6 @@
                     <div class="region region-content">
                         <section id="block-system-main" class="block block-system clearfix">
                             <article>
-
-
                                 <!-- CONTENT Goes inside this section -->
                                 <h3>Program Objectives</h3>
                                 <p>By the end of <em>Essentials of Managing</em>, it is intended that participants will be able to: </p>
@@ -114,7 +136,6 @@
                                         <p></p>
                                     </li>
                                 </ul>
-
                                 <!-- CONTENT here -->
                             </article>
                         </section>
@@ -151,7 +172,7 @@
                         <div class="col-12">
                             <div id="footer-wordmark">
                                 <section id="block-block-3" class="block block-block col-lg-5 col-12 order-3 order-lg-2 clearfix inline_div">
-                                    <img class="hr_logo" src="MIT_LOGO.png" alt="MIT Logo">
+                                    <img class="hr_logo" src="https://hr.mit.edu/sites/default/files/MIT_LOGO.png" alt="MIT Logo">
                                 </section>
                             </div>
                         </div>
@@ -165,8 +186,8 @@
                             </address>
                             <a class="link__pin btn-bar nobg new-window no-decoration" href="https://whereis.mit.edu/?go=NE49" title="Campus Map">
         <span class="icon__pin white" aria-hidden="true">
-
-        </span>                    Get Directions
+         <img class="hr_logo" src="https://hr.mit.edu/sites/default/files/location.png" alt="Location icon">
+        </span>Get Directions
       </a>
                             <a href="/contact" class="btn__bar cta-left black no-decoration" title="Contact Human Resources">
         <span class="icon__arrow-right white" aria-hidden="true"></span>
@@ -177,16 +198,13 @@
                                     <h3 class="menu__utility__title menu-title">Connect</h3>
                                     <ul role="menu">
                                         <li class="menu__footer__parent" role="menuitem"><a href="https://twitter.com/mit_hr" class="link__social black hover-black hover-icon-white external" title="Twitter">
-                <span class="icon__twitter yellow">
-
-                </span>    <span class="sr-only">Twitter</span>
+                <span class="icon__twitter yellow"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/twitter.png" alt="Twitter Logo">
+                </span>    <span class="sr-only"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/twitter.png" alt="MIT Logo">Twitter</span>
               </a></li>
                                         <li class="menu__footer__parent" role="menuitem">
                                             <a href="https://www.linkedin.com/school/mit/" class="link__social black hover-black hover-icon-white external" title="LinkedIn">
-                <span class="icon__linkedin yellow">
-
-                </span>    
-                <span class="sr-only">LinkedIn</span>
+                <span class="icon__linkedin yellow"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/linkedin.png" alt="Linkedin Logo"></span>    
+                <span class="sr-only"><img class="hr_logo" src="https://hr.mit.edu/sites/default/files/linkedin.png" alt="LinkedIn Logo">LinkedIn</span>
               </a></li>
                                     </ul>
                                 </div>
@@ -230,6 +248,7 @@
                             </nav>
                         </div>
                         <div class="col-lg-3 col-md-4 footer-atlas">
+                            <img class="hr_logo logos" src="atlas.png" alt="Atlas Logo">
                             <a class="link__atlas external" href="http://atlas.mit.edu" title="Atlas">
                                 <h6>A self-service hub for your administrative needs</h6>
                                 <p>Sign up for classes, review your benefits, check your paystubs, and more.</p>
@@ -246,7 +265,7 @@
                             <div>
                                 <ul role="menu">
                                     <li class="menu__main__item" role="menuitem">
-                                        <a href="/privacy" class="btn__bar cta-left nobg no-decoration" title="Privacy">
+                                        <a href="https://hr.mit.edu/privacy" class="btn__bar cta-left nobg no-decoration" title="Privacy">
               <span class="icon__arrow-right white" aria-hidden="true"></span>
               Privacy
             </a></li>
