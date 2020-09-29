@@ -1,0 +1,21 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg9" version="1.1" viewBox="0 0 42 42" height="42px" width="42px">
+  <metadata id="metadata13">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        <dc:title></dc:title>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <defs id="defs2"></defs>
+  <g fill-rule="evenodd" fill="white" stroke-width="1" stroke="none" id="Symbols">
+    <g fill="white" transform="translate(-14.000000, -14.000000)" id="search-icon" class="fill">
+      <g id="Group-6">
+        <g transform="translate(34.000000, 36.000000) rotate(-315.000000) translate(-34.000000, -36.000000) translate(19.000000, 12.000000)" id="Group-4">
+          <path id="Combined-Shape" d="M12,29.6999457 C5.15327904,28.3101347 1.77635684e-15,22.2568737 1.77635684e-15,15 C1.77635684e-15,6.71572875 6.71572875,-4.54747351e-13 15,-4.54747351e-13 C23.2842712,-4.54747351e-13 30,6.71572875 30,15 C30,22.2568737 24.846721,28.3101347 18,29.6999457 L18,48 L12,48 L12,29.6999457 Z M15,25 C20.5228475,25 25,20.5228475 25,15 C25,9.4771525 20.5228475,5 15,5 C9.4771525,5 5,9.4771525 5,15 C5,20.5228475 9.4771525,25 15,25 Z"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

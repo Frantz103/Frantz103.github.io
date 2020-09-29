@@ -1,0 +1,725 @@
+/* Main stylesheet for the site */
+html, body {
+ height:100%;
+ padding: 0;
+ margin:  0;
+}
+
+body { 
+  
+  /*overflow-y: hidden;*/
+}
+
+.border {
+ z-index: 99999999;
+ background: #fff; 
+ position: fixed;
+}
+
+.top {
+  height: 2em;
+  width: 100%;
+  top: 0;
+}
+
+.left {
+  width: 2em;
+  min-height: 52em;
+  height: 100%;
+  left:0;
+  top: 0;
+}
+
+.right {
+  width: 2em;
+  min-height: 52em;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.bottom {
+  height: 2em;
+  width: 100%;
+  bottom: 0;
+}
+
+.cadre-fine {
+  border: 0.5px solid #fff;
+  box-shadow: 0px 2px 20px 2px grey;
+}
+
+/* the components that I will re-used */
+
+.container {
+ width: 100%; 
+ height: 100%;
+}
+
+.container { 
+  margin: 32px 0;
+}
+
+.box-small {  
+  width: 100%; 
+  max-width: 320px;
+  height: auto;
+}
+
+.box-md {
+  width: 80%;
+  max-width:800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-box, .text-box-2 {
+  width: 30%;
+  min-width: 240px;
+  height: 14em;
+  z-index: 998;
+  position: absolute;
+  top: 35%;
+ }
+
+ .text-box-2 {
+  left: 35%;
+ }
+
+ .text-box {
+  left: 50%;
+ }
+
+.text-box p, 
+.text-box-2 p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11px;
+  width: 200px;
+  height: 50px;
+  background: #000;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+ }
+ .button:hover {
+  background-color: #fff;
+  color:#000;
+  -webkit-transition: background-color 2s, color 2s;
+  transition: background-color 2s, color 2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+ }
+
+/*.button:hover {
+  animation-name: colorchange;
+  -webkit-animation-duration: 4500ms;
+  animation-duration: 4500ms;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+ }
+
+@keyframes colorchange {
+    from {background-color: #000; color:#fff;}
+    to {background-color: #fff;color:#000;}
+}*/
+
+.margin-auto { 
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .margin-zero {
+  margin: 0;
+ }
+
+ .text-center {
+  text-align: center;
+ }
+
+ .text-left {
+  text-align: left!important;
+ }
+
+ .text-justify {
+  text-align: justify;
+ }
+
+ .italic {
+  font-style: italic;
+ }
+
+.margin-top--5 {
+  margin-top: 5%;
+}
+
+.margin-top--20 {
+  margin-top: 20%;
+}
+
+.margin-bottom--10 {
+  margin-bottom: 10%;
+}
+
+
+.min-height--25em {
+  min-height: 25em;
+}
+
+.padding-top--20 { 
+  padding-top: 10%;
+}
+
+.width-max--300 {
+  width: 100%;
+  max-width: 300px;
+}
+
+/*  Notification system for the menu */
+
+  .notify-bubble {
+    position: absolute;
+    top: -0.2em;
+    left: 1em;
+    width:0.7em;
+    height: 0.7em;
+    background-color: red;
+    border-radius: 50%;
+    }
+
+    @keyframes circle {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+.circle {
+  margin: 0 auto;
+  width: 1.2em;
+  height: 1.2em;
+  border: 0.2em solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.6em;
+  left: 0.55em;
+}
+.one {
+  animation: circle 2s infinite linear;
+}
+.two {
+  animation: circle 2s infinite linear;
+}
+
+
+/* css for the homepage */
+
+h2, h3 {
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Garamond', sans-serif;
+  font-weight: normal;
+ }
+
+h1 {
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+h1.blog-h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.marketer {
+  margin-top: 0%;
+  margin-bottom: 6%;
+}
+
+.brand {
+  position: relative;
+  top: 5%;
+  left: 1%;
+}
+
+p, li {
+  font-family: 'EB Garamond', serif;
+}
+address {
+  font-family: Quicksand;
+}
+
+i {
+  font-size: 1.5em !important;
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+}
+
+li {
+    list-style: none;
+}
+
+.resume h3, 
+.resume h2,
+.resume p {
+ color: #fff;
+}
+
+.nav-box, .closed-box {
+  width: 5%;
+  min-width: 60px;
+  min-height: 60px;
+  height: 5%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  z-index: 999;
+}
+
+#blog-box {
+  color: #000;
+}
+
+.nav-box.menu {
+  left: 3.5%;
+  position: fixed;
+  top: 6.25%;
+}
+
+.closed-box  {
+  right: 1.5%;
+  position: fixed;
+}
+
+.nav-box:hover, 
+.closed-box:hover {
+  cursor: pointer;
+}
+
+ .nav {
+  display: none;
+ /* opacity: .90;*/
+  /*border-left: 2em solid black;*/
+  }
+
+.menu-open {
+  /*transform: rotate(45deg) translate(8px, 8px);*/
+  /*transition: .5s;*/
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-open li {
+  text-align: center;
+  padding-bottom: 1.25%;
+}
+
+.menu-link {
+   font-size: 1.5em;
+   text-transform: uppercase;
+}
+
+
+.notice {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 999;
+  background: #000;
+  width: 20%;
+  min-width: 100px;
+  min-height: 8em;
+
+}
+
+.notice p { 
+  color: white;
+}
+
+/*the colors that I ll used */
+.color-white {
+  color:#fff;
+}
+
+.color-green--light {
+  color: #80cbc4;
+}
+
+.background-green--light {
+  /*background: #80cbc4;*/
+  background: #cb8084;
+}
+
+.background-white {
+  background: #fff;
+}
+
+.background-black {
+  background: #000;
+}
+
+.background-red {
+ background: #800808;
+}
+
+.background-red--2 {
+  background: #cb9280;
+}
+
+.background-purple-2 {
+ /*background: #649660;*/
+ background: #986063;
+}
+
+.background-green--2 {
+  background: #088080;
+}
+
+.background-favorite {
+  background: rgb(203, 146, 128);
+}
+
+.cover, .box, .about {
+  background-size: cover;
+  background-position: 100% 50%;
+  width: 100%;
+  min-height: 52em;
+  height: 100%;
+ }
+
+ .box {
+  position: absolute;
+ }
+
+ .about .box {
+  position: initial;
+ }
+
+.cover {
+  background-image: url('/images/ceiling.jpg');
+  position: absolute;
+  top: 0;
+}
+
+
+.left-box {
+  min-width: 270px;
+  width: 30%;
+  margin-left: 20px;
+  position: relative;
+  top: 32.5%;
+  left: 3.5%;
+}
+
+.box03 {
+height: 100%;
+top: 0;
+left: 0;
+vertical-align: middle;
+}
+
+.box03 img {
+  width: 80%;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 40%;
+  left: 10%;
+}
+
+  .portfolio h1, 
+  .portfolio h3,
+  .about h1,
+  .about h3 {
+    color: #fff;
+    text-align: center;
+  }
+
+.portfolio h1, .about h1, .brand {
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+ }
+
+.portfolio h1, .about h1 {
+   margin-top: 10%;
+}
+
+.portfolio h3 {
+  padding: 0.5em;
+}
+
+address a {
+  padding-left: 10px;
+ line-height: 150%;
+}
+
+.myportfolio {
+  position: relative;
+  left:10%;
+ top: -0.7em;
+}
+
+ blockquote p {
+   letter-spacing: 1.5px;
+   line-height: 175%;
+   word-spacing: 2px;
+ }
+
+ .resume h4 {
+  font-style: italic;
+  word-spacing: 0.5em;
+  letter-spacing: 0.025em;
+   margin-bottom: 0;
+ }
+
+ .resume h2 {
+  letter-spacing: 0.79em;
+   margin-bottom: 4%;
+ }
+
+ .resume blockquote p {
+ text-align: justify; 
+ border-left: 0.2em solid #fff;
+ padding-left: 1em;
+}
+
+.resume .box {
+  min-height: 187em;
+}
+
+.img-folio {
+  height: 100%;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 20%;
+}
+
+#photobox {
+  position: relative;
+ top: 20%;
+ margin: auto;
+}
+
+.mobile {
+  display: none;
+}
+
+/* code for facebook sharing button */
+
+span#u_0_3 {
+  display: none!important;
+}
+
+._2tga {
+  background: #000!important;
+  border: #000!important;
+}
+
+div.fb-like.fb_iframe_widget {
+  max-width: 100px;
+}
+
+@media screen and (max-width: 780px) {
+  .top, .bottom {
+  height: 1em;
+  }
+
+.left, .right {
+   width: 1em;
+  }
+.notes .box {
+  min-height: 22em;
+}
+
+.left-box {
+  margin: 0;
+}
+
+.img-mobile {
+  max-width: 800px;
+  width: 80%;
+  height: auto;
+}
+
+.social .img-mobile {
+  max-width: 280px;
+  width: 90%;
+  height: auto;
+}
+
+.resume .box {
+  min-height: 290em;
+}
+
+}
+
+/* fixed for screen smaller than 480px */
+@media screen and (max-width: 480px) {
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+.notice {
+  top: 0;
+  left: 5%;
+  width: 90%;
+  min-height: 8em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notice p {
+  padding: 20px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.top, .bottom {
+  height: 1em;
+  }
+
+.left, .right {
+   width: 1em;
+  }
+
+  
+  .left-box {
+    /*top: 30%;*/
+  }
+
+  .text-box, .text-box-2 { 
+    left: 15%;
+  }
+
+  .button {
+    padding: 1em 2em;
+  }
+
+  .portfolio h1 {
+  margin-top: 30%;
+ }
+
+.resume h2 {
+  letter-spacing: 0em;
+   margin-bottom: 0%;
+ }
+
+ .padding-top--20 {
+  padding-left: 0;
+ }
+.cover {
+  min-height: 34em;
+}
+
+#largeBox img {
+ top: 25%;
+}
+
+.padding-top--20 {
+ position: relative;
+ top: 15%;
+}
+
+.contact .box {
+  min-height: 22em;
+}
+
+.contact .text-box-2 {
+  top: 25%;
+}
+
+.resume blockquote p {
+  text-align: left;
+
+}
+
+#resumeBox {
+  margin-top: 30%;
+}
+
+
+.resume .box {
+  min-height: 260em;
+}
+
+.left-box {
+  width: 100%;
+  height: 250px;
+  margin-left: 0;
+}
+
+.home .left-box {
+  margin-left: 1.2em;
+}
+
+}/* end of fixed for screen larger than 480px */
+
+@media screen and (max-width: 415px) {
+
+  .text-box, .text-box-2 {
+    left: 21%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .text-box, .text-box-2 {
+    left: 19%;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .text-box, .text-box-2 {
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+.portfolio h1 {
+  margin-top: 30%;
+ }
+ .left-box {
+ /* margin-left: 1.2em;*/
+ }
+ #largeBox img {
+position: absolute;
+top: 20%;
+}
+
+.resume .box {
+  min-height: 300em;
+}
+
+.social .img-mobile, .social img-folio {
+  max-width: 220px;
+  width: 90%;
+  height: 22em;
+}
+
+}
