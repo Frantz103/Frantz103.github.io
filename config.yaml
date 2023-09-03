@@ -1,0 +1,37 @@
+resume.html:
+  title: "Resume | Frantz Augustin"
+  description: "Frantz's resume highlights a decade of expertise in digital marketing and website management. With a focus on user-centric design and web accessibility, his in-house experience over the last four years showcases a diverse skill set aimed at solving complex web challenges."
+  robots: "index, follow"
+  
+home.html:
+  title: "Frantz Augustin"
+  description: "Hi there, I am a marketing technologist specializing in website management, development, and accessibility. With a decade of experience in healthcare, education, and digital marketing, I currently focus on user-centric design, data analytics, and website security. Discover my innovative approach to web marketing, as well as my knack for leveraging advanced machine learning tools for optimal results"
+  robots: "index, follow"
+
+about.html:
+  title: "About | Frantz Augustin"
+  description: "Hi There, I am Frantz. A digital marketing technologist with over a decade of experiences"
+  robots: "index, follow"
+
+portfolio.html:
+  title: "Online Portfolio | Frantz Augustin"
+  description: "Here’s some past select works of Projects across website management, digital marketing, and technology solutions. With four years of in-house experience, I have works on project from web analytics, website management and maintenance, web accessibility and others web technologies."
+  robots: "index, follow"
+
+contact.html:
+  title: "Contact Frantz Augustin"
+  description: "Facing challenges with your website or digital marketing efforts? Contact Frantz for tailored solutions in website performance, digital campaign auditing, Google Tag Manager setup, web analytics, website personalization, cookie management, web accessibility, AI-powered SEO, and Conversion Rate Optimization (CRO)"
+  robots: "index, follow"
+
+design.html:
+  title: "Design | Frantz Augustin"
+  description: "Here’s some of my past design concepts."
+  robots: "index, follow"
+
+chart.html:
+  title: "A data visualiztion tasks circa 2015"
+  robots: "noindex, nofollow"
+
+notes.html:
+  title: "Photography | Frantz Augustin"
+  description: "In my free time, I like doing photography"

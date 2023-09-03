@@ -116,19 +116,6 @@ body {
   transition-timing-function: ease-in-out;
  }
 
-/*.button:hover {
-  animation-name: colorchange;
-  -webkit-animation-duration: 4500ms;
-  animation-duration: 4500ms;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
- }
-
-@keyframes colorchange {
-    from {background-color: #000; color:#fff;}
-    to {background-color: #fff;color:#000;}
-}*/
-
 .margin-auto { 
    margin-left: auto;
    margin-right: auto;
@@ -211,10 +198,10 @@ body {
   left: 0.55em;
 }
 .one {
-  animation: circle 2s infinite linear;
+  animation: circle 3s linear;
 }
 .two {
-  animation: circle 2s infinite linear;
+  animation: circle 3s linear;
 }
 
 
@@ -229,7 +216,7 @@ h2, h3 {
 h1 {
   font-family: 'Cardo', serif;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
@@ -358,14 +345,22 @@ li {
   color:#fff;
 }
 
+.color-black {
+  color: #000;
+}
+
 .color-green--light {
   color: #80cbc4;
 }
 
 .background-green--light {
-  /*background: #80cbc4;*/
   background: #cb8084;
 }
+
+.background-latte {
+    background-color: #F5F2EC;
+}
+
 
 .background-white {
   background: #fff;
@@ -384,7 +379,6 @@ li {
 }
 
 .background-purple-2 {
- /*background: #649660;*/
  background: #986063;
 }
 
@@ -429,10 +423,10 @@ li {
 }
 
 .box03 {
-height: 100%;
-top: 0;
-left: 0;
-vertical-align: middle;
+  height: 100%;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
 }
 
 .box03 img {
