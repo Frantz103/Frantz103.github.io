@@ -16,3 +16,24 @@ $(document).ready(function() {
   });
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    const circleOne = document.querySelector(".circle.one");
+    const circleTwo = document.querySelector(".circle.two");
+    const notifBuble = document.querySelector(".notify-bubble");
+    
+    if (circleOne) {
+      circleOne.style.display = "none";
+    }
+
+    if (circleTwo) {
+      circleTwo.style.display = "none";
+    }
+
+    if (notifBuble) {
+      notifBuble.style.display = "none";
+    }
+  }, 3000);
+});

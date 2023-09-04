@@ -73,7 +73,7 @@ body {
   margin-right: auto;
 }
 
-.text-box, .text-box-2 {
+.text-box {
   width: 30%;
   min-width: 240px;
   height: 14em;
@@ -83,8 +83,11 @@ body {
  }
 
  .text-box-2 {
-  left: 35%;
+  width: 50rem;
+  height: 14em;
+  padding-top: 10rem;
  }
+
 
  .text-box {
   left: 50%;
@@ -92,8 +95,10 @@ body {
 
 .text-box p, 
 .text-box-2 p {
-  word-spacing: 1px;
-  letter-spacing: 1px;
+  word-spacing: 0.1rem;
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
+  line-height: 150%;
 }
 
 .button {
@@ -306,8 +311,6 @@ li {
   }
 
 .menu-open {
-  /*transform: rotate(45deg) translate(8px, 8px);*/
-  /*transition: .5s;*/
   display:inline-block;
   width: 100%;
   height: 100%;
@@ -441,16 +444,21 @@ li {
 
   .portfolio h1, 
   .portfolio h3,
-  .about h1,
   .about h3 {
     color: #fff;
     text-align: center;
   }
 
-.portfolio h1, .about h1, .brand {
+.portfolio h1, .brand {
   font-size: 1.1em;
   letter-spacing: 0.2em;
  }
+
+ .about h1 {
+  font-size: 1.78rem;
+  margin-bottom:16px;
+ }
+
 
 .portfolio h1, .about h1 {
    margin-top: 10%;
@@ -611,6 +619,8 @@ div.fb-like.fb_iframe_widget {
   .text-box, .text-box-2 { 
     left: 15%;
   }
+
+
 
   .button {
     padding: 1em 2em;
