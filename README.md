@@ -25,8 +25,9 @@ This Python script generates a static website using HTML templates and YAML file
 Clone this repository:
 
 Run the script:
-
-'python3 build.py'
+~~~
+python3 build.py'
+~~~
 
 ### Adding New Pages
 1. Add your HTML template into the templates folder.
@@ -37,8 +38,9 @@ Run the script:
 
 To test on **local environment.**
 Run the comand below in the website directory
-
-'python3 -m http.server'
+~~~
+python3 -m http.server'
+~~~
 
 You can now view thew website by navigating to http://127.0.0.1:8000 or http://localhost:8000 in your web browser.
 
