@@ -10,8 +10,10 @@ This Python script generates a static website using HTML templates and YAML file
 2. PyYAML (for handling YAML files)
 3. To install PyYAML, run:
 
+~~~
+pip install PyYAML
+~~~
 
-'pip install PyYAML'
 
 ### Features
 
@@ -26,7 +28,7 @@ Clone this repository:
 
 Run the script:
 ~~~
-python3 build.py'
+python3 build.py
 ~~~
 
 ### Adding New Pages
@@ -39,7 +41,7 @@ python3 build.py'
 To test on **local environment.**
 Run the comand below in the website directory
 ~~~
-python3 -m http.server'
+python3 -m http.server
 ~~~
 
 You can now view thew website by navigating to http://127.0.0.1:8000 or http://localhost:8000 in your web browser.
