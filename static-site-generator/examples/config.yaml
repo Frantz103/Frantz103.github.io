@@ -1,0 +1,26 @@
+# Static Site Generator Configuration
+# Define your pages and their metadata here
+
+index.html:
+  title: "My Website"
+  description: "Welcome to my personal website"
+  robots: "index, follow"
+  author: "Your Name"
+
+about.html:
+  title: "About | My Website"
+  description: "Learn more about me and my work"
+  robots: "index, follow"
+  author: "Your Name"
+
+portfolio.html:
+  title: "Portfolio | My Website"
+  description: "Check out my latest projects and work"
+  robots: "index, follow"
+  author: "Your Name"
+
+contact.html:
+  title: "Contact | My Website"
+  description: "Get in touch with me"
+  robots: "index, follow"
+  author: "Your Name"
