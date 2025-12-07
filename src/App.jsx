@@ -866,6 +866,7 @@ const ContactSection = () => {
           name="contact"
           method="POST"
           data-netlify="true"
+          netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="w-full bg-white/80 border border-neutral-100 rounded-2xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.2)] p-8 space-y-6"
