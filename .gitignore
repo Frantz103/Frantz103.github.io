@@ -25,3 +25,6 @@ pnpm-debug.log*
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# Local experiments
+WYSIWID/
