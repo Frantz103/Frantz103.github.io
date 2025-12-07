@@ -1,0 +1,78 @@
+<body class="about">
+
+    <div class="border top"></div>
+    <div class="border left"></div>
+    <div class="border right"></div>
+    <div class="border bottom"></div>
+     
+    <div class="box background-latte" id="box">
+
+      <div class="nav-box menu">
+        <i class="fa fa-bars color-black" aria-hidden="true"></i>
+      </div>
+
+      <nav class="nav menu">
+
+        <div class="closed-box">
+          <i class="color-black fa fa-times" aria-hidden="true"></i>
+        </div>
+        
+        <ul class="padding-top--20">
+          <li><a class="menu-link" href="/">Home</a></li>
+          <li><a class="menu-link" href="/portfolio.html">Portfolio</a></li>
+          <li><a class="menu-link" href="/about.html">About</a></li>
+          <li><a class="menu-link" href="/notes.html">Photography</a></li>
+          <li><a class="menu-link" href="/design.html">Design</a></li>
+          <li><a class="menu-link" href="/resume.html">Resume</a></li>
+          <li><a class="menu-link" href="/contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+       
+      <div class="text-box-2 margin-auto" id="storyBox">
+      <h1 class="color-black" id="theStory">The Story</h1>
+      <p class="color-black text-left" id="p1"> Hello, I am Frantz Augustin.<br>
+      A Marketing Professional with experience in Digital Marketing, Social Media, Marketing Research, Web Design and Web Development.</p>
+      <a class="button" id="button" onclick="myFunction()">Read more </a>
+      </div>
+
+    </div>
+  
+
+    <script type="text/javascript">
+    function myFunction() {
+    document.getElementById("p1").innerHTML = "<p>Thank you for showing interest in my portfolio.\
+      My name is Frantz Casimir Augustin and let me tell you my story.</p>\
+    <p>I was born in the beautiful island of Haiti. At the age of 9,\
+      I started working with my father in the family business, where I learned about entrepreneurship and later helped improve the family business. In 2009, I have helped my father introduce the first UPS bar-code scanner in my city. Later, I helped install the first mechanical counter and opened the first online store in my state.</p>\
+    <p>I am passionate about marketing and I want to start and market a brand to great heights.\
+      In 5 years, I envision myself as a successful marketing executive and entrepreneur.</p>\
+     <p>I am a learner.</p>\
+     <p>In college, I was blown over by digital marketing, integrated marketing communication,  and business planning.  I saw a  great potential in the E-commerce industry. So I started to develop concurrent skills in that area.\
+       I learnt basic graphic design and computer programming, during my free time.\
+       I also keenly learnt about sociology and human behavior to adapt it to my marketing plans.</p>\
+     <p>I am a reader.</p>\
+     <p>I love to read. I have read a lot of books and articles  on my favorite subjects of marketing, and human sciences. I believe that marketing should be approached in a holistic way and we should learn about human behavior and decision making from various branches such as psychology, sociology, anthropology and the arts.My goal is to  learn everything about marketing and I mean 'everything'about marketing.If marketing is a language then I want to speak it fluently and write poetry in it.</p>\
+      <p>To conclude</p>\
+      <p>I am highly motivated and life has taught me to be an humble person. I believe in hard work, teamwork, honesty, time management and most importantly I have the 'habit of never giving up' on the challenges which life assigns me to face.\
+      <p><Thank you for your time and please visit my work samples.</p>";
+
+document.getElementById("storyBox").style.height="100%";
+document.getElementById("storyBox").style.position="inherit";
+document.getElementById("theStory").style.paddingTop="35%";
+document.getElementById("box").style.minHeight="110em";
+
+var parent = document.getElementById("storyBox");
+var child = document.getElementById("button");
+    parent.removeChild(child);
+
+var button = document.createElement('a');
+var buttonText = document.createTextNode("Visit My Portfolio");
+    button.appendChild(buttonText);
+    button.className = "button";
+    button.title = "Visit My Portfolio";
+    button.href = "http://frantzaugustin.com/portfolio.html";
+document.getElementById("storyBox").appendChild(button);  
+
+}
+</script>

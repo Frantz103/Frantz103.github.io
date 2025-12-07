@@ -1,49 +1,16 @@
-## My Static Portfolio Generator
+# React + Vite
 
-### Description
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This Python script generates a static website using HTML templates and YAML files for page attributes. The script is flexible, allowing for custom headers, footers, and content to be defined on a per-page basis.
+Currently, two official plugins are available:
 
-### Requirements
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-1. Python 3.x
-2. PyYAML (for handling YAML files)
-3. To install PyYAML, run:
+## React Compiler
 
-~~~
-pip install PyYAML
-~~~
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Expanding the ESLint configuration
 
-### Features
-
-1. Generates pages from HTML templates
-2. Supports custom headers and footers
-3. Fetches attributes from YAML files to populate templates
-4. Handles errors gracefully, with debug output for easy troubleshooting
-
-### How to Use
-
-Clone this repository:
-
-Run the script:
-~~~
-python3 build.py
-~~~
-
-### Adding New Pages
-1. Add your HTML template into the templates folder.
-2. Add the corresponding YAML file with page attributes in the attributes folder.
-3. If you want a custom header or footer, add those into the headers and footers folders respectively.
-4. Run build.py to generate the new page.
-
-
-To test on **local environment.**
-Run the comand below in the website directory
-~~~
-python3 -m http.server
-~~~
-
-You can now view thew website by navigating to http://127.0.0.1:8000 or http://localhost:8000 in your web browser.
-
-You also test using VS Code Live Server: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
