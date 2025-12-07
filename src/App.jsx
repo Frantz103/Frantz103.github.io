@@ -808,29 +808,6 @@ const AboutSection = () => {
 };
 
 const ContactSection = () => {
-  const [formStatus, setFormStatus] = useState({ submitting: false, success: false, error: '' });
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    formData.set('form-name', form.getAttribute('name'));
-
-    setFormStatus({ submitting: true, success: false, error: '' });
-
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-      });
-      setFormStatus({ submitting: false, success: true, error: '' });
-      form.reset();
-    } catch (error) {
-      setFormStatus({ submitting: false, success: false, error: 'Something went wrong. Please try again.' });
-    }
-  };
-
   return (
     <div className="pt-32 pb-20 px-6 max-w-6xl mx-auto min-h-[80vh]">
       <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
@@ -866,9 +843,8 @@ const ContactSection = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
           className="w-full bg-white/80 border border-neutral-100 rounded-2xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.2)] p-8 space-y-6"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -915,17 +891,10 @@ const ContactSection = () => {
           </div>
           <button
             type="submit"
-            disabled={formStatus.submitting}
-            className={`w-full px-6 py-3 text-sm tracking-[0.3em] uppercase transition-colors ${
-              formStatus.submitting ? 'bg-neutral-400 text-white' : 'bg-neutral-900 text-white hover:bg-indigo-700'
-            }`}
+            className="w-full px-6 py-3 text-sm tracking-[0.3em] uppercase transition-colors bg-neutral-900 text-white hover:bg-indigo-700"
           >
-            {formStatus.submitting ? 'Sending...' : 'Send Message'}
+            Send Message
           </button>
-          {formStatus.success && (
-            <p className="text-sm text-green-600 text-center">Thank you for reaching out - I'll reply as soon as I can.</p>
-          )}
-          {formStatus.error && <p className="text-sm text-red-500 text-center">{formStatus.error}</p>}
         </form>
       </div>
     </div>
