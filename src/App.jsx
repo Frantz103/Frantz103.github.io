@@ -835,6 +835,7 @@ const ContactSection = () => {
         <form
           name="contact"
           method="POST"
+          action="/contact-success"
           data-netlify="true"
           netlify
           data-netlify-honeypot="bot-field"
