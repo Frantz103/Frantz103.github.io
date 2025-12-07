@@ -819,7 +819,7 @@ const ContactSection = () => {
 
           <div className="mt-10 space-y-6">
             <div>
-              <p className="text-sm uppercase tracking-widest text-neutral-400 mb-4">Elsewhere</p>
+              <p className="text-sm uppercase tracking-widest text-neutral-400 mb-4">Socials</p>
               <div className="flex flex-wrap gap-6">
                 <SocialLink icon={<Linkedin size={24} />} label="LinkedIn" href="https://www.linkedin.com/in/frantz103/" />
                 <SocialLink icon={<Github size={24} />} label="GitHub" href="https://github.com/Frantz103" />
