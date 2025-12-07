@@ -847,6 +847,17 @@ const ContactSection = () => {
               Don't fill this out if you're human <input name="bot-field" />
             </label>
           </div>
+          <div className="hidden" aria-hidden="true">
+            <label htmlFor="contact-last-name">
+              Last Name
+              <input id="contact-last-name" name="last-name" type="text" />
+            </label>
+          </div>
+          <div className="hidden">
+            <label>
+              Don't fill this out if you're human <input name="bot-field" />
+            </label>
+          </div>
           <div>
             <label htmlFor="contact-name" className="block text-xs uppercase tracking-widest text-neutral-400 mb-2">
               Name
