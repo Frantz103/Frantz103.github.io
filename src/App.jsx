@@ -818,13 +818,6 @@ const ContactSection = () => {
           </p>
 
           <div className="mt-10 space-y-6">
-            <a
-              href="mailto:hello@frantzaugustin.com"
-              className="inline-flex items-center gap-3 text-2xl font-serif italic text-indigo-600 hover:text-indigo-800 border-b-2 border-indigo-100 hover:border-indigo-600 transition-all pb-1"
-            >
-              <Mail size={22} /> hello@frantzaugustin.com
-            </a>
-
             <div>
               <p className="text-sm uppercase tracking-widest text-neutral-400 mb-4">Elsewhere</p>
               <div className="flex flex-wrap gap-6">
