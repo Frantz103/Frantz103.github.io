@@ -10,7 +10,7 @@ const ensureFileExists = async (relativePath) => {
     if (!stats.isFile()) {
       throw new Error(`${relativePath} is not a file.`);
     }
-  } catch (error) {
+  } catch {
     throw new Error(`Missing required build artifact: ${relativePath}`);
   }
 };
@@ -20,7 +20,7 @@ const ensureAssetBundle = async () => {
   let files;
   try {
     files = await fs.readdir(assetsDir);
-  } catch (error) {
+  } catch {
     throw new Error('docs/assets directory is missing.');
   }
 
