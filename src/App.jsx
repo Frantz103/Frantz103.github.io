@@ -196,13 +196,28 @@ const App = () => {
       <footer className="bg-neutral-50 border-t border-neutral-200 py-12 mt-20">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-neutral-500">
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-indigo-600 transition-colors">
+            <a
+              href="https://frantzphotography.com"
+              className="hover:text-indigo-600 transition-colors"
+              target="_blank"
+              rel="noreferrer"
+            >
               Photography
             </a>
-            <a href="#" className="hover:text-indigo-600 transition-colors">
+            <a
+              href="https://chezfrantz.com"
+              className="hover:text-indigo-600 transition-colors"
+              target="_blank"
+              rel="noreferrer"
+            >
               Chez Frantz
             </a>
-            <a href="#" className="hover:text-indigo-600 transition-colors">
+            <a
+              href="http://frantzstudio.com/"
+              className="hover:text-indigo-600 transition-colors"
+              target="_blank"
+              rel="noreferrer"
+            >
               Frantz Studio
             </a>
           </div>
@@ -836,7 +851,7 @@ const ContactSection = () => {
         <form
           name="contact"
           method="POST"
-          action="/contact-success"
+          action="/contact-success.html"
           data-netlify="true"
           netlify="true"
           data-netlify-honeypot="bot-field"
