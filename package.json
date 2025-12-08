@@ -2,7 +2,6 @@
   "name": "frantz103.github.io",
   "private": true,
   "version": "1.0.0",
-  "description": "Frantz Augustin personal portfolio (writing, photography, contact)",
   "type": "module",
   "scripts": {
     "dev": "vite",
