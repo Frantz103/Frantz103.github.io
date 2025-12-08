@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup, within } from '@testing-library/react';
 import App from './App';
 
 const renderWithPath = (path = '/') => {
@@ -38,6 +38,19 @@ describe('App routing and sections', () => {
     expect(form).toHaveAttribute('name', 'contact');
     expect(form).toHaveAttribute('data-netlify', 'true');
     expect(form).toHaveAttribute('netlify', 'true');
-    expect(form).toHaveAttribute('action', '/contact-success');
+    expect(form).toHaveAttribute('action', '/contact-success.html');
+  });
+
+  it('footer links are valid', () => {
+    renderWithPath('/');
+    const footer = screen.getByRole('contentinfo');
+    const links = within(footer).getAllByRole('link');
+
+    // Photography
+    expect(links[0]).toHaveAttribute('href', 'https://frantzphotography.com');
+    // Chez Frantz
+    expect(links[1]).toHaveAttribute('href', 'https://chezfrantz.com');
+    // Frantz Studio
+    expect(links[2]).toHaveAttribute('href', 'http://frantzstudio.com/');
   });
 });
