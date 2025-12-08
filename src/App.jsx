@@ -480,7 +480,7 @@ in moves I cannot yet see.`,
         });
         setShareStatus({ message: 'Shared successfully', slug: essay.slug });
       } catch (error) {
-        // user cancelled share; ignore silently
+        console.warn('Share was cancelled or failed', error);
       }
       return;
     }
@@ -491,6 +491,7 @@ in moves I cannot yet see.`,
         setShareStatus({ message: 'Link copied to clipboard', slug: essay.slug });
         return;
       } catch (error) {
+        console.error('Copy to clipboard failed', error);
         setShareStatus({ message: 'Unable to copy link. Please copy manually.', slug: essay.slug });
       }
     }
