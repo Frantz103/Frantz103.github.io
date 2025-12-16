@@ -274,7 +274,7 @@ const HomeSection = ({ onNavigate }) => {
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto mt-16">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight">Frantz Augustin</h1>
         <p className="text-base md:text-lg tracking-[0.3em] uppercase text-white/90 mb-12">
-          Independent Researcher & Creative Technologist
+          Independent researcher exploring technology and cognition
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
@@ -561,8 +561,7 @@ in moves I cannot yet see.`,
       <div className="mb-20 text-center">
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">Research & Writing</h2>
         <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-          My truest body of work. A curated set of micro-essays, reflections, and technical explorations into the future of cognition.
-        </p>
+         A curated set of micro-essays, reflections, and technical explorations on cognition and intelligent systems.        </p>
       </div>
 
       <div className="mb-24">
