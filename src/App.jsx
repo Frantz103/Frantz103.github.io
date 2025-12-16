@@ -788,20 +788,14 @@ const AboutSection = () => {
 
           <div className="space-y-6 text-lg text-neutral-600 leading-relaxed font-light">
             <p>
-              I am a multidisciplinary creative and independent researcher based in San Diego, with interest in artificial intelligence, cognitive science, and human computer interaction. I study how machines learn, how humans make meaning, and how the two can meet in ways that feel generous rather than extractive.
+            I am a multidisciplinary creative and independent researcher based in San Diego, with interests in artificial intelligence, cognitive science, and human computer interaction. I explore how machines learn, how humans make meaning, and how the two might meet in ways that feel generous.
             </p>
             <p>
-              My philosophy is simple. Technology should help humans, not replace them. My independent research focuses on perception, meaning, and the interaction between humans and intelligent systems. These themes guide how I approach my work.
-            </p>
+            My philosophy is simple. Technology should help humans, not replace them. My independent research focuses on perception, meaning, and the interaction between humans and intelligent systems. These themes guide how I approach my work.            </p>
+            
             <p>
-              Before all of this, my undergraduate work was in marketing, and my favorite subjects were consumer behavior, marketing research, and the way a message becomes the medium until it no longer does. Around the same time, I taught myself to code, and I have been building for the web since 2012. In 2016, while working at a marketing agency, I discovered AI through a single question: can we predict when a tweet might go viral. Later, working in SEO introduced me to information retrieval, and I have been curious ever since, in my own slow and steady way.
-            </p>
-            <p>
-              Beyond research, I work on several personal projects. Frantz Studio is a small AI native consultancy centered on design, analytics, and AI assisted tooling. Chez Frantz is an online store for my imaginative side: fashion, stationery, poems, and storytelling. Frantz Photography is my fashion and documentary practice, where I study how what we wear shapes identity, emotion, and our understanding of each other. These projects support my research by helping me explore how people interact with tools, images, and systems.
-            </p>
-            <p>
-              I am preparing for advanced study in human computer interaction and cognitive systems, with interest in perception and understanding in intelligent systems.
-            </p>
+              Beyond research, I work on several personal projects. Frantz Studio is a small AI native consultancy centered on design, analytics, and AI assisted tooling. Chez Frantz is an online store for my imaginative side: fashion, stationery, poems, and storytelling. Frantz Photography is my fashion and documentary practice, where I study how what we wear shapes identity, emotion, and our understanding of each other. These projects support my research by helping me explore how people interact with tools, images, and systems.            </p>
+           
           </div>
 
           <div className="mt-10 pt-10 border-t border-neutral-100">
