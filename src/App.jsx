@@ -635,7 +635,7 @@ const CreativeSection = () => {
     {
       title: 'Frantz Photography',
       description:
-        'Editorial fashion, documentary narratives, and visual essays exploring identity through clothing, gesture, and light. This is the emotional side of my work, for visitors drawn to story, beauty, and image making.',
+      'Editorial fashion, documentary narratives, and visual essays exploring identity through clothing, gesture, and light. The emotional side of my work.',
       url: 'https://frantzphotography.com',
       cta: 'Visit Frantz Photography',
       tag: 'Imagery & Emotion',
@@ -643,7 +643,7 @@ const CreativeSection = () => {
     {
       title: 'Frantz Studio',
       description:
-        'Creative tooling, AI native experiments, design systems, and technical projects that show how tools shape the way we create. This is where engineering meets creative practice.',
+        'Creative tooling, AI assisted experiments, design systems, and technical projects developed as part of my creative practice. This is the applied side of my work and research.',
       url: 'http://frantzstudio.com/',
       cta: 'Explore Frantz Studio',
       tag: 'Tools & Systems',
@@ -656,7 +656,7 @@ const CreativeSection = () => {
         <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 font-bold mb-4">Creative Work</p>
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">Two Doors Into My Practice</h2>
         <p className="text-lg text-neutral-600">
-          I like creating images with feeling, and I like experimenting with tools that let me create in new ways.
+          I create images with feeling, and I experiment with tools that open new ways of working.
         </p>
       </div>
 
