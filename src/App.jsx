@@ -824,7 +824,7 @@ const ContactSection = () => {
         <div className="text-left">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-neutral-900 mb-6">Let's Connect.</h2>
           <p className="text-xl text-neutral-600 max-w-2xl">
-            Open for academic collaborations, research discussions, or a thoughtful chat about the future of AI and creative research.
+           Open for academic collaborations, research discussions, or a thoughtful chat about AI, meaning, and creative research.
           </p>
 
           <div className="mt-10 space-y-6">
