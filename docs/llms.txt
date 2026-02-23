@@ -1,22 +1,29 @@
 # Frantz Augustin
 
-> Personal website of Frantz Augustin, an independent researcher and multidisciplinary creative based in San Diego. His work explores artificial intelligence, cognitive science, and human computer interaction — specifically how machines learn, how humans make meaning, and how the two might meet in ways that feel generous.
+> Personal website of Frantz Augustin, an independent researcher and software developer based in San Diego. He builds AI systems and writes about how machines and humans make meaning — from agent architectures to image captioning for accessibility. His work spans cognitive science, computational aesthetics, and human computer interaction.
 
-Frantz's philosophy: technology should help humans, not replace them. His independent research focuses on perception, meaning, and the interaction between humans and intelligent systems.
-
-He also runs Frantz Studio (AI native consultancy), Chez Frantz (online store for stationery and creative goods), and Frantz Photography (fashion and documentary practice).
+Frantz has 6.5 years of software development experience (Python, TypeScript, Ruby on Rails) with academic foundations from Harvard Extension and MIT xPRO. He created the Concept-Driven Agent Architecture (CDAA) framework and publishes ML experiments on HuggingFace.
 
 ## Research & Writing
 
-- [Research & Writing](https://frantzaugustin.com/writing/): Research interests and curated micro-essays on cognition and intelligent systems
+- [Research & Writing](https://frantzaugustin.com/writing/): Research interests, technical writing, and curated micro-essays on cognition and intelligent systems
 - [Move 37](https://frantzaugustin.com/writing/move-37/): A poem reflecting on AlphaGo's move 37, exploring unity, perfection, and the intersection of AI and meaning
+
+## Projects & Experiments
+
+- [Projects & Experiments](https://frantzaugustin.com/projects/): AI research projects, HuggingFace Spaces, and ML experiments
+- [CaptionQuest](https://huggingface.co/spaces/Frantz103/CaptionQuest): Gradio app comparing AI captioning models side-by-side
+- [CDAA](https://frantzaugustin.com/projects/): Concept-Driven Agent Architecture framework for conceptually grounded AI agents
+- [Image Captioning for Accessibility](https://github.com/Frantz103/image-caption-accessibility): Evaluating AI captions against POUR accessibility principles
+- [HuggingFace Profile](https://huggingface.co/Frantz103): Full collection of models, Spaces, and datasets
 
 ## Pages
 
-- [About](https://frantzaugustin.com/about/): Bio, background, and focus areas (cognitive science, HCI, machine perception, local AI systems)
+- [About](https://frantzaugustin.com/about/): Bio, background, ML journey, research focus, and collaboration interests. Focus areas: cognitive science, HCI, machine perception, computational aesthetics, agent architecture, philosophy of mind, local AI systems
 - [Creative Work](https://frantzaugustin.com/creative/): Two creative practices — Frantz Photography and Frantz Studio
 - [Field Notes](https://frantzaugustin.com/field-notes/): Living snapshot of current projects and research directions
-- [Contact](https://frantzaugustin.com/contact/): Contact form and social links
+- [Contact](https://frantzaugustin.com/contact/): Contact form and social links (LinkedIn, GitHub, HuggingFace, Medium, Photography, Threads, Substack)
+- [Learning Timeline](https://frantzaugustin.com/timeline/): Chronological technical milestones — from early ML experiments through agent architectures and computational aesthetics
 
 ## Optional
 

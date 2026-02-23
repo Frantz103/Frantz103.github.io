@@ -1,0 +1,104 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { timelineEvents } from '@/data/timeline';
+
+const grouped = timelineEvents.reduce<Record<string, typeof timelineEvents>>(
+  (acc, event) => {
+    (acc[event.year] ??= []).push(event);
+    return acc;
+  },
+  {},
+);
+
+const years = Object.keys(grouped).sort();
+const firstYear = years[0];
+const currentYear = new Date().getFullYear();
+---
+
+<BaseLayout
+  title="Learning Timeline"
+  description={`A chronological overview of Frantz Augustin's technical journey (${firstYear}–${currentYear}) — from generative art to agent architectures.`}
+>
+  <div class="pt-32 pb-20 px-6 max-w-4xl mx-auto">
+    <div class="mb-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">
+        Learning Timeline
+      </h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        A chronological record of technical milestones — ML experiments, research projects, and the tools built along the way.
+      </p>
+    </div>
+
+    <div class="relative">
+      {years.map((year, yi) => (
+        <div class="relative grid grid-cols-1 md:grid-cols-[120px_1fr] gap-6 md:gap-10 mb-16 last:mb-0">
+          {/* Year label */}
+          <div class="md:sticky md:top-32 self-start">
+            <span class="text-3xl md:text-4xl font-serif font-bold text-neutral-300">
+              {year}
+            </span>
+          </div>
+
+          {/* Events column */}
+          <div class="relative pl-8 md:pl-0">
+            {/* Vertical line — mobile only */}
+            <div class="absolute left-0 top-2 bottom-2 w-px bg-neutral-200 md:hidden" />
+
+            <div class="space-y-6">
+              {grouped[year].map((event, ei) => (
+                <div class="relative">
+                  {/* Dot — mobile only */}
+                  <div class="absolute -left-8 top-3 w-2.5 h-2.5 rounded-full bg-neutral-300 ring-4 ring-neutral-50 md:hidden" />
+
+                  <div class="bg-white border border-neutral-200 rounded-xl p-6 hover:border-indigo-200 transition-colors">
+                    <h3 class="text-lg font-bold text-neutral-900 mb-2">
+                      {event.title}
+                    </h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed">
+                      {event.description}
+                    </p>
+
+                    {event.links && event.links.length > 0 && (
+                      <div class="flex flex-wrap gap-3 mt-4">
+                        {event.links.map((link) => (
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            class="inline-flex items-center gap-1.5 text-xs font-medium text-neutral-500 hover:text-indigo-600 transition-colors"
+                          >
+                            {link.label}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="12"
+                              height="12"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path d="M7 7h10v10" />
+                              <path d="M7 17 17 7" />
+                            </svg>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-neutral-100 text-center">
+      <p class="text-sm text-neutral-400">
+        This timeline covers technical work only.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

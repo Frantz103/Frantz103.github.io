@@ -1,0 +1,102 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import { getProjectsByTier } from '@/data/projects';
+
+const featured = getProjectsByTier('featured');
+const experiments = getProjectsByTier('experiment');
+const notebooks = getProjectsByTier('notebook');
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Projects & Experiments — Frantz Augustin',
+  description:
+    'AI research projects, HuggingFace Spaces, and ML experiments by Frantz Augustin.',
+  url: 'https://frantzaugustin.com/projects/',
+};
+---
+
+<BaseLayout
+  title="Projects & Experiments"
+  description="AI research projects, HuggingFace Spaces, and ML experiments by Frantz Augustin."
+  jsonLd={jsonLd}
+>
+  <div class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="mb-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">
+        Projects & Experiments
+      </h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        Research tools, ML experiments, and HuggingFace Spaces — the technical work behind the ideas.
+      </p>
+    </div>
+
+    <div class="mb-24">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+        <span class="text-sm uppercase tracking-widest text-neutral-500 font-bold"
+          >Featured Projects</span
+        >
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {featured.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+
+    <div class="mb-24">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+        <span class="text-sm uppercase tracking-widest text-neutral-500 font-bold"
+          >Experiments</span
+        >
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {experiments.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+        <span class="text-sm uppercase tracking-widest text-neutral-500 font-bold"
+          >Notebooks & Learning</span
+        >
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-2xl mx-auto gap-8">
+        {notebooks.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+
+    <div class="text-center pt-8 border-t border-neutral-100">
+      <a
+        href="https://huggingface.co/Frantz103"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 hover:text-indigo-600 transition-colors"
+      >
+        View full HuggingFace profile
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M7 7h10v10"></path>
+          <path d="M7 17 17 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</BaseLayout>
