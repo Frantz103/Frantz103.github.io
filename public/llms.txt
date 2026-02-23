@@ -1,0 +1,24 @@
+# Frantz Augustin
+
+> Personal website of Frantz Augustin, an independent researcher and multidisciplinary creative based in San Diego. His work explores artificial intelligence, cognitive science, and human computer interaction — specifically how machines learn, how humans make meaning, and how the two might meet in ways that feel generous.
+
+Frantz's philosophy: technology should help humans, not replace them. His independent research focuses on perception, meaning, and the interaction between humans and intelligent systems.
+
+He also runs Frantz Studio (AI native consultancy), Chez Frantz (online store for stationery and creative goods), and Frantz Photography (fashion and documentary practice).
+
+## Research & Writing
+
+- [Research & Writing](https://frantzaugustin.com/writing/): Research interests and curated micro-essays on cognition and intelligent systems
+- [Move 37](https://frantzaugustin.com/writing/move-37/): A poem reflecting on AlphaGo's move 37, exploring unity, perfection, and the intersection of AI and meaning
+
+## Pages
+
+- [About](https://frantzaugustin.com/about/): Bio, background, and focus areas (cognitive science, HCI, machine perception, local AI systems)
+- [Creative Work](https://frantzaugustin.com/creative/): Two creative practices — Frantz Photography and Frantz Studio
+- [Field Notes](https://frantzaugustin.com/field-notes/): Living snapshot of current projects and research directions
+- [Contact](https://frantzaugustin.com/contact/): Contact form and social links
+
+## Optional
+
+- [RSS Feed](https://frantzaugustin.com/rss.xml): RSS feed of essays
+- [Sitemap](https://frantzaugustin.com/sitemap-index.xml): XML sitemap
