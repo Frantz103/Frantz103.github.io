@@ -1,0 +1,11 @@
+import{c as i,j as t}from"./createLucideIcon.Clx9tP0v.js";import{r}from"./index.DiEladB3.js";/**
+ * @license lucide-react v0.555.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const u=[["path",{d:"M4 5h16",key:"1tepv9"}],["path",{d:"M4 12h16",key:"1lakjw"}],["path",{d:"M4 19h16",key:"1djgab"}]],f=i("menu",u);/**
+ * @license lucide-react v0.555.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const m=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],p=i("x",m);function j({navLinks:n,currentPath:a}){const[o,l]=r.useState(!1),[d,c]=r.useState(!1),x=a==="/";r.useEffect(()=>{const e=()=>c(window.scrollY>50);return window.addEventListener("scroll",e),e(),()=>window.removeEventListener("scroll",e)},[]);const h=e=>e==="/"?a==="/":a.startsWith(e),s=d||!x;return t.jsxs("nav",{className:`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${s?"bg-white/80 backdrop-blur-md border-b border-neutral-100 py-4":"bg-transparent py-6"}`,children:[t.jsxs("div",{className:"max-w-6xl mx-auto px-6 flex justify-between items-center",children:[t.jsx("a",{href:"/",className:`text-xl tracking-tight font-serif font-bold transition-colors ${s?"text-neutral-900":"text-white"}`,children:"Frantz Augustin"}),t.jsx("div",{className:"hidden md:flex space-x-8",children:n.map(e=>t.jsx("a",{href:e.href,className:`text-sm tracking-wide transition-colors duration-300 hover:opacity-70 ${h(e.href)?"opacity-100 font-medium":"opacity-80"} ${s?"text-neutral-600 hover:text-indigo-600":"text-white/90 hover:text-white"}`,children:e.label},e.href))}),t.jsx("button",{className:`md:hidden p-2 ${s?"text-neutral-900":"text-white"}`,onClick:()=>l(!o),"aria-label":"Toggle menu",children:o?t.jsx(p,{size:24}):t.jsx(f,{size:24})})]}),o&&t.jsx("div",{className:"absolute top-full left-0 w-full bg-white border-b border-neutral-100 md:hidden flex flex-col p-6 shadow-xl",children:n.map(e=>t.jsx("a",{href:e.href,className:"text-left py-3 text-neutral-600 hover:text-indigo-600 transition-colors",onClick:()=>l(!1),children:e.label},e.href))})]})}export{j as default};

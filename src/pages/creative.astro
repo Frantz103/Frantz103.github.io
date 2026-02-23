@@ -1,0 +1,89 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { creativeCards } from '@/data/creative-cards';
+---
+
+<BaseLayout
+  title="Creative Work"
+  description="I create images with feeling, and I experiment with tools that open new ways of working."
+>
+  <div class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <p class="text-xs uppercase tracking-[0.3em] text-neutral-400 font-bold mb-4">
+        Creative Work
+      </p>
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">
+        Two Doors Into My Practice
+      </h2>
+      <p class="text-lg text-neutral-600">
+        I create images with feeling, and I experiment with tools that open new ways of working.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {
+        creativeCards.map((card) => (
+          <a
+            href={card.url}
+            class="group relative border border-neutral-200 rounded-3xl p-8 bg-white shadow-[0_30px_60px_-40px_rgba(0,0,0,0.4)] hover:-translate-y-1 hover:shadow-[0_30px_80px_-50px_rgba(99,102,241,0.6)] transition-all duration-300 flex flex-col"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-xs uppercase tracking-widest text-neutral-500 font-semibold">
+                {card.tag}
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-neutral-400 group-hover:text-indigo-500 transition-colors"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-serif font-semibold text-neutral-900 mb-4">{card.title}</h3>
+            <p class="text-neutral-600 leading-relaxed flex-grow">{card.description}</p>
+            <span class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-indigo-600 group-hover:gap-3 transition-all">
+              {card.cta}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="mt-16 bg-neutral-50 border border-neutral-100 rounded-2xl p-8">
+      <p class="text-neutral-600 leading-relaxed">
+        You can also support my work and research through Chez Frantz, my small store for stationery
+        and creative goods:
+        <a
+          href="https://chezfrantz.com"
+          class="text-indigo-600 font-medium hover:underline ml-1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          chezfrantz.com </a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

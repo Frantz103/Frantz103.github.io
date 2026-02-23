@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Message Received" noindex={true}>
+  <div class="min-h-[80vh] flex items-center justify-center px-6">
+    <div
+      class="bg-white p-10 rounded-3xl shadow-[0_30px_60px_-40px_rgba(0,0,0,0.4)] max-w-xl text-center"
+    >
+      <h1 class="text-4xl font-serif font-bold text-neutral-900 mb-4">
+        Thank you for reaching out.
+      </h1>
+      <p class="text-lg text-neutral-600 leading-relaxed">
+        I received your note and will reply soon. Until then, feel free to keep exploring the site.
+      </p>
+      <a
+        href="/"
+        class="inline-flex mt-8 pb-0.5 border-b border-neutral-200 text-neutral-900 font-semibold hover:text-indigo-700 hover:border-indigo-700 transition-colors"
+      >
+        Return home
+      </a>
+    </div>
+  </div>
+</BaseLayout>

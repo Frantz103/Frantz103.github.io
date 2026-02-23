@@ -1,0 +1,64 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ResearchCard from '@/components/ResearchCard.astro';
+import EssayCard from '@/components/EssayCard.astro';
+import { researchInterests } from '@/data/research-interests';
+import { getCollection } from 'astro:content';
+
+const essays = await getCollection('essays');
+essays.sort((a, b) => (a.data.date > b.data.date ? -1 : 1));
+---
+
+<BaseLayout
+  title="Research & Writing"
+  description="A curated set of micro-essays, reflections, and technical explorations on cognition and intelligent systems."
+>
+  <div class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="mb-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">
+        Research & Writing
+      </h2>
+      <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+        A curated set of micro-essays, reflections, and technical explorations on cognition and
+        intelligent systems.
+      </p>
+    </div>
+
+    <div class="mb-24">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+        <span class="text-sm uppercase tracking-widest text-neutral-400 font-bold"
+          >Research Interests</span
+        >
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {researchInterests.map((interest) => <ResearchCard interest={interest} />)}
+      </div>
+    </div>
+
+    <div>
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+        <span class="text-sm uppercase tracking-widest text-neutral-400 font-bold"
+          >Selected Essays</span
+        >
+        <div class="h-px bg-neutral-200 flex-grow"></div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-12 max-w-3xl mx-auto">
+        {
+          essays.map((essay) => (
+            <EssayCard
+              date={essay.data.date}
+              title={essay.data.title}
+              excerpt={essay.data.excerpt}
+              href={`/writing/${essay.data.slug}/`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

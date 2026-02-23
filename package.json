@@ -1,43 +1,33 @@
 {
   "name": "frantz103.github.io",
   "private": true,
-  "version": "1.0.0",
-  "description": "Frantz Augustin personal portfolio (writing, photography, contact)",
+  "version": "2.0.0",
+  "description": "Frantz Augustin — research, writing, and creative work. Built with Astro.",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "astro dev",
+    "build": "astro build",
     "postbuild": "node scripts/check-docs.js",
+    "preview": "astro preview",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "preview": "vite preview"
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.17.3",
+    "esbuild": "^0.27.3",
     "lucide-react": "^0.555.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@tailwindcss/postcss": "^4.1.17",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.0",
-    "@types/react": "^19.2.5",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "^10.4.22",
     "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "jsdom": "^27.2.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17",
-    "vite": "npm:rolldown-vite@7.2.5",
-    "vitest": "^4.0.15"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+    "tailwindcss": "^4.1.17"
   }
 }

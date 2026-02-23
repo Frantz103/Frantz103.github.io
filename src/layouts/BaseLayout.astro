@@ -1,0 +1,45 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import BaseHead from '@/components/BaseHead.astro';
+import Nav from '@/components/Nav.astro';
+import Footer from '@/components/Footer.astro';
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonicalPath?: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description, ogImage, canonicalPath, noindex, jsonLd } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      canonicalPath={canonicalPath}
+      noindex={noindex}
+      jsonLd={jsonLd}
+    />
+    <ViewTransitions />
+  </head>
+  <body
+    class="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-indigo-100 selection:text-indigo-900"
+  >
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:p-4 focus:bg-white focus:text-indigo-600">
+      Skip to content
+    </a>
+    <Nav currentPath={Astro.url.pathname} transition:persist />
+    <main id="main-content" class="animate-fade-in" transition:animate="fade">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,12 @@
+---
+import NavIsland from './NavIsland.tsx';
+import { NAV_LINKS } from '@/data/site';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+---
+
+<NavIsland client:load navLinks={NAV_LINKS} currentPath={currentPath} />

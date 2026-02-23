@@ -4,106 +4,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Python-based static portfolio website generator that assembles HTML pages from modular components. It's hosted on GitHub Pages and uses a template-driven approach where content, headers, and footers are combined through Python scripts to generate final HTML pages.
+Personal website for Frantz Augustin — research, writing, and creative work. Built with **Astro 5.x** (static site generation), deployed from `docs/` to both GitHub Pages and Netlify.
 
-## Build System
+## Commands
 
-### Generate All Pages
 ```bash
-python3 build.py
-```
-This is the primary build command. It reads `config.yaml`, processes templates from `templates/`, combines them with content from `content/`, headers from `headers/`, and footers from `footers/` to generate HTML pages in the root directory.
-
-### Generate Blog Posts
-```bash
-python3 build_blog.py
-```
-Converts Markdown files from `markdowns/` to HTML blog posts in `blogs/`. Expects YAML front matter with `title` and `summary` fields in each Markdown file.
-
-### Local Development Server
-```bash
-python3 -m http.server
-```
-Run in project root to test locally at http://localhost:8000
-
-### Dependencies
-```bash
-pip install PyYAML markdown beautifulsoup4
+npm run dev       # Start dev server
+npm run build     # Build to docs/ and verify artifacts
+npm run preview   # Preview production build
+npm run lint      # Run ESLint
 ```
 
 ## Architecture
 
-### Template System
-The build process uses a placeholder replacement strategy:
-- `page_template.html` - Base template for standard pages
-- `blog_template.html` - Base template for blog posts
-- Placeholders like `{{title}}`, `{{description}}`, `{{header}}`, `{{footer}}`, `{{body}}` are replaced during build
+### Stack
+- **Astro 5.x** — static site generator with file-based routing
+- **React** — used only for 2 interactive islands (`NavIsland.tsx`, `ShareButton.tsx`)
+- **Tailwind CSS v4** — via PostCSS (no `@astrojs/tailwind` — incompatible with v4)
+- **Content Collections** — essays and field notes stored as Markdown with Zod schemas
 
-### Directory Structure
-- `templates/` - HTML template files with placeholder variables
-- `content/` - Page body content (named as `{page}_content.html`)
-- `headers/` - Header sections (page-specific headers use `{page}_header.html` naming)
-- `footers/` - Footer sections (shared across pages)
-- `markdowns/` - Markdown source files for blog posts with YAML front matter
-- `blogs/` - Generated HTML blog posts
-- Root directory - Final generated HTML pages served by GitHub Pages
+### Key Directories
+- `src/pages/` — file-based routing (each `.astro` file = one page)
+- `src/layouts/` — `BaseLayout.astro` (shell) + `EssayLayout.astro` (article chrome)
+- `src/components/` — Astro components (static) + React islands (interactive)
+- `src/content/` — Markdown content collections (essays, field-notes)
+- `src/data/` — TypeScript data files (site config, research interests, social links, creative cards)
+- `src/styles/` — `global.css` with Tailwind imports and custom animations
+- `src/assets/` — Images processed by Astro's `<Image>` component
+- `public/` — Static assets served as-is (favicon, homepage.jpg, robots.txt, CNAME)
+- `docs/` — Build output (do not edit directly)
 
-### Configuration
-`config.yaml` maps HTML filenames to their metadata (title, description, robots meta). Each page entry defines the attributes that will be injected into the template during build.
+### Content Collections
+- `src/content/essays/` — Markdown essays with frontmatter: title, date, excerpt, slug
+- `src/content/field-notes/` — Field notes with frontmatter: title, lastUpdated, quote
+- Schema defined in `src/content.config.ts`
 
-### Build Logic (build.py)
-1. Loads `config.yaml` to get page definitions
-2. For each page, checks for page-specific header (`{page}_header.html`), falls back to `header.html`
-3. Selects appropriate template (blog_template for blog pages, page_template for others)
-4. Replaces placeholders in template with values from config
-5. Loads content from `content/{page}_content.html`
-6. Assembles final HTML: template + header + content + footer
-7. Writes output to root directory
+### Key Patterns
+- **Islands architecture**: Only `NavIsland.tsx` (`client:load`) and `ShareButton.tsx` (`client:visible`) ship JS to the browser
+- **Inline SVG**: Astro components use inline SVG paths instead of icon libraries
+- **`lucide-react`** is only imported inside React island components
+- **Trailing slashes**: All internal links end with `/` (`trailingSlash: 'always'` in config)
+- **Fonts**: Google Fonts loaded via `<link>` in `BaseHead.astro` (Golos Text + Playfair Display)
 
-### Build Logic (build_blog.py)
-1. Scans `markdowns/` for `.md` files
-2. Parses YAML front matter for metadata (title, summary)
-3. Converts Markdown body to HTML using `markdown` library
-4. Injects into `blog_template.html`
-5. Writes to `blogs/` directory
+### Deployment
+- `outDir: 'docs'` for GitHub Pages compatibility
+- Netlify reads `netlify.toml` (publish: docs)
+- Sitemap generated at `/sitemap-index.xml` via `@astrojs/sitemap`
+- RSS feed at `/rss.xml`
+- Contact form uses Netlify Forms (`data-netlify="true"` on static HTML)
 
-## Utility Scripts
+## Adding Content
 
-### config.py
-Reverse-engineers existing HTML pages to generate default `config.yaml` entries. Useful when adding new pages or regenerating config.
+### New Essay
+1. Create `src/content/essays/{slug}.md` with frontmatter: title, date, excerpt, slug
+2. Build — the essay auto-appears on `/writing/` and gets its own page at `/writing/{slug}/`
 
-### create_dirs.py
-Bootstraps the directory structure for new projects (`headers/`, `footers/`, `content/`, `templates/`, `markdowns/`, `blogs/`).
-
-### setup.py
-Helper script to migrate existing HTML files to content directory with `_content.html` suffix.
-
-### dissect.py
-Extracts header, body, and footer sections from existing monolithic HTML files (useful for breaking down legacy pages).
-
-## Adding New Pages
-
-1. Create content file in `content/{pagename}_content.html`
-2. Add page entry to `config.yaml` with title, description, robots metadata
-3. (Optional) Create page-specific header in `headers/{pagename}_header.html`
-4. Run `python3 build.py` to generate the page
-
-## Adding New Blog Posts
-
-1. Create Markdown file in `markdowns/{slug}.md` with YAML front matter:
-```markdown
----
-title: "Post Title"
-summary: "Brief description"
----
-Content here...
-```
-2. Run `python3 build_blog.py` to generate HTML in `blogs/`
-
-## Key Conventions
-
-- Content files must follow the naming pattern: `{page}_content.html` for a page called `{page}.html`
-- Page-specific headers override the general header when named `{page}_header.html`
-- The build scripts include debug print statements for troubleshooting placeholder replacement
-- All generated pages are written to the root directory for GitHub Pages compatibility
-- The site uses custom CSS in `style.css` and JavaScript in `js/` directory for navigation and interactions
+### New Page
+1. Create `src/pages/{name}.astro`
+2. Import and use `BaseLayout` as the wrapper
+3. Add nav link in `src/data/site.ts` if needed

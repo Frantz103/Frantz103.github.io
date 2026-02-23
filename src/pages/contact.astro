@@ -1,0 +1,36 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SocialLink from '@/components/SocialLink.astro';
+import ContactForm from '@/components/ContactForm.astro';
+import { socialLinks } from '@/data/social-links';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Open for academic collaborations, research discussions, or a thoughtful chat about AI, meaning, and creative research."
+>
+  <div class="pt-32 pb-20 px-6 max-w-6xl mx-auto min-h-[80vh]">
+    <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
+      <div class="text-left">
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-neutral-900 mb-6">
+          Let's Connect.
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl">
+          Open for academic collaborations, research discussions, or a thoughtful chat about AI,
+          meaning, and creative research.
+        </p>
+
+        <div class="mt-10 space-y-6">
+          <div>
+            <p class="text-sm uppercase tracking-widest text-neutral-400 mb-4">Socials</p>
+            <div class="flex flex-wrap gap-6">
+              {socialLinks.map((link) => <SocialLink icon={link.icon} label={link.label} href={link.href} />)}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ContactForm />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,7 +1,18 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const requiredFiles = ['docs/index.html', 'docs/contact-success.html', 'docs/_redirects'];
+const requiredFiles = [
+  'docs/index.html',
+  'docs/writing/index.html',
+  'docs/creative/index.html',
+  'docs/field-notes/index.html',
+  'docs/about/index.html',
+  'docs/contact/index.html',
+  'docs/contact-success/index.html',
+  'docs/404.html',
+  'docs/sitemap-index.xml',
+  'docs/rss.xml',
+];
 
 const ensureFileExists = async (relativePath) => {
   const fullPath = path.resolve(process.cwd(), relativePath);
@@ -15,26 +26,8 @@ const ensureFileExists = async (relativePath) => {
   }
 };
 
-const ensureAssetBundle = async () => {
-  const assetsDir = path.resolve(process.cwd(), 'docs/assets');
-  let files;
-  try {
-    files = await fs.readdir(assetsDir);
-  } catch {
-    throw new Error('docs/assets directory is missing.');
-  }
-
-  const hasCss = files.some((file) => file.endsWith('.css'));
-  const hasJs = files.some((file) => file.endsWith('.js'));
-
-  if (!hasCss || !hasJs) {
-    throw new Error('docs/assets must contain at least one CSS and one JS file.');
-  }
-};
-
 const run = async () => {
   await Promise.all(requiredFiles.map(ensureFileExists));
-  await ensureAssetBundle();
   console.log('Docs integrity check passed.');
 };
 
