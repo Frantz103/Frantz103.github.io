@@ -34,14 +34,5 @@ const svgPaths: Record<string, string> = {
     />
   </div>
   <h3 class="text-xl font-serif font-semibold mb-4 text-neutral-800">{interest.title}</h3>
-  <ul class="space-y-3">
-    {
-      interest.points.map((point) => (
-        <li class="text-sm text-neutral-600 leading-relaxed flex items-start gap-2">
-          <span class="mt-1.5 w-1.5 h-1.5 bg-neutral-300 rounded-full flex-shrink-0 group-hover:bg-indigo-400 transition-colors" />
-          {point}
-        </li>
-      ))
-    }
-  </ul>
+  <p class="text-sm text-neutral-600 leading-relaxed">{interest.description}</p>
 </div>
