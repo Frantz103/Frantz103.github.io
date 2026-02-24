@@ -34,6 +34,16 @@ export const projects: Project[] = [
     tier: 'featured',
   },
   {
+    title: 'AI Programming Architecture',
+    date: '2025',
+    oneLiner: 'Plain English as source code, intent separated from execution',
+    description:
+      'A series of 7 original architecture documents proposing a new approach to building software with AI — where natural language serves as the actual source code, intent is kept strictly separate from execution, and developers define what a system should do while machines handle how. Includes a working proof of concept built on the same principles.',
+    status: 'active',
+    stack: ['Architecture', 'AI-Assisted Development', 'Natural Language', 'System Design'],
+    tier: 'featured',
+  },
+  {
     title: 'Image Captioning for Accessibility',
     date: '2024',
     oneLiner: 'Evaluating AI captions against POUR accessibility principles',

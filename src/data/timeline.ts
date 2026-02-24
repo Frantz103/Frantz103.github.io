@@ -264,6 +264,13 @@ export const timelineEvents: TimelineEvent[] = [
       'Designed an AI accessibility agent that audits content against POUR principles. Full MVP spec with Next.js, FastAPI, GPT-4/Claude, and PGVector — bridging years of accessibility research into a product.',
   },
   {
+    year: '2025',
+    title: 'AI Programming Architecture',
+    icon: 'blocks',
+    description:
+      'Wrote 7 original architecture documents proposing a new way to build software with AI — where plain English serves as the actual source code, intent is kept separate from execution, and humans define what a system should do while machines handle how. Built a working proof of concept.',
+  },
+  {
     year: '2026',
     title: 'DATA System',
     icon: 'blocks',
