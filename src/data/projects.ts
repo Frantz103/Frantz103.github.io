@@ -59,11 +59,11 @@ export const projects: Project[] = [
     tier: 'featured',
   },
   {
-    title: 'Memorization-Generalization Spectrum',
+    title: 'Memorization-Generalization Research',
     date: '2024',
     oneLiner: 'A Four Anchor framework for quantifying how models learn',
     description:
-      'A novel experimental framework that positions any ML model on the spectrum between memorization and generalization. Uses four deliberately constructed anchor models — degenerate, underfit, overfit, and collapsed — to produce a composite metric revealing how a model learns, not just how well. Grounded in work by Arpit, Zhang, Carlini, and Power et al. on grokking.',
+      'An experimental framework that positions any ML model between memorization and generalization. Uses four deliberately constructed anchor models — degenerate, underfit, overfit, and collapsed — to produce a composite metric revealing how a model learns, not just how well. Grounded in work by Arpit, Zhang, Carlini, and Power et al. on grokking.',
     status: 'in-progress',
     stack: ['Python', 'ML Theory', 'PyTorch', 'Experimental Design'],
     tier: 'featured',
