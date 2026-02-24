@@ -93,7 +93,7 @@ export const timelineEvents: TimelineEvent[] = [
     title: 'GPT-4 & LLM API Experiments',
     icon: 'code',
     description:
-      'Paused the ML challenge to experiment with GPT-4 API access, ChatGPT Code Interpreter, and early plugin systems from OpenAI, Google (Bard), and Cohere.',
+      'Paused the ML challenge to experiment with GPT-4 API access and ChatGPT Code Interpreter. Also explored early LLM APIs from Google (Bard) and Cohere.',
   },
   {
     year: '2023',
