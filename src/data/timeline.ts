@@ -151,10 +151,10 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2024',
-    title: 'Memorization-Generalization Spectrum Research',
+    title: 'Memorization-Generalization Research',
     icon: 'search',
     description:
-      'Designed a novel Four Anchor experimental framework to quantify where any ML model sits on the spectrum between memorization and generalization — using degenerate, underfit, overfit, and collapsed models as reference points to produce a composite positioning metric.',
+      'Designed a Four Anchor experimental framework to quantify where any ML model sits between memorization and generalization — using degenerate, underfit, overfit, and collapsed models as reference points to produce a composite positioning metric.',
   },
   {
     year: '2025',
