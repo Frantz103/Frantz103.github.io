@@ -8,6 +8,7 @@ const essays = defineCollection({
     date: z.string(),
     excerpt: z.string(),
     slug: z.string(),
+    draft: z.boolean().optional(),
   }),
 });
 

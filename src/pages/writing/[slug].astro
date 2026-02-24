@@ -3,7 +3,8 @@ import EssayLayout from '@/layouts/EssayLayout.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const essays = await getCollection('essays');
+  const allEssays = await getCollection('essays');
+  const essays = allEssays.filter((e) => !e.data.draft);
   return essays.map((essay) => ({
     params: { slug: essay.data.slug },
     props: { essay },

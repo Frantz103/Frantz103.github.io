@@ -6,7 +6,8 @@ import { researchInterests } from '@/data/research-interests';
 import { technicalWriting } from '@/data/technical-writing';
 import { getCollection } from 'astro:content';
 
-const essays = await getCollection('essays');
+const allEssays = await getCollection('essays');
+const essays = allEssays.filter((e) => !e.data.draft);
 essays.sort((a, b) => (a.data.date > b.data.date ? -1 : 1));
 ---
 
