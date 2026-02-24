@@ -100,7 +100,7 @@ export const timelineEvents: TimelineEvent[] = [
     title: '100 Days of ML — Medium Blog Post',
     icon: 'pen',
     description:
-      'Published a detailed account of the entire 100 Days of ML journey on Medium — documenting what worked, what didn\'t, and what changed along the way.',
+      'Published a detailed account of the entire 100 Days of ML journey on Medium.',
     links: [
       {
         label: 'Medium',
