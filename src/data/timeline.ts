@@ -34,19 +34,6 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2017',
-    title: 'The Case for AI in SEO',
-    icon: 'pen',
-    description:
-      'Published an early argument for why SEO specialists should make the jump to AI — recognizing that Google was already using machine learning and neural networks to reshape search.',
-    links: [
-      {
-        label: 'LinkedIn post',
-        href: 'https://www.linkedin.com/posts/frantz103_machine-learning-neural-networks-the-real-activity-6268074727479218176-nge8',
-      },
-    ],
-  },
-  {
     year: '2018',
     title: 'Generative Art Program',
     icon: 'code',
@@ -110,32 +97,6 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2023',
-    title: 'Cat/Dogs Classifier',
-    icon: 'lab',
-    description:
-      'First binary classifier — a FastAI experiment distinguishing cats from dogs.',
-    links: [
-      {
-        label: 'HF Space',
-        href: 'https://huggingface.co/spaces/Frantz103/Cat_Dogs_classifier',
-      },
-    ],
-  },
-  {
-    year: '2023',
-    title: 'Dog/Cat Multi-Classifier',
-    icon: 'lab',
-    description:
-      'Custom ResNet50 trained on Oxford-IIIT Pets dataset for 37-breed classification.',
-    links: [
-      {
-        label: 'HF Space',
-        href: 'https://huggingface.co/spaces/Frantz103/Dog_Cat_multi_classifier',
-      },
-    ],
-  },
-  {
-    year: '2023',
     title: '100 Days of ML — Medium Blog Post',
     icon: 'pen',
     description:
@@ -196,19 +157,6 @@ export const timelineEvents: TimelineEvent[] = [
       'Designed a novel Four Anchor experimental framework to quantify where any ML model sits on the spectrum between memorization and generalization — using degenerate, underfit, overfit, and collapsed models as reference points to produce a composite positioning metric.',
   },
   {
-    year: '2024',
-    title: 'YT Audio Transcription',
-    icon: 'mic',
-    description:
-      'Whisper-based pipeline for transcribing YouTube audio.',
-    links: [
-      {
-        label: 'HF Space',
-        href: 'https://huggingface.co/spaces/Frantz103/YT_Audio_Transcription',
-      },
-    ],
-  },
-  {
     year: '2025',
     title: 'Concept-Driven Agent Architecture (CDAA)',
     icon: 'blocks',
@@ -234,13 +182,6 @@ export const timelineEvents: TimelineEvent[] = [
     icon: 'search',
     description:
       'Systematic evaluation of Qwen3-0.6B, Phi-3, and Gemma on structured reasoning tasks.',
-  },
-  {
-    year: '2025',
-    title: 'Google Cloud Certificate',
-    icon: 'spark',
-    description:
-      'Earned Google Cloud certification — formalizing cloud infrastructure knowledge for ML deployment and data pipeline work.',
   },
   {
     year: '2025',
