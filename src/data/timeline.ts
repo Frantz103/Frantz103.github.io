@@ -54,7 +54,7 @@ export const timelineEvents: TimelineEvent[] = [
       'Published a piece on how RankBrain, Google Lens, and voice search were signaling the end of traditional SEO — arguing that machine learning was already reshaping how search worked.',
   },
   {
-    year: '2019',
+    year: '2023',
     title: 'Juno iPad Python Notebooks',
     icon: 'code',
     description:
