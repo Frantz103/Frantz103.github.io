@@ -71,30 +71,6 @@ export const projects: Project[] = [
     tier: 'experiment',
   },
 
-  // Experiments
-  {
-    title: 'Dog/Cat Multi-Classifier',
-    date: '2024',
-    oneLiner: 'Custom ResNet50 on Oxford-IIIT Pets dataset',
-    description:
-      'A multi-class image classifier built on ResNet50 architecture, trained on the Oxford-IIIT Pets dataset to distinguish between 37 breeds of cats and dogs.',
-    status: 'completed',
-    stack: ['Python', 'PyTorch', 'ResNet50', 'HuggingFace Spaces'],
-    url: 'https://huggingface.co/spaces/Frantz103/Dog_Cat_multi_classifier',
-    tier: 'experiment',
-  },
-  {
-    title: 'YT Audio Transcription',
-    date: '2024',
-    oneLiner: 'Whisper-based audio transcription pipeline',
-    description:
-      'A Whisper-powered pipeline for transcribing audio from YouTube videos, built as an experiment in speech-to-text workflows.',
-    status: 'completed',
-    stack: ['Python', 'Whisper', 'Gradio', 'HuggingFace Spaces'],
-    url: 'https://huggingface.co/spaces/Frantz103/YT_Audio_Transcription',
-    tier: 'experiment',
-  },
-
   // Notebooks
   {
     title: 'HuggingFace Profile',
