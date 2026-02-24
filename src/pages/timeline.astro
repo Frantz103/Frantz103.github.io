@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { timelineEvents } from '@/data/timeline';
+import type { TimelineEvent } from '@/data/timeline';
 
-const grouped = timelineEvents.reduce<Record<string, typeof timelineEvents>>(
+const grouped = timelineEvents.reduce<Record<string, TimelineEvent[]>>(
   (acc, event) => {
     (acc[event.year] ??= []).push(event);
     return acc;
@@ -13,6 +14,18 @@ const grouped = timelineEvents.reduce<Record<string, typeof timelineEvents>>(
 const years = Object.keys(grouped).sort();
 const firstYear = years[0];
 const currentYear = new Date().getFullYear();
+
+const iconPaths: Record<TimelineEvent['icon'], string> = {
+  spark: 'M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z',
+  brain: 'M12 2a7 7 0 0 0-4.6 12.3A4 4 0 0 0 8 18v2h8v-2a4 4 0 0 0 .6-3.7A7 7 0 0 0 12 2zM9 22h6',
+  pen: 'M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z',
+  code: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+  lab: 'M9 3h6M12 3v7.4a2 2 0 0 0 .4 1.2l5.1 6.8a2 2 0 0 1-1.6 3.2H8.1a2 2 0 0 1-1.6-3.2l5.1-6.8a2 2 0 0 0 .4-1.2V3',
+  eye: 'M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z',
+  mic: 'M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2M12 19v3',
+  blocks: 'M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z M3.3 7l8.7 5 8.7-5M12 22V12',
+  search: 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.35-4.35',
+};
 ---
 
 <BaseLayout
@@ -29,70 +42,103 @@ const currentYear = new Date().getFullYear();
       </p>
     </div>
 
+    <!-- Timeline -->
     <div class="relative">
+      {/* Continuous vertical line */}
+      <div class="absolute left-5 md:left-[184px] top-0 bottom-0 w-px bg-gradient-to-b from-neutral-200 via-neutral-300 to-neutral-200" />
+
       {years.map((year, yi) => (
-        <div class="relative grid grid-cols-1 md:grid-cols-[120px_1fr] gap-6 md:gap-10 mb-16 last:mb-0">
-          {/* Year label */}
-          <div class="md:sticky md:top-32 self-start">
-            <span class="text-3xl md:text-4xl font-serif font-bold text-neutral-300">
-              {year}
-            </span>
+        <div class="relative mb-12 last:mb-0">
+          {/* Year marker */}
+          <div class="relative flex items-center mb-8">
+            <div class="hidden md:block w-40 text-right pr-8">
+              <span class="text-3xl font-serif font-bold text-neutral-900">
+                {year}
+              </span>
+            </div>
+            <div class="relative z-10 w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center shadow-md shadow-indigo-200">
+              <span class="text-xs font-bold text-white md:hidden">{year.slice(2)}</span>
+              <svg class="hidden md:block w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            </div>
+            <div class="ml-4 md:hidden">
+              <span class="text-2xl font-serif font-bold text-neutral-900">{year}</span>
+            </div>
+            <div class="hidden md:block ml-4 h-px bg-neutral-200 flex-grow" />
           </div>
 
-          {/* Events column */}
-          <div class="relative pl-8 md:pl-0">
-            {/* Vertical line — mobile only */}
-            <div class="absolute left-0 top-2 bottom-2 w-px bg-neutral-200 md:hidden" />
+          {/* Events */}
+          <div class="space-y-6 pl-14 md:pl-0 md:ml-[200px]">
+            {grouped[year].map((event) => (
+              <div class="relative group">
+                {/* Connector line from vertical line to card */}
+                <div class="hidden md:block absolute -left-[16px] top-5 w-4 h-px bg-neutral-200 group-hover:bg-indigo-300 transition-colors" />
 
-            <div class="space-y-6">
-              {grouped[year].map((event, ei) => (
-                <div class="relative">
-                  {/* Dot — mobile only */}
-                  <div class="absolute -left-8 top-3 w-2.5 h-2.5 rounded-full bg-neutral-300 ring-4 ring-neutral-50 md:hidden" />
-
-                  <div class="bg-white border border-neutral-200 rounded-xl p-6 hover:border-indigo-200 transition-colors">
-                    <h3 class="text-lg font-bold text-neutral-900 mb-2">
-                      {event.title}
-                    </h3>
-                    <p class="text-neutral-600 text-sm leading-relaxed">
-                      {event.description}
-                    </p>
-
-                    {event.links && event.links.length > 0 && (
-                      <div class="flex flex-wrap gap-3 mt-4">
-                        {event.links.map((link) => (
-                          <a
-                            href={link.href}
-                            target="_blank"
-                            rel="noreferrer"
-                            class="inline-flex items-center gap-1.5 text-xs font-medium text-neutral-500 hover:text-indigo-600 transition-colors"
-                          >
-                            {link.label}
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12"
-                              height="12"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            >
-                              <path d="M7 7h10v10" />
-                              <path d="M7 17 17 7" />
-                            </svg>
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                  </div>
+                {/* Event node on the vertical line */}
+                <div class="absolute -left-[30px] md:-left-[24px] top-2.5 z-10 w-6 h-6 rounded-full bg-white border-2 border-neutral-300 group-hover:border-indigo-400 flex items-center justify-center transition-colors">
+                  <svg class="w-3 h-3 text-neutral-400 group-hover:text-indigo-500 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d={iconPaths[event.icon]} />
+                  </svg>
                 </div>
-              ))}
-            </div>
+
+                {/* Card */}
+                <div class="bg-white border border-neutral-200 rounded-xl p-6 group-hover:border-indigo-200 group-hover:shadow-sm transition-all">
+                  <h3 class="text-lg font-bold text-neutral-900 mb-2">
+                    {event.title}
+                  </h3>
+                  <p class="text-neutral-600 text-sm leading-relaxed">
+                    {event.description}
+                  </p>
+
+                  {event.links && event.links.length > 0 && (
+                    <div class="flex flex-wrap gap-3 mt-4">
+                      {event.links.map((link) => (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          class="inline-flex items-center gap-1.5 text-xs font-medium text-neutral-500 hover:text-indigo-600 transition-colors"
+                        >
+                          {link.label}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                          </svg>
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ))}
+
+      {/* Terminal node */}
+      <div class="relative flex items-center mt-8">
+        <div class="hidden md:block w-40 text-right pr-8">
+          <span class="text-sm font-bold uppercase tracking-widest text-neutral-400">Now</span>
+        </div>
+        <div class="relative z-10 w-10 h-10 rounded-full bg-neutral-900 flex items-center justify-center shadow-md">
+          <div class="w-2.5 h-2.5 rounded-full bg-white animate-pulse" />
+        </div>
+        <div class="ml-4 md:hidden">
+          <span class="text-sm font-bold uppercase tracking-widest text-neutral-400">Now</span>
+        </div>
+      </div>
     </div>
 
     <div class="mt-16 pt-8 border-t border-neutral-100 text-center">

@@ -2,6 +2,7 @@ export interface TimelineEvent {
   year: string;
   title: string;
   description: string;
+  icon: 'spark' | 'brain' | 'pen' | 'code' | 'lab' | 'eye' | 'mic' | 'blocks' | 'search';
   links?: { label: string; href: string }[];
 }
 
@@ -9,6 +10,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2015',
     title: 'First MNIST Experiment',
+    icon: 'spark',
     description:
       'Wrote a first MNIST classifier — the "hello world" of machine learning. A self-directed leap back into code after years in content marketing, driven by a persistent love of programming and curiosity about deep learning.',
     links: [
@@ -21,6 +23,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2017',
     title: 'AI Will Make Coding Easy',
+    icon: 'brain',
     description:
       'Predicted that AI would soon make coding accessible to everyone — years before GPT or Copilot existed. An early conviction that shaped the direction of everything that followed.',
     links: [
@@ -33,6 +36,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2017',
     title: 'The Case for AI in SEO',
+    icon: 'pen',
     description:
       'Published an early argument for why SEO specialists should make the jump to AI — recognizing that Google was already using machine learning and neural networks to reshape search.',
     links: [
@@ -45,6 +49,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2018',
     title: 'Generative Art Program',
+    icon: 'code',
     description:
       'Built a program that creates digital paintings and illustrations autonomously — drawing at random or transforming input images into digital art. Early exploration of computational creativity.',
     links: [
@@ -57,12 +62,14 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2024',
     title: '100 Days of ML & FastAI',
+    icon: 'brain',
     description:
       'Began structured ML study. Trained first image classifiers using FastAI and deployed to HuggingFace Spaces.',
   },
   {
     year: '2024',
     title: 'Cat/Dogs Classifier',
+    icon: 'lab',
     description:
       'First binary classifier — a FastAI experiment distinguishing cats from dogs.',
     links: [
@@ -75,6 +82,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2024',
     title: 'Dog/Cat Multi-Classifier',
+    icon: 'lab',
     description:
       'Custom ResNet50 trained on Oxford-IIIT Pets dataset for 37-breed classification.',
     links: [
@@ -87,6 +95,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2024',
     title: 'CaptionQuest',
+    icon: 'eye',
     description:
       'Built a Gradio app comparing 4 captioning models side-by-side, revealing systematic differences in machine perception.',
     links: [
@@ -99,6 +108,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2024',
     title: 'Image Captioning for Accessibility',
+    icon: 'eye',
     description:
       'Research project evaluating AI captions against POUR principles, replicating experiments from Leotta et al.',
     links: [
@@ -119,6 +129,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2024',
     title: 'YT Audio Transcription',
+    icon: 'mic',
     description:
       'Whisper-based pipeline for transcribing YouTube audio.',
     links: [
@@ -131,12 +142,14 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2025',
     title: 'Concept-Driven Agent Architecture (CDAA)',
+    icon: 'blocks',
     description:
       'Developed an architectural framework for AI agents grounded in explicit conceptual reasoning.',
   },
   {
     year: '2025',
     title: 'Qwen3-VL MoE Computational Aesthetics',
+    icon: 'eye',
     description:
       'Evaluated vision-language MoE models on aesthetic judgment tasks.',
     links: [
@@ -149,6 +162,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: '2025',
     title: 'Local LLM Comparative Study',
+    icon: 'search',
     description:
       'Systematic evaluation of Qwen3-0.6B, Phi-3, and Gemma on structured reasoning tasks.',
   },
