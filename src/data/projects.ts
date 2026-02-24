@@ -58,6 +58,26 @@ export const projects: Project[] = [
     stack: ['Python', 'ML Theory', 'PyTorch', 'Experimental Design'],
     tier: 'featured',
   },
+  {
+    title: 'Digital Mirror',
+    date: '2025',
+    oneLiner: 'Personal knowledge graph from a decade of data',
+    description:
+      'A personal data indexing and analysis system that processes 509K+ objects across iCloud, notes, and filesystem exports. Includes 6,360 analyzed conversations, a 24K-node knowledge graph, and a Gemma-powered NLP annotation pipeline for topic modeling and entity extraction.',
+    status: 'active',
+    stack: ['Python', 'Gemma', 'NLP', 'Knowledge Graphs', 'BM25'],
+    tier: 'featured',
+  },
+  {
+    title: 'AccessCopilot',
+    date: '2025',
+    oneLiner: 'AI accessibility agent auditing against POUR principles',
+    description:
+      'An AI-powered accessibility agent designed to audit digital content against POUR principles. Full MVP specification with Next.js frontend, FastAPI backend, GPT-4/Claude for analysis, and PGVector for semantic search — bridging years of CPACC certification and accessibility research into a deployable product.',
+    status: 'in-progress',
+    stack: ['Next.js', 'FastAPI', 'GPT-4', 'Claude', 'PGVector', 'Accessibility'],
+    tier: 'featured',
+  },
 
   {
     title: 'Qwen3-VL MoE Computational Aesthetics Evaluation',

@@ -254,7 +254,14 @@ export const timelineEvents: TimelineEvent[] = [
     title: 'Project Digital Mirror',
     icon: 'search',
     description:
-      'Built a personal data indexing and analysis system. 509K+ objects indexed across iCloud, local filesystem, and notes exports. NLP annotation pipeline using Gemma for topic modeling and entity extraction.',
+      'Built a personal data indexing and analysis system. 509K+ objects indexed, 6,360 conversations analyzed, 24K-node knowledge graph constructed. NLP annotation pipeline using Gemma for topic modeling and entity extraction.',
+  },
+  {
+    year: '2025',
+    title: 'AccessCopilot',
+    icon: 'eye',
+    description:
+      'Designed an AI accessibility agent that audits content against POUR principles. Full MVP spec with Next.js, FastAPI, GPT-4/Claude, and PGVector — bridging years of accessibility research into a product.',
   },
   {
     year: '2026',
