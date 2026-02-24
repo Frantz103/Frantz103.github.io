@@ -61,7 +61,7 @@ export const timelineEvents: TimelineEvent[] = [
       'Ran Python notebooks on iPad using Juno — web crawling, SEO auditing, and data analysis scripts. An early move toward mobile-first development and portable computing workflows.',
   },
   {
-    year: '2020',
+    year: '2023',
     title: 'IAAP CPACC Certification',
     icon: 'spark',
     description:
