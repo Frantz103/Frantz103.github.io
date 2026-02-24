@@ -60,14 +60,35 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2024',
-    title: '100 Days of ML & FastAI',
+    year: '2022',
+    title: '100 Days of ML Challenge',
     icon: 'brain',
     description:
-      'Began structured ML study. Trained first image classifiers using FastAI and deployed to HuggingFace Spaces.',
+      'Launched a structured 100-day ML challenge on Dec 18, 2022. Used ChatGPT from Day 1 for study plans and code guidance — covering GANs, neural style transfer, PyTorch, and ML fundamentals.',
   },
   {
-    year: '2024',
+    year: '2023',
+    title: 'FastAI Course Completed',
+    icon: 'brain',
+    description:
+      'Completed "Practical Deep Learning for Coders" by FastAI. Built a bird image classifier after the first hour of lecture. Top-down learning paradigm that unlocked rapid prototyping.',
+  },
+  {
+    year: '2023',
+    title: 'WikiArt Art Classifier',
+    icon: 'lab',
+    description:
+      'Attempted training an image classifier on 80K+ art images (33GB) to identify genre, style, and artist. Hit compute and memory limits on Google Colab — pivoted to simpler projects but gained hard lessons in large-scale data handling.',
+  },
+  {
+    year: '2023',
+    title: 'GPT-4 & LLM API Experiments',
+    icon: 'code',
+    description:
+      'Paused the ML challenge to experiment with GPT-4 API access, ChatGPT Code Interpreter, and early plugin systems from OpenAI, Google (Bard), and Cohere.',
+  },
+  {
+    year: '2023',
     title: 'Cat/Dogs Classifier',
     icon: 'lab',
     description:
@@ -80,7 +101,7 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2024',
+    year: '2023',
     title: 'Dog/Cat Multi-Classifier',
     icon: 'lab',
     description:
@@ -93,7 +114,20 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2024',
+    year: '2023',
+    title: '100 Days of ML — Medium Blog Post',
+    icon: 'pen',
+    description:
+      'Published a detailed account of the entire 100 Days of ML journey on Medium — documenting what worked, what didn\'t, and what changed along the way.',
+    links: [
+      {
+        label: 'Medium',
+        href: 'https://medium.com/@AugustinCaz/my-100-days-of-machine-learning-challenge-cd637083d55d',
+      },
+    ],
+  },
+  {
+    year: '2023',
     title: 'CaptionQuest',
     icon: 'eye',
     description:
@@ -106,7 +140,7 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
-    year: '2024',
+    year: '2023',
     title: 'Image Captioning for Accessibility',
     icon: 'eye',
     description:
@@ -125,6 +159,13 @@ export const timelineEvents: TimelineEvent[] = [
         href: 'https://colab.research.google.com/drive/13O9fOQhkIMRFOcKwTFR_JNXY0zKuqkLE?usp=sharing',
       },
     ],
+  },
+  {
+    year: '2023',
+    title: 'Synthetic Data Rottweiler Classifier',
+    icon: 'lab',
+    description:
+      'Used Midjourney-generated synthetic images to train a YOLO + ResNet50 ensemble for breed classification. Tackled imbalanced datasets, data augmentation, and weighted loss functions.',
   },
   {
     year: '2024',
@@ -165,5 +206,33 @@ export const timelineEvents: TimelineEvent[] = [
     icon: 'search',
     description:
       'Systematic evaluation of Qwen3-0.6B, Phi-3, and Gemma on structured reasoning tasks.',
+  },
+  {
+    year: '2025',
+    title: 'Google Cloud Certificate',
+    icon: 'spark',
+    description:
+      'Earned Google Cloud certification — formalizing cloud infrastructure knowledge for ML deployment and data pipeline work.',
+  },
+  {
+    year: '2025',
+    title: 'Thinking Machines Lab & Tinker',
+    icon: 'brain',
+    description:
+      'LLM fine-tuning project for personalized AI. Explored model adaptation, prompt engineering, and data preparation for custom language model behavior.',
+  },
+  {
+    year: '2025',
+    title: 'Project Digital Mirror',
+    icon: 'search',
+    description:
+      'Built a personal data indexing and analysis system. 509K+ objects indexed across iCloud, local filesystem, and notes exports. NLP annotation pipeline using Gemma for topic modeling and entity extraction.',
+  },
+  {
+    year: '2026',
+    title: 'DATA System',
+    icon: 'blocks',
+    description:
+      'Local-first personal memory system with 1.6TB indexed across 70+ chapter-driven specifications. BM25 search, LLM synthesis, MCP server, SwiftUI menu bar app, PII redaction, and Gemma-powered annotation pipeline — all running offline.',
   },
 ];
