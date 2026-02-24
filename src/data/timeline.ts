@@ -60,6 +60,27 @@ export const timelineEvents: TimelineEvent[] = [
     ],
   },
   {
+    year: '2019',
+    title: 'Traditional SEO is Dying',
+    icon: 'pen',
+    description:
+      'Published a piece on how RankBrain, Google Lens, and voice search were signaling the end of traditional SEO — arguing that machine learning was already reshaping how search worked.',
+  },
+  {
+    year: '2019',
+    title: 'Juno iPad Python Notebooks',
+    icon: 'code',
+    description:
+      'Ran Python notebooks on iPad using Juno — web crawling, SEO auditing, and data analysis scripts. An early move toward mobile-first development and portable computing workflows.',
+  },
+  {
+    year: '2020',
+    title: 'IAAP CPACC Certification',
+    icon: 'spark',
+    description:
+      'Earned the Certified Professional in Accessibility Core Competencies (CPACC) from IAAP — laying the foundation for all later research on AI-generated captions and POUR accessibility principles.',
+  },
+  {
     year: '2022',
     title: '100 Days of ML Challenge',
     icon: 'brain',
