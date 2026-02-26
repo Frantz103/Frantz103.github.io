@@ -2,7 +2,7 @@
 
 > Personal website of Frantz Augustin, an independent researcher and software developer based in San Diego. He builds AI systems and writes about how machines and humans make meaning — from agent architectures to image captioning for accessibility. His work spans cognitive science, computational aesthetics, and human computer interaction.
 
-Frantz has 6.5 years of software development experience (Python, TypeScript, Ruby on Rails) with academic foundations from Harvard Extension and MIT xPRO. He created the Concept-Driven Agent Architecture (CDAA) framework and publishes ML experiments on HuggingFace.
+Frantz has 6.5 years of software development experience (Python, TypeScript, Ruby on Rails) with academic foundations from Harvard Extension and MIT xPRO. He created a concept-driven architecture for AI agents and publishes ML experiments on HuggingFace.
 
 ## Research & Writing
 
@@ -13,7 +13,7 @@ Frantz has 6.5 years of software development experience (Python, TypeScript, Rub
 
 - [Projects & Experiments](https://frantzaugustin.com/projects/): AI research projects, HuggingFace Spaces, and ML experiments
 - [CaptionQuest](https://huggingface.co/spaces/Frantz103/CaptionQuest): Gradio app comparing AI captioning models side-by-side
-- [CDAA](https://frantzaugustin.com/projects/): Concept-Driven Agent Architecture framework for conceptually grounded AI agents
+- [Concept-Driven Architecture](https://frantzaugustin.com/projects/): A framework for more effective AI agents grounded in conceptual reasoning
 - [Image Captioning for Accessibility](https://github.com/Frantz103/image-caption-accessibility): Evaluating AI captions against POUR accessibility principles
 - [HuggingFace Profile](https://huggingface.co/Frantz103): Full collection of models, Spaces, and datasets
 

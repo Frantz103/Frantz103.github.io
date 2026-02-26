@@ -28,16 +28,22 @@ npm run lint      # Run ESLint
 - `src/layouts/` — `BaseLayout.astro` (shell) + `EssayLayout.astro` (article chrome)
 - `src/components/` — Astro components (static) + React islands (interactive)
 - `src/content/` — Markdown content collections (essays, field-notes)
-- `src/data/` — TypeScript data files (site config, research interests, social links, creative cards)
+- `src/data/` — TypeScript data files (site config, research interests, social links, creative cards, technical writing, timeline, projects)
 - `src/styles/` — `global.css` with Tailwind imports and custom animations
 - `src/assets/` — Images processed by Astro's `<Image>` component
 - `public/` — Static assets served as-is (favicon, homepage.jpg, robots.txt, CNAME)
 - `docs/` — Build output (do not edit directly)
 
 ### Content Collections
-- `src/content/essays/` — Markdown essays with frontmatter: title, date, excerpt, slug
+- `src/content/essays/` — Markdown essays with frontmatter: title, date, excerpt, slug, draft (optional boolean)
 - `src/content/field-notes/` — Field notes with frontmatter: title, lastUpdated, quote
 - Schema defined in `src/content.config.ts`
+- Essays with `draft: true` are filtered from `/writing/` listing and slug route generation — they exist in the repo but are not rendered on the site
+
+### Drafts Workspace
+- `drafts/` at project root is a symlink to the "Writing Drafts" Obsidian vault in iCloud
+- Contains `tasks.md` (writing checklist), `references.md` (index of published work), and `outlines/` folder
+- Gitignored — local-only, not committed to the repo
 
 ### Key Patterns
 - **Islands architecture**: Only `NavIsland.tsx` (`client:load`) and `ShareButton.tsx` (`client:visible`) ship JS to the browser
@@ -76,6 +82,7 @@ Add an object to the `timelineEvents` array in `src/data/timeline.ts`:
 {
   year: '2025',           // Events are grouped and sorted by year
   title: 'Project Name',
+  icon: 'code',           // One of: spark, brain, pen, code, lab, eye, mic, blocks, search
   description: 'One or two sentences about what was built or achieved.',
   links: [                // Optional — omit if no external links
     { label: 'GitHub', href: 'https://...' },
@@ -98,3 +105,14 @@ Delete the object from the `timelineEvents` array. If the event also exists in `
 **Data file**: `src/data/projects.ts`
 
 Each project has a `tier` field (`'featured'` | `'experiment'` | `'notebook'`) that controls which section it appears in on the projects page. The `links` field uses the same `{ label, href }` format as timeline events.
+
+### Writing Page (`/writing/`)
+The writing page displays three sections in this order:
+1. **Selected Essays** — from `src/content/essays/` (drafts filtered out)
+2. **Technical Writing & Analysis** — from `src/data/technical-writing.ts`
+3. **Research Interests** — from `src/data/research-interests.ts`
+
+### Style Guidelines
+- Avoid acronyms and internal jargon in public-facing titles and descriptions
+- Write in plain, accessible language — describe what things do, not what they're called
+- Don't use self-aggrandizing words like "novel" — prefer "original" or just describe the work
