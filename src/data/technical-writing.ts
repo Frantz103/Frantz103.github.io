@@ -13,9 +13,9 @@ export const technicalWriting: TechnicalWritingEntry[] = [
     status: 'published',
   },
   {
-    title: 'NeurIPS 2025 Synthesis: Key Themes and Takeaways',
+    title: 'NeurIPS 2025: What Stood Out',
     description:
-      'A structured synthesis of major themes from NeurIPS 2025, covering scaling laws, agent architectures, and emerging research directions.',
+      'A summary of the biggest themes from the NeurIPS 2025 conference — what researchers are focused on and where the field is heading.',
     status: 'forthcoming',
   },
   {
@@ -25,15 +25,15 @@ export const technicalWriting: TechnicalWritingEntry[] = [
     status: 'forthcoming',
   },
   {
-    title: 'Representation, Computation, and Inference',
+    title: 'How Representation Shapes What Models Can Learn',
     description:
-      'A technical exploration of how representation shapes what models can learn, compute, and infer — bridging cognitive science and ML.',
+      'An exploration of how the way data is represented determines what AI models can learn, reason about, and get wrong.',
     status: 'forthcoming',
   },
   {
-    title: 'Local LLM Comparative Study: Small Models, Structured Tasks',
+    title: 'Small Models, Structured Tasks',
     description:
-      'Systematic evaluation of local models (Qwen3-0.6B, Phi-3, Gemma) on structured reasoning tasks, with analysis of failure modes and practical thresholds.',
+      'Testing what small, locally-run AI models can actually handle — where they work, where they break, and what that tells us.',
     status: 'forthcoming',
   },
 ];
