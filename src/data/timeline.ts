@@ -158,7 +158,7 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     year: '2025',
-    title: 'Concept-Driven Agent Architecture (CDAA)',
+    title: 'Concept-Driven Architecture for AI Agents',
     icon: 'blocks',
     description:
       'Developed an architectural framework for AI agents grounded in explicit conceptual reasoning.',

@@ -24,11 +24,11 @@ export const projects: Project[] = [
     tier: 'featured',
   },
   {
-    title: 'Concept-Driven Agent Architecture (CDAA)',
+    title: 'Concept-Driven Architecture for AI Agents',
     date: '2025',
     oneLiner: 'A framework for conceptually grounded AI agents',
     description:
-      'CDAA is an architectural framework for building AI agents that reason through explicit conceptual structures rather than purely reactive behavior. It integrates structured knowledge representation with agentic workflows to produce more interpretable and controllable systems.',
+      'An architectural framework for building AI agents that reason through explicit conceptual structures rather than purely reactive behavior. It integrates structured knowledge representation with agentic workflows to produce more interpretable and controllable systems.',
     status: 'active',
     stack: ['Python', 'LLM Orchestration', 'Agent Architecture'],
     tier: 'featured',
