@@ -13,7 +13,7 @@ export const technicalWriting: TechnicalWritingEntry[] = [
     status: 'published',
   },
   {
-    title: 'NeurIPS 2025: What Stood Out',
+    title: 'Notes on NeurIPS 2025',
     description:
       'A summary of the biggest themes from the NeurIPS 2025 conference — what researchers are focused on and where the field is heading.',
     status: 'forthcoming',
