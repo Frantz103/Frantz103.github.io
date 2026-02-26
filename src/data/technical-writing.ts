@@ -19,9 +19,9 @@ export const technicalWriting: TechnicalWritingEntry[] = [
     status: 'forthcoming',
   },
   {
-    title: 'The Bitter Evolution: From Scaling Laws to Conceptual Architecture',
+    title: 'Bitter Evolution: From Scale to Structure in AI',
     description:
-      'An essay tracing the trajectory from Sutton\'s "Bitter Lesson" through current scaling debates to the case for concept-driven systems.',
+      'An essay tracing how AI research shifted from brute-force scaling to more structured, concept-driven approaches — and why that matters.',
     status: 'forthcoming',
   },
   {
