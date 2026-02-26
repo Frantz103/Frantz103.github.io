@@ -11,20 +11,20 @@ export const researchInterests: ResearchInterest[] = [
     icon: 'brain',
     iconColor: 'text-indigo-500',
     description:
-      'I developed a concept-driven architecture for AI agents grounded in explicit conceptual reasoning rather than purely reactive behavior. My work evaluates local models like Qwen3-0.6B for structured tasks and explores how human-AI collaboration can extend individual cognition without replacing it.',
+      'I build frameworks for AI agents that reason through concepts instead of just reacting. I also test small, locally-run models on structured tasks and study how working with AI can extend how we think without replacing it.',
   },
   {
     title: 'Machine Perception',
     icon: 'eye',
     iconColor: 'text-purple-500',
     description:
-      'My CaptionQuest app on HuggingFace compares how different captioning models describe the same image, revealing systematic differences in machine perception. I study how multimodal models can serve accessibility applications — evaluating AI-generated captions against POUR principles to understand where they help and where they fall short.',
+      'My CaptionQuest app compares how different AI models describe the same image, showing how machines see differently from each other. I study how these models can improve accessibility — testing whether AI-generated captions actually help people who need them.',
   },
   {
     title: 'Experimental Research',
     icon: 'cpu',
     iconColor: 'text-pink-500',
     description:
-      'I treat LLMs as simulation engines for behavioral modeling and run comparative evaluations across model families. My experiments include a custom ResNet50 classifier trained on Oxford-IIIT Pets, explorations of HuggingGPT-style orchestration, and systematic studies of how local models handle structured reasoning tasks.',
+      'I run hands-on experiments to understand how AI models behave — training image classifiers, comparing models head-to-head, and testing where small models succeed or fail on real tasks.',
   },
 ];
