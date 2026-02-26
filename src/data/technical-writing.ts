@@ -7,9 +7,9 @@ export interface TechnicalWritingEntry {
 
 export const technicalWriting: TechnicalWritingEntry[] = [
   {
-    title: 'Concept-Driven Architecture for AI Agents',
+    title: 'How to Build AI Agents That Reason',
     description:
-      'An architectural framework for building AI agents grounded in explicit conceptual reasoning.',
+      'A framework for building AI agents that think through concepts instead of just reacting to inputs.',
     status: 'published',
   },
   {
