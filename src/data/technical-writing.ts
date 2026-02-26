@@ -9,7 +9,7 @@ export const technicalWriting: TechnicalWritingEntry[] = [
   {
     title: 'Concept-Driven Architecture for AI Agents',
     description:
-      'Foundational document for CDAA — an architectural framework for building AI agents grounded in explicit conceptual reasoning.',
+      'An architectural framework for building AI agents grounded in explicit conceptual reasoning.',
     status: 'published',
   },
   {
