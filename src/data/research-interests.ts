@@ -11,7 +11,7 @@ export const researchInterests: ResearchInterest[] = [
     icon: 'brain',
     iconColor: 'text-indigo-500',
     description:
-      'I developed the Concept-Driven Agent Architecture (CDAA), a framework for building AI agents grounded in explicit conceptual reasoning rather than purely reactive behavior. My work evaluates local models like Qwen3-0.6B for structured tasks and explores how human-AI collaboration can extend individual cognition without replacing it.',
+      'I developed a concept-driven architecture for AI agents grounded in explicit conceptual reasoning rather than purely reactive behavior. My work evaluates local models like Qwen3-0.6B for structured tasks and explores how human-AI collaboration can extend individual cognition without replacing it.',
   },
   {
     title: 'Machine Perception',
