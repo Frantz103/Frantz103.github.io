@@ -1,0 +1,119 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { timelineEvents } from '@/data/timeline';
+import type { TimelineEvent } from '@/data/timeline';
+
+const grouped = timelineEvents.reduce<Record<string, TimelineEvent[]>>(
+  (acc, event) => {
+    (acc[event.year] ??= []).push(event);
+    return acc;
+  },
+  {},
+);
+
+const years = Object.keys(grouped).sort();
+const firstYear = years[0];
+const currentYear = new Date().getFullYear();
+
+const iconPaths: Record<TimelineEvent['icon'], string> = {
+  spark: 'M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z',
+  brain: 'M12 2a7 7 0 0 0-4.6 12.3A4 4 0 0 0 8 18v2h8v-2a4 4 0 0 0 .6-3.7A7 7 0 0 0 12 2zM9 22h6',
+  pen: 'M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z',
+  code: 'M16 18l6-6-6-6M8 6l-6 6 6 6',
+  lab: 'M9 3h6M12 3v7.4a2 2 0 0 0 .4 1.2l5.1 6.8a2 2 0 0 1-1.6 3.2H8.1a2 2 0 0 1-1.6-3.2l5.1-6.8a2 2 0 0 0 .4-1.2V3',
+  eye: 'M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z',
+  mic: 'M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2M12 19v3',
+  blocks: 'M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z M3.3 7l8.7 5 8.7-5M12 22V12',
+  search: 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.35-4.35',
+};
+---
+
+<BaseLayout
+  title="Learning Timeline"
+  description={`A chronological overview of Frantz Augustin's technical journey (${firstYear}–${currentYear}) — from generative art to agent architectures.`}
+>
+  <div class="pt-32 pb-20 px-6 max-w-3xl mx-auto">
+    <div class="mb-24 text-center">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-neutral-900 mb-6">
+        Learning Timeline
+      </h2>
+      <p class="text-lg text-neutral-600 max-w-xl mx-auto font-light">
+        Technical milestones, {firstYear}–{currentYear}.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative ml-5 md:ml-0">
+      {/* Vertical line */}
+      <div class="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-neutral-200" />
+
+      {years.map((year, yi) => (
+        <div class={yi > 0 ? 'mt-20' : ''}>
+          {/* Year marker */}
+          <div class="relative flex items-center mb-10">
+            <div class="relative z-10 -ml-3 md:ml-[23px] w-[22px] h-[22px] rounded-full bg-indigo-600 shadow-sm shadow-indigo-200" />
+            <span class="ml-6 md:ml-8 text-sm font-bold uppercase tracking-[0.2em] text-neutral-400">
+              {year}
+            </span>
+          </div>
+
+          {/* Events */}
+          <div class="ml-8 md:ml-24 space-y-10">
+            {grouped[year].map((event) => (
+              <div class="group relative">
+                {/* Icon node on the line */}
+                <div class="absolute -left-8 md:-left-24 top-0 flex items-start">
+                  <div class="relative z-10 -ml-[21px] md:ml-[18px] w-[18px] h-[18px] rounded-full bg-neutral-50 border border-neutral-200 group-hover:border-indigo-300 flex items-center justify-center transition-colors duration-300">
+                    <svg class="w-2.5 h-2.5 text-neutral-300 group-hover:text-indigo-400 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d={iconPaths[event.icon]} />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div>
+                  <h3 class="text-base font-bold text-neutral-900 mb-1.5 group-hover:text-indigo-900 transition-colors duration-300">
+                    {event.title}
+                  </h3>
+                  <p class="text-neutral-500 text-sm leading-relaxed font-light">
+                    {event.description}
+                  </p>
+
+                  {event.links && event.links.length > 0 && (
+                    <div class="flex flex-wrap gap-4 mt-3">
+                      {event.links.map((link) => (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          class="inline-flex items-center gap-1 text-xs text-neutral-400 hover:text-indigo-600 transition-colors"
+                        >
+                          {link.label}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                          </svg>
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {/* Terminal dot */}
+      <div class="relative mt-20">
+        <div class="relative z-10 -ml-1 md:ml-[27px] w-2.5 h-2.5 rounded-full bg-neutral-300" />
+      </div>
+    </div>
+
+    <div class="mt-20 text-center">
+      <p class="text-xs text-neutral-300 uppercase tracking-[0.2em]">
+        Technical work only
+      </p>
+    </div>
+  </div>
+</BaseLayout>

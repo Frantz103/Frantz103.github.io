@@ -7,7 +7,10 @@ import portrait from '@/assets/homepage.jpg';
 const focusAreas = [
   'Cognitive Science',
   'Human Computer Interaction',
-  'Machine Perception and Understanding',
+  'Machine Perception',
+  'Computational Aesthetics',
+  'Agent Architecture',
+  'Philosophy of Mind',
   'Local AI Systems',
 ];
 
@@ -18,10 +21,12 @@ const jsonLd = {
   url: SITE.url,
   jobTitle: 'Independent Researcher',
   description:
-    'Multidisciplinary creative and independent researcher exploring AI, cognitive science, and human computer interaction.',
+    'Independent researcher and software developer exploring AI, cognitive science, and computational aesthetics. Builder of AI systems, HuggingFace Spaces, and frameworks for more effective AI agents.',
   sameAs: [
     'https://www.linkedin.com/in/frantz103/',
     'https://github.com/Frantz103',
+    'https://huggingface.co/Frantz103',
+    'https://medium.com/@AugustinCaz',
     'https://frantzphotography.com',
     'https://www.threads.com/@augustincaz',
     'https://substack.com/@franzcode',
@@ -29,7 +34,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title="About" description="About Frantz Augustin — independent researcher and creative based in San Diego." jsonLd={jsonLd}>
+<BaseLayout title="About" description="About Frantz Augustin — independent researcher and developer building AI systems, from agent architectures to accessibility tools." jsonLd={jsonLd}>
   <div class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
       <div class="order-2 md:order-1 relative">
@@ -53,23 +58,34 @@ const jsonLd = {
 
         <div class="space-y-6 text-lg text-neutral-600 leading-relaxed font-light">
           <p>
-            I am a multidisciplinary creative and independent researcher based in San Diego, with
-            interests in artificial intelligence, cognitive science, and human computer interaction. I
-            explore how machines learn, how humans make meaning, and how the two might meet in ways
-            that feel generous.
+            I am an independent researcher based in San Diego working at the intersection of cognition, computation, and aesthetics. I study how machines learn, how humans make meaning, and where those processes converge in ways that matter.
           </p>
+
           <p>
-            My philosophy is simple. Technology should help humans, not replace them. My independent
-            research focuses on perception, meaning, and the interaction between humans and
-            intelligent systems. These themes guide how I approach my work.
+            I bring 6.5 years of software development experience across Python, TypeScript, and Ruby on Rails, with academic foundations from Harvard Extension and MIT xPRO programs. My technical background shapes how I approach research — I build the tools I theorize about.
           </p>
+
           <p>
-            Beyond research, I work on several personal projects. Frantz Studio is a small AI native
-            consultancy centered on design, analytics, and AI assisted tooling. Chez Frantz is an
-            online store for my imaginative side: fashion, stationery, poems, and storytelling. Frantz
-            Photography is my fashion and documentary practice, where I study how what we wear shapes
-            identity, emotion, and our understanding of each other. These projects support my research
-            by helping me explore how people interact with tools, images, and systems.
+            My ML journey started with 100 Days of ML and FastAI, where I trained my first image classifiers and deployed them to <a href="https://huggingface.co/Frantz103" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-400 transition-colors">HuggingFace Spaces</a>. From there I moved into multimodal models, built <a href="https://huggingface.co/spaces/Frantz103/CaptionQuest" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 underline decoration-indigo-200 hover:decoration-indigo-400 transition-colors">CaptionQuest</a> to compare captioning models, and developed a concept-driven architecture for building AI agents grounded in explicit conceptual reasoning.
+          </p>
+
+          <p>
+            Right now I'm focused on agent architecture, local model evaluation, computational aesthetics, and preparing for graduate study. I'm particularly interested in how small, local models can serve as thinking tools rather than replacement systems.
+          </p>
+
+          <p>
+            I'm looking for co-authors, lab affiliations, and collaborators interested in joint experiments. If you work on agent architectures, machine perception, or computational approaches to meaning — I'd like to hear from you.
+          </p>
+
+          <p class="text-base text-neutral-500">
+            Find me on <a href="https://huggingface.co/Frantz103" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors">HuggingFace</a>, <a href="https://medium.com/@AugustinCaz" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors">Medium</a>, and <a href="https://github.com/Frantz103" target="_blank" rel="noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors">GitHub</a>.
+          </p>
+
+          <p class="text-base">
+            <a href="/timeline/" class="inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-800 transition-colors font-medium">
+              See my full technical journey
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
           </p>
         </div>
 
