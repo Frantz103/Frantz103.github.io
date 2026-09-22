@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Coding Style
+
+**Tier 2: Coding Style (Production)** — See `~/Developer/ai-coding-styles/CODING_STYLE.md` for full principles.
+
+Spec-first, module isolation, citation traceability, Plan/Apply for destructive ops, append-only logs, test by absence.
+
+
 ## Project Overview
 
 Personal website for Frantz Augustin — research, writing, and creative work. Built with **Astro 5.x** (static site generation), deployed from `docs/` to both GitHub Pages and Netlify.

@@ -34,8 +34,8 @@
 - Always rebuild (`npm run build`) before pushing to ensure Netlify/GitHub Pages stay in sync.
 - Netlify forms rely on the hidden form in `index.html`; avoid removing the honeypot fields or `contact-success.html`.
 
-## WYSIWID Agent Workflow
-- Before coding, load `WYSIWID/context.yaml` to understand current concept state; treat it as the single source of project memory.
-- Follow the reasoning loop in `WYSIWID/pseudocode_reasoning_system.yaml` (Plan → Execute → Answer) and enforce Concept/Synchronization rules from `WYSIWID/CODING-PHILOSOPHY.md`.
-- When defining new architectural pieces, copy templates from `WYSIWID/templates/concept/` and run `python WYSIWID/scripts/validate_architecture.py` to confirm compliance.
-- Update `WYSIWID/context.yaml` with any new decisions before finishing, and keep `QUALITY-STANDARDS.md` checklists in mind for security/performance.
+## Agent Workflow
+- Before coding, load `context.yaml` to understand current concept state; treat it as the single source of project memory.
+- Follow the reasoning loop in `module isolation/pseudocode_reasoning_system.yaml` (Plan → Execute → Answer) and enforce Concept/Synchronization rules from `~/Developer/CODING_STYLE.md`.
+- When defining new architectural pieces, copy templates from `module isolation/templates/concept/` and run `python module isolation/scripts/validate_architecture.py` to confirm compliance.
+- Update `context.yaml` with any new decisions before finishing, and keep `QUALITY-STANDARDS.md` checklists in mind for security/performance.
