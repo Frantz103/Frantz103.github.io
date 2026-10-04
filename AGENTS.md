@@ -1,41 +1,65 @@
-# Repository Guidelines
+# AGENTS.md
 
-## Project Structure & Module Organization
-- `src/` contains the React single-page app (routing logic in `App.jsx`, styles in `App.css`/`index.css`).
-- `docs/` stores the production bundle published to GitHub Pages and Netlify; never hand-edit except via `npm run build`.
-- `public/` holds static assets copied during build (e.g., `contact-success.html`, favicon, hero image).
-- Tests live beside code (`src/App.test.jsx`) and share utilities defined in `vitest.setup.js`.
-- Automation lives under `scripts/` and `.github/workflows/` (CI pipeline).
+Guidance for coding agents working in this repository. `CLAUDE.md` is a symlink to this file.
 
-## Build, Test, and Development Commands
-- `npm install` — install dependencies.
-- `npm run dev` — start the Vite dev server with hot reload.
-- `npm run test` — run Vitest suite (routing, form detection).
-- `npm run build` — produce the site into `docs/` and run the docs integrity script.
-- `npm run lint` — check ESLint rules before committing.
+## Project Overview
 
-## Coding Style & Naming Conventions
-- Use modern React with function components and hooks; no class components.
-- Prefer descriptive camelCase for variables/functions, PascalCase for components.
-- Stick to Tailwind utility classes for layout/typography; add minimal custom CSS in `App.css`.
-- Keep JSX readable: break long props onto new lines and favor semantic HTML.
+Personal website for Frantz Augustin — research, writing, and creative work. Built with **Astro 5.x** (static site generation), deployed from `docs/` to both GitHub Pages and Netlify.
 
-## Testing Guidelines
-- Vitest + Testing Library (jsdom) power unit tests. Add new suites in `src/*.test.jsx`.
-- Name tests as `ComponentName.test.jsx` and keep assertions focused on visible behavior.
-- Run `npm run test` (or `npm run test:watch`) locally before pushing.
+## Commands
 
-## Commit & Pull Request Guidelines
-- Follow existing commit styles (`feat:`, `fix:`, `chore:`, `docs:`). Limit scope to a single change set.
-- Include generated `docs/` changes when edits affect UI/content.
-- Pull requests should describe user-facing changes, note any Netlify/CI considerations, and include screenshots or links when visual sections change.
+```bash
+npm run dev       # Start dev server
+npm run build     # Build to docs/ and verify artifacts
+npm run preview   # Preview production build
+npm run lint      # Run ESLint
+```
 
-## Deployment & Config Tips
-- Always rebuild (`npm run build`) before pushing to ensure Netlify/GitHub Pages stay in sync.
-- Netlify forms rely on the hidden form in `index.html`; avoid removing the honeypot fields or `contact-success.html`.
+## Architecture
 
-## WYSIWID Agent Workflow
-- Before coding, load `WYSIWID/context.yaml` to understand current concept state; treat it as the single source of project memory.
-- Follow the reasoning loop in `WYSIWID/pseudocode_reasoning_system.yaml` (Plan → Execute → Answer) and enforce Concept/Synchronization rules from `WYSIWID/CODING-PHILOSOPHY.md`.
-- When defining new architectural pieces, copy templates from `WYSIWID/templates/concept/` and run `python WYSIWID/scripts/validate_architecture.py` to confirm compliance.
-- Update `WYSIWID/context.yaml` with any new decisions before finishing, and keep `QUALITY-STANDARDS.md` checklists in mind for security/performance.
+### Stack
+- **Astro 5.x** — static site generator with file-based routing
+- **React** — used only for 2 interactive islands (`NavIsland.tsx`, `ShareButton.tsx`)
+- **Tailwind CSS v4** — via PostCSS (no `@astrojs/tailwind` — incompatible with v4)
+- **Content Collections** — essays and field notes stored as Markdown with Zod schemas
+
+### Key Directories
+- `src/pages/` — file-based routing (each `.astro` file = one page)
+- `src/layouts/` — `BaseLayout.astro` (shell) + `EssayLayout.astro` (article chrome)
+- `src/components/` — Astro components (static) + React islands (interactive)
+- `src/content/` — Markdown content collections (essays, field-notes)
+- `src/data/` — TypeScript data files (site config, research interests, social links, creative cards)
+- `src/styles/` — `global.css` with Tailwind imports and custom animations
+- `src/assets/` — Images processed by Astro's `<Image>` component
+- `public/` — Static assets served as-is (favicon, homepage.jpg, robots.txt, CNAME)
+- `docs/` — Build output (do not edit directly)
+
+### Content Collections
+- `src/content/essays/` — Markdown essays with frontmatter: title, date, excerpt, slug
+- `src/content/field-notes/` — Field notes with frontmatter: title, lastUpdated, quote
+- Schema defined in `src/content.config.ts`
+
+### Key Patterns
+- **Islands architecture**: Only `NavIsland.tsx` (`client:load`) and `ShareButton.tsx` (`client:visible`) ship JS to the browser
+- **Inline SVG**: Astro components use inline SVG paths instead of icon libraries
+- **`lucide-react`** is only imported inside React island components
+- **Trailing slashes**: All internal links end with `/` (`trailingSlash: 'always'` in config)
+- **Fonts**: Google Fonts loaded via `<link>` in `BaseHead.astro` (Golos Text + Playfair Display)
+
+### Deployment
+- `outDir: 'docs'` for GitHub Pages compatibility
+- Netlify reads `netlify.toml` (publish: docs)
+- Sitemap generated at `/sitemap-index.xml` via `@astrojs/sitemap`
+- RSS feed at `/rss.xml`
+- Contact form uses Netlify Forms (`data-netlify="true"` on static HTML)
+
+## Adding Content
+
+### New Essay
+1. Create `src/content/essays/{slug}.md` with frontmatter: title, date, excerpt, slug
+2. Build — the essay auto-appears on `/writing/` and gets its own page at `/writing/{slug}/`
+
+### New Page
+1. Create `src/pages/{name}.astro`
+2. Import and use `BaseLayout` as the wrapper
+3. Add nav link in `src/data/site.ts` if needed
