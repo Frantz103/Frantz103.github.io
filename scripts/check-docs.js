@@ -28,6 +28,8 @@ const ensureFileExists = async (relativePath) => {
 
 const run = async () => {
   await Promise.all(requiredFiles.map(ensureFileExists));
+  // Prerender modules are build intermediates, not public static assets.
+  await fs.rm(path.resolve('docs/.prerender'), { recursive: true, force: true });
   console.log('Docs integrity check passed.');
 };
 
