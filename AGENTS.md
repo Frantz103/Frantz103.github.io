@@ -4,7 +4,7 @@ Guidance for coding agents working in this repository. `CLAUDE.md` is a symlink 
 
 ## Project Overview
 
-Personal website for Frantz Augustin — research, writing, and creative work. Built with **Astro 5.x** (static site generation), deployed from `docs/` to both GitHub Pages and Netlify.
+Personal website for Frantz Augustin — research, writing, and creative work. Built with **Astro 7.x** (static site generation), deployed from `docs/` to both GitHub Pages and Netlify. Use Node.js 24, as specified in `.nvmrc` and the deployment configuration.
 
 ## Commands
 
@@ -18,7 +18,7 @@ npm run lint      # Run ESLint
 ## Architecture
 
 ### Stack
-- **Astro 5.x** — static site generator with file-based routing
+- **Astro 7.x** — static site generator with file-based routing
 - **React** — used only for 2 interactive islands (`NavIsland.tsx`, `ShareButton.tsx`)
 - **Tailwind CSS v4** — via PostCSS (no `@astrojs/tailwind` — incompatible with v4)
 - **Content Collections** — essays and field notes stored as Markdown with Zod schemas
