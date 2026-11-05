@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import 'tailwindcss/index.css';
 
 body {
   font-family: 'Golos Text', sans-serif;
